@@ -1,0 +1,118 @@
+.parent_container{
+    background-color: #f3f6fa;
+}
+.footer_card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 50px 0px;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 0px 20px 20px rgb(201 201 201 / 11%);
+}
+.footer_card::before{
+    content: "";
+    background-color: #7398cd;
+    position: absolute;
+    width: 90%;
+    height: 40px;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+.footer_wrapper{
+    height: 100%;
+}
+.footer_wrapper h5{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.footer_card p{
+    margin: 0;
+    padding: 0;
+}
+.phone{
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+    padding: 0px 70px;
+}
+.icon{
+    width: 60px;
+}
+.footer{
+    background-image: url('../../image/aws4.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 130px;
+    margin-top: -110px;
+    position: relative;
+}
+.footer::before{
+    content: "";
+    background-image: linear-gradient(45deg, #56b5e3, #7d58a5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+}
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-wrapper img{
+    width: 80px;
+    padding: 30px 0px;
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+}
+.footer_container h5{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.list_wrapper{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list_wrapper li{
+    color: white;
+    font-weight: 700;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 30px 0px;
+}
+.social_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+.social_wrapper{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.social_wrapper span{
+    font-weight: 700;
+}
+.social img{
+    width: 20px;
+    margin: 0px 5px;
+}

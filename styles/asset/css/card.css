@@ -1,0 +1,23 @@
+.des-card {
+    border: none !important;
+    border-radius: 0px !important;
+    background-color: #f5f5f5;
+}
+
+.trainerCard {
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px !important;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.areaCard {
+    border: none !important;
+    border-radius: 2px !important;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.ModalBorder {
+    border-bottom: none !important;
+    border-top: none !important;
+}

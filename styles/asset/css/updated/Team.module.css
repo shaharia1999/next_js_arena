@@ -1,0 +1,62 @@
+.team_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 450px;
+    background-image: url('../../image/New_Assets/team-bg.png');
+    /* background-image: url('../../image/New_Assets/test.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .team_wrapper :nth-child(1) :before{
+    content: 'testing';
+    font-size: 24px;
+    position: absolute;
+} */
+.team_title{
+    font-weight: 700;
+    margin: 0;
+    color: #00c389;
+    font-size: 20px;
+}
+.line{
+    width: 2rem;
+    background-color: #7e7e7e;
+    height: 2px;
+}
+.team_pera{
+    font-weight: 800;
+    color: #04004d;
+    font-size: 45px;
+    margin: 30px 0px 60px 0px;
+}
+.img_wrapper{
+    width: 40%;
+    overflow: hidden;
+    border: 3px solid #00c389;
+    border-radius: 999px 999px 999px 0px;
+    transform: translate(50%);
+    transition: .5s all;
+}
+.img_wrapper:hover{
+    transform: scale(1.3) translate(-50%,0);
+    cursor:pointer;
+}
+.img_wrapper img{
+    width: 100%;
+}
+.odd_team{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+}
+.even_team{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* right: 50%;
+    left: 50%; */
+    /* margin: auto;
+    bottom: 0; */
+}

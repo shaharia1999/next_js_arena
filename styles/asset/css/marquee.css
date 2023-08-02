@@ -1,0 +1,16 @@
+.marquee-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+    text-decoration: none!important;
+    margin-top: 0px!important;
+}
+
+.marquee-div{
+    height: 35px!important;
+    width: 100% !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ececec;
+}

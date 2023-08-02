@@ -1,0 +1,47 @@
+.state_wrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+/* .state_wrapper div:first-child{
+    width: 50%;
+    background-color: red;
+}  */
+.h3{
+    color: #00005c;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+.num_wrapper{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+/* .num_wrapper div{
+    border-left: 3px solid gray;
+    padding:0px 30px;
+} */
+.num_wrapper h1{
+    font-weight: 700;
+    font-size: 60px;
+    color: #26a3df;
+}
+
+
+
+.count{
+    border-left: 3px solid gray;
+    padding:0px 30px;
+}
+.count span{
+    font-weight: 700;
+    font-size: 60px;
+    color: #26a3df;
+}
+.count sup{
+    font-weight: 700;
+    font-size: 50px;
+    color: #26a3df;
+}

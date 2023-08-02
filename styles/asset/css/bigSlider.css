@@ -1,0 +1,256 @@
+.TopBanner {
+    height: 500px !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BannerMainTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 44px;
+    margin: 2px;
+}
+
+.BannerSubTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 2px;
+}
+
+.BannerDesTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 15px 0px 0px 0px;
+}
+
+
+.BannerMainTitleBlack {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 44px;
+    margin: 2px;
+}
+
+.BannerSubTitleBlack {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    margin: 2px;
+}
+
+.BannerDesTitleBlack {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    font-size: 14px;
+    margin: 15px 0px 0px 0px;
+}
+
+.SliderContentBottomToTop {
+    margin-bottom: 120px !important;
+}
+
+
+@media (max-width: 374.98px) {
+    .TopBanner {
+        height: 320px !important;
+    }
+
+    .BannerMainTitle {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .BannerSubTitle {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .BannerDesTitle {
+        font-size: 9px;
+    }
+
+    .SliderContentBottomToTop {
+        margin-bottom: 30px !important;
+    }
+
+    .BannerMainTitleBlack {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .BannerSubTitleBlack {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .BannerDesTitleBlack {
+        font-size: 9px;
+    }
+
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .TopBanner {
+        height: 320px !important;
+    }
+
+    .BannerMainTitle {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .BannerSubTitle {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .BannerDesTitle {
+        font-size: 9px;
+    }
+
+    .SliderContentBottomToTop {
+        margin-bottom: 40px !important;
+    }
+
+    .BannerMainTitleBlack {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .BannerSubTitleBlack {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .BannerDesTitleBlack {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .TopBanner {
+        height: 320px !important;
+    }
+
+    .BannerMainTitle {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .BannerSubTitle {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .BannerDesTitle {
+        font-size: 10px;
+    }
+
+    .SliderContentBottomToTop {
+        margin-bottom: 45px !important;
+    }
+
+    .BannerMainTitleBlack {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .BannerSubTitleBlack {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .BannerDesTitleBlack {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .TopBanner {
+        height: 340px !important;
+    }
+
+    .BannerMainTitle {
+        font-weight: 700;
+        font-size: 38px;
+    }
+
+    .BannerSubTitle {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .BannerDesTitle {
+        font-size: 12px;
+    }
+
+    .SliderContentBottomToTop {
+        margin-bottom: 45px !important;
+    }
+
+    .BannerMainTitleBlack {
+        font-weight: 700;
+        font-size: 38px;
+    }
+
+    .BannerSubTitleBlack {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .BannerDesTitleBlack {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .TopBanner {
+        height: 380px !important;
+    }
+
+    .BannerMainTitle {
+        font-weight: 700;
+        font-size: 42px;
+    }
+
+    .BannerSubTitle {
+        font-weight: 400;
+        font-size: 26px;
+    }
+
+    .BannerDesTitle {
+        font-size: 14px;
+    }
+
+    .SliderContentBottomToTop {
+        margin-bottom: 80px !important;
+    }
+
+    .BannerMainTitleBlack {
+        font-weight: 700;
+        font-size: 42px;
+    }
+
+    .BannerSubTitleBlack {
+        font-weight: 400;
+        font-size: 26px;
+    }
+
+    .BannerDesTitleBlack {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,130 @@
+/* path{
+    fill:url(#gradient) !important;
+} */
+.header_container{
+    position: relative;
+    /* height: 100vh;
+    min-height: 800px; */
+    height: 800px;
+    z-index: 0;
+    overflow: hidden;
+}
+.wave{
+    position: relative;
+}
+.wave::before{
+    background-image: linear-gradient(330deg,#56b5e3,#7d58a5);
+    height: 1050px;
+    /* height: 90vh; */
+    /* min-height: 1500px; */
+    content: "";
+    position: absolute;
+    /* width: 2300px; */
+    width: 130%;
+    border-radius: 666px;
+    transform: rotate(339deg);
+    top: -123%;
+    left: -17%;
+    z-index: -11;
+    box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+    -webkit-box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+    -moz-box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+    margin-top: -30%;
+}
+.wave::after{
+    height: 1050px;
+    content: "";
+    position: absolute;
+    /* width: 2300px; */
+    width: 130%;
+    border-radius: 666px;
+    transform: rotate(339deg);
+    top: -123%;
+    left: -17%;
+    z-index: -11;
+    opacity: .05;
+    background-repeat: no-repeat;
+    background-image: url(/image/aws7.webp);
+    background-size: cover;
+    background-position: center;
+    margin-top: -30%;
+}
+.details{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    /* width: 800px; */
+    color: white;
+    font-size: 30px;
+    z-index: -1;
+}
+.header_title{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Philosopher', sans-serif;
+}
+.header_slogan{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Roboto display";
+}
+.aboutTxt{
+    width: 800px;
+    color: white;
+    font-size: 22px;
+    text-align: justify ;
+}
+.btn{
+    border: 0px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin-top: 50px;
+}
+/* Badge section */
+.badge_container{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(192, 192, 192); */
+    box-shadow: inset 0px 0px 13px 4px #b7b7b79e;
+    width: 500px;
+    height: 70px;
+    /* padding-left: 5px; */
+    /* padding-right: 15px; */
+    border-radius: 9999px;
+}
+.icon_wrapper{
+    background-color: rgb(255, 255, 255);
+    border-radius: 9999px;
+    padding: 12px;
+    border: 1px solid #abababc7;
+    box-shadow: inset 0px 0px 20px 0px green;
+}
+.icon{
+    font-size: 40px;
+    /* border: 5px solid rgb(75, 70, 70);
+    border-radius: 9999px; */
+}
+.badge p{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.path{
+    fill:green !important;
+}

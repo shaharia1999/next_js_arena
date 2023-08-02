@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="651" height="531" viewBox="0 0 651 531">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.458" x2="0.488" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#56b5e3" stop-opacity="0.549"/>
+      <stop offset="1" stop-color="#7d58a5" stop-opacity="0.639"/>
+    </linearGradient>
+    <clipPath id="clip-cyber-security">
+      <rect width="651" height="531"/>
+    </clipPath>
+  </defs>
+  <g id="cyber-security" clip-path="url(#clip-cyber-security)">
+    <rect width="651" height="531" fill="#fff"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(0.052 -0.18)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="651" height="531" transform="translate(-0.052 0.18)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Rectangle_21" data-name="Rectangle 21" transform="translate(297 208)" stroke="#707070" stroke-width="1">
+      <rect width="118" height="124" stroke="none"/>
+      <rect x="0.5" y="0.5" width="117" height="123" fill="none"/>
+    </g>
+    <g id="cyber-security-2" data-name="cyber-security" transform="translate(263.726 162.992)">
+      <path id="Path_121" data-name="Path 121" d="M148.191,307.368h60.063V271.211H148.191Zm30.032-24.105a6.026,6.026,0,1,1-6.006,6.027A6.016,6.016,0,0,1,178.223,283.263Zm0,0" transform="translate(-88.552 -162.612)" fill="#f33944"/>
+      <path id="Path_122" data-name="Path 122" d="M172.836,24.233c-31.635,0-50.785-5.912-61.278-10.872C100.871,8.309,96.839,3.228,96.476,2.75a5.813,5.813,0,0,0-9.565-.46c-.35.391-5.212,5.664-16.963,10.888C58.6,18.222,38.388,24.235,6.506,24.235A6.015,6.015,0,0,0,.5,30.26v96.417c0,24.524,15.466,45.89,44.728,61.793,19.882,10.805,42.079,16.546,44.442,16.546,2.108,0,24.08-5.479,44.444-16.546,29.26-15.9,44.728-37.27,44.728-61.793V30.26a6.017,6.017,0,0,0-6.006-6.027ZM131.715,150.78a6.016,6.016,0,0,1-6.006,6.027H53.633a6.017,6.017,0,0,1-6.006-6.027V102.572a6.017,6.017,0,0,1,6.006-6.025h6.025V78.266a30.013,30.013,0,0,1,60.026,0,6.006,6.006,0,1,1-12.013,0,18,18,0,0,0-36,0v18.28h54.038a6.016,6.016,0,0,1,6.006,6.025Zm0,0" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}/* 
+input:-webkit-autofill{
+    -webkit-text-fill-color: #157212 !important;
+} */
+.navSec{
+    height: 10vh;
+}
+.loginSec{
+    height: 90vh;
+}
+.login_box{
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px #b3b3b36b;
+}
+.aside_left{
+    background-image: linear-gradient(90deg,#56b5e3, #7d58a5);
+}
+.cross{
+    width: 1rem;
+}
+.login_btn{
+    padding: 10px 30px;
+    background-color: #00c389;
+    border: 0;
+    border-radius: 9999px;
+    color: white;
+}
+.login_btn:active{
+    transform: scale(.95);
+}
+.eye{
+    width: 24px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}

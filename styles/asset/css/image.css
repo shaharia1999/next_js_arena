@@ -1,0 +1,12 @@
+.img-fluid{
+    width: auto;
+    height: auto;
+    max-height: 100px!important;
+    max-width: 100px!important;
+}
+
+.SuccessImgFluid{
+    width: 100%;
+    height: auto;
+    max-height: 400px!important;
+}

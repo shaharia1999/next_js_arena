@@ -1,0 +1,115 @@
+
+.NavbarBGMobile {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+}
+
+.sideNavOpen {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    overflow-x: hidden;
+    font-size: 16px;
+    padding-top: 0px!important;
+    transition: 0.1s;
+    background-image: linear-gradient(to top, rgba(86, 181, 227, 100), rgba(125, 88, 165, 50));
+    box-shadow: 0 0 8px 0 rgba(57, 78, 234, 0.1);
+}
+.sideNavClose {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    font-size: 20px;
+    left: 0;
+    z-index: 10;
+    overflow-x: hidden;
+    transition: 0.1s;
+    background-color: #161616;
+    box-shadow: 0 0 8px 0 rgba(57, 78, 234, 0.1);
+}
+.ContentOverlayOpen {
+    display: block;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+.ContentOverlayClose {
+    display: none;
+}
+
+.bars-btn{
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f7f7f7 !important;
+    background: none !important;
+    font-size: 20px;
+    padding: 0px 10px 0px 10px!important;
+    border-radius: 2px;
+    margin-top: 0px!important;
+    border-color: #bfbfbf;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.3);
+    margin-left: 5px;
+}
+
+.bars-btn:focus{
+    box-shadow: none!important;
+}
+
+
+.social-facebook{
+    text-decoration: none!important;
+    font-weight: 400;
+    color: #2367e4 !important;
+    background: none !important;
+    border: none!important;
+    font-size: 20px;
+}
+
+.social-youtube{
+    text-decoration: none!important;
+    font-weight: 400;
+    color: #ff1a1a !important;
+    background: none !important;
+    border: none!important;
+    font-size: 20px;
+}
+
+.cyberHeroMainTitleImg{
+    margin-left: 4px!important;
+    height: 16px!important;
+    width: auto!important;
+}
+
+.NavMobile{
+    height: 60px!important;
+}
+
+.MobileNavLogo{
+    height: 60px!important;
+    width: auto!important;
+    align-content: center!important;
+    margin-top: 20px!important;
+    margin-left: 10px;
+}
+
+.NavFontMarginTop{
+    margin-top: 15px!important;
+}
+
+.MobileMarginTop{
+    margin-top: 45px;
+}
+
+.MobileMarginTop1{
+    margin-top: 80px;
+}

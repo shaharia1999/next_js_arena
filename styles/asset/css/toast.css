@@ -1,0 +1,51 @@
+.toastMargin {
+    margin-top: 250px;
+    width: 450px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 374px) {
+    .toastMargin {
+        margin-top: 100px;
+        width: 340px !important;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 575px) {
+    .toastMargin {
+        margin-top: 100px;
+        width: 340px !important;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .toastMargin {
+        margin-top: 350px;
+        width: 340px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .toastMargin {
+        margin-top: 350px;
+        width: 340px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .toastMargin {
+        margin-top: 350px;
+        width: 340px !important;
+    }
+}
+

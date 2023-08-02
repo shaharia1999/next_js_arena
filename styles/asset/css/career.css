@@ -1,0 +1,82 @@
+.CareerCard {
+    padding: 10px 20px 10px 20px;
+    border-radius: 0 !important;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.careerBtn {
+    border-radius: 0 !important;
+    border-color: #237ab1;
+    background-color: #237ab1;
+    padding-top: 10px !important;
+    margin-bottom: 8px;
+}
+
+.careerBtn:hover {
+    border-radius: 0 !important;
+    border-color: #208ed0;
+    background-color: #208ed0;
+}
+
+.careerBtn:focus {
+    border-radius: 0 !important;
+    border-color: #208ed0 !important;
+    background-color: #208ed0 !important;
+    box-shadow: none !important;
+}
+
+.careerJobMainTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+.careerBodyTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.careerBodySubTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.CareerApplyNowBtn {
+    border-radius: 2px !important;
+    background-color: #1b760d;
+    margin-bottom: 8px;
+    padding: 10px 20px 10px 20px !important;
+    color: #ffffff;
+}
+
+.CareerApplyNowBtn:hover {
+    border-radius: 2px !important;
+    background-color: #17590c;
+    margin-bottom: 8px;
+    padding: 10px 20px 10px 20px !important;
+    color: #ffffff;
+}
+
+.CareerApplyNowBtn:focus {
+    border-radius: 2px !important;
+    background-color: #17590c !important;
+    margin-bottom: 8px;
+    padding: 10px 20px 10px 20px !important;
+    box-shadow: none !important;
+}
+
+.CarrerModalTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none !important;
+}

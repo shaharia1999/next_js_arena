@@ -1,0 +1,78 @@
+.nusratImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.AlumniMainTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #0b6481;
+}
+
+.AlumniTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #0b6481;
+    margin-top: 20px;
+}
+
+.AlumniDes {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+}
+
+@media (max-width: 374.98px) {
+    .nusratImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .AlumniMainTitle {
+        font-size: 20px;
+    }
+
+    .AlumniTitle {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .AlumniDes {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .nusratImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        border-radius: 10px;
+        height: 300px;
+    }
+
+    .AlumniMainTitle {
+        font-size: 22px;
+    }
+
+    .AlumniTitle {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .AlumniDes {
+        font-size: 14px;
+    }
+}

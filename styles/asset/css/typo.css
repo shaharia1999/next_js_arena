@@ -1,0 +1,52 @@
+.pay-now-btn{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px 10px 3px 10px;
+    background-color: #DC3545;
+}
+
+.pay-now-btn:hover{
+    font-family: 'Poppins', sans-serif;
+    color: #1b1e21;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px 10px 3px 10px;
+    background-color: #5BA9DB;
+}
+
+.aboutDescription {
+    font-family: 'Poppins', sans-serif;
+    color: #1b1e21;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 374.98px) {
+    .aboutDescription {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .aboutDescription {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .aboutDescription {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .aboutDescription {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

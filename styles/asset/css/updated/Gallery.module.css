@@ -1,0 +1,38 @@
+.gallery_container{
+    margin: 200px 0px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    gap: 5px;
+}
+.gallery_container img{
+    border-radius: 10px;
+}
+.gallery_container img{
+    width: 100%;
+}
+.gallery_content{
+    /* width: 300px; */
+    grid-column: span 2 / span 2;
+}
+/* img:last-child{
+    grid-column: span 2 / span 2;
+    height: 100%;
+} */
+.second_image{
+    grid-row: span 2 / span 2;
+    height: 100%;
+    background-image: url('../../image/aws2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.last_image{
+    grid-column: span 2 / span 2;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url('../../image/aws8.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

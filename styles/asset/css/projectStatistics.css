@@ -1,0 +1,31 @@
+.Project-card {
+    border: none !important;
+    border-radius: 5px !important;
+    margin: 0px !important;
+    height: auto;
+}
+
+.statistics-img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    min-width: 80px;
+    min-height: 80px;
+}
+
+.statistics-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #7D58A5FF;
+}
+
+.statistics-des {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #595959;
+}

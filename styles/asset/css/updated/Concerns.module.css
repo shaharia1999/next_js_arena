@@ -1,0 +1,24 @@
+.concern_parent{
+  padding: 80px 0px;
+}
+.concern_title{
+  color: #00c389;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+.concerns_line{
+  content: '';
+  width: 6rem;
+  height: 2px;
+  background-color: #7e7e7e;
+  /* position: relative; */
+}
+.concerns_para{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #04004d;
+  width: 80%;
+}

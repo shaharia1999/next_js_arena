@@ -1,0 +1,44 @@
+.CourseDetailsMainTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1b1e21;
+    margin-bottom: 25px;
+}
+
+.courseIcon {
+    color: #007bff;
+}
+
+
+@media (max-width: 374.98px) {
+    .CourseDetailsMainTitle {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .CourseDetailsMainTitle {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .CourseDetailsMainTitle {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .CourseDetailsMainTitle {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+}

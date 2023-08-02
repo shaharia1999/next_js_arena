@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="651" height="531" viewBox="0 0 651 531">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.458" x2="0.488" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#56b5e3" stop-opacity="0.549"/>
+      <stop offset="1" stop-color="#7d58a5" stop-opacity="0.639"/>
+    </linearGradient>
+    <clipPath id="clip-ux">
+      <rect width="651" height="531"/>
+    </clipPath>
+  </defs>
+  <g id="ux" clip-path="url(#clip-ux)">
+    <rect width="651" height="531" fill="#fff"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(0.052 -0.18)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="651" height="531" transform="translate(-0.052 0.18)" fill="url(#linear-gradient)"/>
+    </g>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="77" cy="77.5" rx="77" ry="77.5" transform="translate(270 211)" fill="#fff"/>
+    <g id="ux-2" data-name="ux" transform="translate(269.474 211.051)">
+      <path id="Path_19" data-name="Path 19" d="M32.2,270.664H.111a77.548,77.548,0,0,0,73.423,72.9V311.5A45.634,45.634,0,0,1,32.2,270.664Z" transform="translate(0 -188.671)"/>
+      <path id="Path_20" data-name="Path 20" d="M272.483,311.389V343.5a77.543,77.543,0,0,0,72.32-72.838H312.718A45.64,45.64,0,0,1,272.483,311.389Z" transform="translate(-189.862 -188.67)"/>
+      <path id="Path_21" data-name="Path 21" d="M73.533,32.07V0A77.548,77.548,0,0,0,.111,72.9H32.2A45.633,45.633,0,0,1,73.533,32.07Z"/>
+      <path id="Path_22" data-name="Path 22" d="M312.718,73.06H344.8A77.544,77.544,0,0,0,272.483.222V32.334A45.64,45.64,0,0,1,312.718,73.06Z" transform="translate(-189.862 -0.155)"/>
+      <path id="Path_23" data-name="Path 23" d="M195.978,228.776v6.036a5.985,5.985,0,0,1-.638,3.052,3.111,3.111,0,0,1-5.066,0,5.984,5.984,0,0,1-.638-3.052v-11.2h-6.994v11.409a12.978,12.978,0,0,0,.3,2.845c1,4.458,4.481,6.965,9.807,6.965,3.563,0,6.3-1.122,8.022-3.2a10.1,10.1,0,0,0,2.084-6.611V223.61h-6.875Z" transform="translate(-127.236 -155.871)" fill="#f43a45"/>
+      <path id="Path_24" data-name="Path 24" d="M272.568,223.61l-3.4,5.166-.033.05-.034-.05L265.6,223.61H257.75l7.231,10.284-2.845,3.971-.108.151-4.544,6.34h7.972l3.5-5.542,3.586,5.542h8l-4.626-6.491-3.02-4.237,3.487-4.851,3.714-5.166Z" transform="translate(-179.406 -155.871)" fill="#f43a45"/>
+    </g>
+  </g>
+</svg>

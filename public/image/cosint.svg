@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4450" height="3630" viewBox="0 0 4450 3630">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.458" x2="0.488" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#56b5e3" stop-opacity="0.549"/>
+      <stop offset="1" stop-color="#7d58a5" stop-opacity="0.639"/>
+    </linearGradient>
+    <clipPath id="clip-cosint">
+      <rect width="4450" height="3630"/>
+    </clipPath>
+  </defs>
+  <g id="cosint" clip-path="url(#clip-cosint)">
+    <rect width="4450" height="3630" fill="url(#linear-gradient)"/>
+    <g id="hacker" transform="translate(1892.449 1220.849)">
+      <path id="Path_44" data-name="Path 44" d="M795.465,202.243,776.153,125,669.934,151.547,607.17,0,463.933,47.479,320.7,0,257.932,151.547,151.713,125,132.4,202.243l331.533,83.693Z" transform="translate(180.368)" fill="#e44c5d"/>
+      <path id="Path_45" data-name="Path 45" d="M1075.645,816.5,1263.42,331H25.185L212.96,816.5ZM604.066,491.938h80.469v80.469H604.066Z" transform="translate(0 556.842)"/>
+      <path id="Path_46" data-name="Path 46" d="M976.16,321.34,731.655,202.213C688.011,264.941,615.626,306.252,533.58,306.252s-154.431-41.31-198.075-104.039L91,321.34V467.19H976.16Z" transform="translate(110.721 340.184)" fill="#eceff6"/>
+      <path id="Path_47" data-name="Path 47" d="M196,122.392v76.735a160.938,160.938,0,0,0,321.876,0V122.392L356.938,163.018Z" transform="translate(287.363 205.9)"/>
+    </g>
+    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(2461 2251)" fill="#e44c5d" stroke="#707070" stroke-width="1">
+      <ellipse cx="76" cy="63.5" rx="76" ry="63.5" stroke="none"/>
+      <ellipse cx="76" cy="63.5" rx="75.5" ry="63" fill="none"/>
+    </g>
+  </g>
+</svg>

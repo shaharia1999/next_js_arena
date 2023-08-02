@@ -1,0 +1,312 @@
+.event-card {
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px !important;
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.event-card h4 {
+    margin: 0;
+    padding: 0 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.event-card .title {
+    text-align: right;
+    color: #545454;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.event-card svg {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.img-avatar {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+    top: 15px;
+    left: 140px;
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+    padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+    fill: white;
+}
+
+.img-portada {
+    width: 100%;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: url("https://www.pngitem.com/pimgs/m/74-745142_isometric-vector-business-meeting-hd-png-download.png");
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.eventTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b6481;
+}
+
+.eventDes {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+}
+
+@media (max-width: 374.98px) {
+    .event-card .title {
+        font-weight: 400;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .event-card svg {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+    }
+
+    .img-avatar {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white;
+        background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+        top: 15px;
+        left: 70px;
+    }
+
+    .eventTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .eventDes {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .portada {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-image: url("https://www.pngitem.com/pimgs/m/74-745142_isometric-vector-business-meeting-hd-png-download.png");
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .event-card .title {
+        font-weight: 400;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .event-card svg {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+    }
+
+    .img-avatar {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white;
+        background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+        top: 15px;
+        left: 90px;
+    }
+
+    .eventTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .eventDes {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .portada {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-image: url("https://www.pngitem.com/pimgs/m/74-745142_isometric-vector-business-meeting-hd-png-download.png");
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .event-card .title {
+        font-weight: 400;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .event-card svg {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+    }
+
+    .img-avatar {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white;
+        background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+        top: 15px;
+        left: 140px;
+    }
+
+    .eventTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .eventDes {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .portada {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-image: url("https://www.pngitem.com/pimgs/m/74-745142_isometric-vector-business-meeting-hd-png-download.png");
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .event-card .title {
+        font-weight: 400;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .event-card svg {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+    }
+
+    .img-avatar {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white;
+        background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+        top: 15px;
+        left: 60px;
+    }
+
+    .eventTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .eventDes {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .portada {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-image: url("https://www.pngitem.com/pimgs/m/74-745142_isometric-vector-business-meeting-hd-png-download.png");
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .event-card .title {
+        font-weight: 400;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .event-card svg {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+    }
+
+    .img-avatar {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        border-radius: 50%;
+        border: 6px solid white;
+        background-image: linear-gradient(rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+        top: 15px;
+        left: 90px;
+    }
+
+    .eventTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .eventDes {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .portada {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-image: url("https://www.pngitem.com/pimgs/m/74-745142_isometric-vector-business-meeting-hd-png-download.png");
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}

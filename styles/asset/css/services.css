@@ -1,0 +1,222 @@
+
+.a-box {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-container {
+    height: 230px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 250px;
+    margin: -35px 0px 0px -70px;
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 200px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+
+.inner-skew:hover {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 11deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 200px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+}
+
+.text-container {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    margin: -120px 0px 0px 0px;
+    border-color: #ffffff;
+    height: 100% !important;
+}
+
+.text-container:hover {
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+}
+
+.service-name {
+    color: #0b6481 !important;
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    font-weight: 400;
+}
+
+.service-name:hover {
+    color: #000000 !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+}
+
+.service-des {
+    color: #151515 !important;
+    font-size: 14px !important;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-justify: initial;
+    line-height: 1.4;
+}
+
+.serviceDetailsHeadline {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 22px !important;
+    color: #424242;
+    text-decoration: none !important;
+}
+
+
+.serviceDetailsDes {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px !important;
+    color: #424242;
+    text-decoration: none !important;
+}
+
+.textLine {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+@media (max-width: 374.98px) {
+    .a-box {
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+
+    .img-container {
+        height: 230px;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 0px 0px 20px 20px;
+        display: inline-block;
+    }
+
+    .img-container img {
+        transform: skew(0deg, -13deg);
+        height: 250px;
+        margin: -35px 0px 0px -70px;
+    }
+
+    .inner-skew {
+        display: inline-block;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 0px;
+        transform: skew(0deg, 13deg);
+        font-size: 0px;
+        margin: 30px 0px 0px 0px;
+        background: #c8c2c2;
+        height: 250px;
+        width: 200px;
+    }
+
+    .text-container {
+        padding: 120px 20px 20px 20px;
+        margin: -120px 0px 0px 0px;
+    }
+
+    .service-name {
+        font-size: 16px !important;
+        font-weight: 400;
+    }
+
+    .service-name:hover {
+        font-size: 18px !important;
+        font-weight: 600;
+    }
+
+    .service-des {
+        font-size: 12px !important;
+        font-weight: 300;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .serviceDetailsHeadline {
+        font-weight: 500;
+        font-size: 16px !important;
+    }
+
+    .serviceDetailsDes {
+        font-weight: 300;
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .serviceDetailsHeadline {
+        font-weight: 500;
+        font-size: 18px !important;
+    }
+
+    .serviceDetailsDes {
+        font-weight: 300;
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .serviceDetailsHeadline {
+        font-weight: 500;
+        font-size: 20px !important;
+    }
+
+    .serviceDetailsDes {
+        font-weight: 300;
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,107 @@
+.CountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CountTitle {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.countdown {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.countdown div {
+    margin: 10px;
+}
+
+.countdown p {
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 70px;
+    width: 160px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.countdown h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.TimeFont {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.TimeDays {
+    color: #9B51E0;
+}
+
+.TimeHours {
+    color: #3ED089;
+}
+
+.TimeMinutes {
+    color: #00BAFF;
+}
+
+.TimeSeconds {
+    color: #ED6B6B;
+}
+
+.swal-Title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px !important;
+    font-weight: 400;
+    color: #ED6B6B;
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .swal-Title {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .swal-Title {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .swal-Title {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .swal-Title {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+    .swal-Title {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .swal-Title {
+        font-size: 16px !important;
+    }
+}

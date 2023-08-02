@@ -1,0 +1,198 @@
+.img-Center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 95px !important;
+    width: 240px !important;
+    padding: 15px 25px 0px 20px;
+}
+
+.nav-font {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none !important;
+}
+
+.nav-font:hover {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none !important;
+}
+
+.Navbar {
+    border: none !important;
+    padding: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, rgba(86, 181, 227, 100), rgba(125, 88, 165, 100));
+    z-index: 1000;
+}
+
+.MainLogoTitle {
+    font-family: 'Poppins', sans-serif;
+    color: #0b6481;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none !important;
+    margin-left: 10px;
+}
+
+.JoinFacebook {
+    border-radius: 10px;
+    border-color: red;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    alignment: center !important;
+    margin-right: 50px;
+}
+
+.Nav-Apply {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none !important;
+}
+
+.Nav-Apply:hover {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #59a8e1;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none !important;
+}
+
+.Nav-payment {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none !important;
+    height: 33px;
+    margin-top: 4px;
+}
+
+.BtnLine {
+    padding: 2px;
+}
+
+
+@media (max-width: 374.98px) {
+    .img-Center {
+        height: 70px !important;
+        width: 200px !important;
+        padding: 10px 25px 5px 10px;
+    }
+
+    .nav-font {
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none !important;
+    }
+
+    .nav-font:hover {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none !important;
+    }
+
+    .Navbar {
+        border: none !important;
+        padding: 10px;
+    }
+
+    .MainLogoTitle {
+        color: #2a2a2a;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none !important;
+        margin-left: 10px;
+    }
+
+    .JoinFacebook {
+        border-radius: 15px;
+        margin-top: 3px;
+        font-weight: 400;
+        font-size: 12px;
+        alignment: center !important;
+        margin-right: 80px;
+    }
+
+    .Nav-Apply {
+        background-color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none !important;
+    }
+
+    .Nav-Apply:hover {
+        background-color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        color: #59a8e1;
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none !important;
+    }
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .JoinFacebook {
+        border-radius: 15px;
+        margin-top: 3px;
+        font-weight: 400;
+        font-size: 12px;
+        alignment: center !important;
+        margin-right: 150px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .JoinFacebook {
+        border-radius: 15px;
+        margin-top: 3px;
+        font-weight: 400;
+        font-size: 12px;
+        alignment: center !important;
+        margin-right: 220px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .JoinFacebook {
+        border-radius: 15px;
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 12px;
+        alignment: center !important;
+        margin-right: 80px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .JoinFacebook {
+        border-radius: 15px;
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 12px;
+        alignment: center !important;
+        margin-right: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
