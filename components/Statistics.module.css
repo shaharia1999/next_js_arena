@@ -1,8 +1,12 @@
 .state_wrapper{
     
+    width: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* margin: 100px 0px; */
+    padding: 100px 0;
  
 }
 /* .state_wrapper div:first-child{

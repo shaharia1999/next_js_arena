@@ -1,5 +1,5 @@
-.concern_parent{
-  padding: 80px 0px;
+.concernParent{
+  padding: 100px 0px;
 }
 .concern_title{
   color: #00c389;
@@ -21,4 +21,8 @@
   font-weight: 700;
   color: #04004d;
   width: 80%;
+}
+.marqueImg{
+  width:100px;
+   height:100px;
 }

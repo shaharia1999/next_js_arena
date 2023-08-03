@@ -1,7 +1,7 @@
 .parent_container{
     background-color: #f3f6fa;
 }
-.footer_card{
+.footerCard{
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     display: grid;
@@ -14,7 +14,7 @@
     z-index: 10;
     box-shadow: 0px 0px 20px 20px rgb(201 201 201 / 11%);
 }
-.footer_card::before{
+.footerCard::before{
     content: "";
     background-color: #7398cd;
     position: absolute;
@@ -33,7 +33,7 @@
     margin-top: 20px;
     margin-bottom: 15px;
 }
-.footer_card p{
+.footerCard p{
     margin: 0;
     padding: 0;
 }
@@ -46,7 +46,7 @@
     width: 60px;
 }
 .footer{
-    background-image: url('../../image/aws4.webp');
+    background-image: url('/image/aws4.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -63,21 +63,21 @@
     top: 0;
     opacity: 0.9;
 }
-.contact-wrapper{
+.contactWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contact-wrapper img{
+.contactWrapper img{
     width: 80px;
     padding: 30px 0px;
 }
-.footer_container{
+.footerContainer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     position: relative;
 }
-.footer_container h5{
+.footerContainer h5{
     color: white;
     font-size: 30px;
     font-weight: 700;
@@ -98,18 +98,18 @@
     border-bottom: 3px solid rgb(255, 255, 255);
     padding: 30px 0px;
 }
-.social_container{
+.socialContainer{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 50%;
 }
-.social_wrapper{
+.socialWrapper{
     display: flex;
     align-items: center;
     color: white;
 }
-.social_wrapper span{
+.socialWrapper span{
     font-weight: 700;
 }
 .social img{

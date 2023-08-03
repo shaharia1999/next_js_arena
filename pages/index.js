@@ -5,6 +5,9 @@ import Header from '@/components/Header'
 import About from '@/components/About'
 import Statistics from '@/components/Statistics'
 import Services from '@/components/Services'
+import Courses from '@/components/Courses'
+import Review from '@/components/Revew'
+import Concerns from '@/components/Concerns'
 
 
 
@@ -23,6 +26,9 @@ const Home= () => {
         <About></About>
         <Statistics></Statistics>
         <Services></Services>
+        <Courses></Courses>
+        <Review></Review>
+        <Concerns/>
       </main>
     </>
   )

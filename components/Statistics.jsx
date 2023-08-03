@@ -28,7 +28,7 @@ const Statistics = () => {
                 <div >
                     <h3 className={`${style.h3}`}>Statistics shows our contribution <br /> to the security community</h3>
                 </div>
-                <div className={style.num_wrapper}>
+                <div className={`${style.num_wrapper}`}>
                     <div className={`${style.count}`}>
                         <ScrollTrigger onEnter={() => setCount(true)}>
                             {count &&

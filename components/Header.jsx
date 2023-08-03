@@ -13,7 +13,7 @@ const Header = () => {
                 <div className={style.wave}>
                     {/* <Navbar /> */}
                     
-                    <div data-aos="fade-right" data-aos-duration="1000" className={`container ${style.details}`}>
+                    <div  className={`container ${style.details}`}>
                         <h1 className={style.header_title}>Arena Web Security</h1>
                         <p className={style.header_slogan}>New window of world wide web</p>
                         <p className={style.aboutTxt}>Arena Web Security is a sister concern of Arena Web Technology. Arena Web Security is a renowned IT security company in Bangladesh since its establishment in 2012. During these years, Arena Web Security has provided Cyber Security Services and Trainings to many around the world.</p>

@@ -43,9 +43,9 @@ const Navbar = () => {
       <nav className={`${style.navbar} container-fluid`}>
         <Link href="/new"><img src={colorChange ? logo2 : logo} alt="" /></Link>
         <ul className={`${style.link_wrapper}`}>
-          <Link href="/new"><li>HOME</li></Link>
-          <Link href="/new-about"><li>ABOUT</li></Link>
-          <Link href="/new-services"><li>SERVICES</li></Link>
+          <Link href="/"><li>HOME</li></Link>
+          <Link href="/about"><li>ABOUT</li></Link>
+          <Link href="/services"><li>SERVICES</li></Link>
           <li id={style.courses}>
             <div>
             <span>COURSES</span>

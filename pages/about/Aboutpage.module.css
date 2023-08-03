@@ -5,26 +5,26 @@
     margin: auto;
 }
 .banner_container img{
-    height: 400px;
+    height: 600px;
     border-radius: 0px 0px 20px 20px;
 }
-.about_content{
+.aboutContent{
     position: relative;
     width: 80%;
-    margin: auto;
+    margin:0 auto;
     padding: 20px;
     margin-top: -100px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 20px 0px #80808047;
 }
-.about_content h5{
+.aboutContent h5{
     font-weight: 700;
     margin: 0;
     color: #00c389;
     font-size: 20px;;
 }
-.about_content div{
+.aboutContent div{
     width: 3rem;
     background-color: #7e7e7e;
     height: 2px;

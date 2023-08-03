@@ -6,6 +6,9 @@
     /* position: relative; */
     font-size: 20px;
 }
+.coursesid{
+    padding: 100px 0;
+}
 .course_line{
     width: 2rem;
     background-color: #7e7e7e;
