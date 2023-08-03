@@ -5,7 +5,6 @@ import RootLayout from '@/components/Layout'
 import React, { useState } from 'react';
 // const style = '/css/updated/Aboutpage.module.css'
 import  style from './Aboutpage.module.css'
-import ReactModal from 'react-modal';
 const banner = '/image/New_Assets/aboutbanner2.jpg'
 const about1 = '/image/New_Assets/About/AWTBrochure-01.png'
 const about2 = '/image/New_Assets/About/AWTBrochure-02.png'
@@ -21,28 +20,26 @@ const about11 = '/image/New_Assets/About/AWTBrochure-11.png'
 const about12 = '/image/New_Assets/About/AWTBrochure-12.png'
 const about13 = '/image/New_Assets/About/AWTBrochure-13.png'
 const about14 = '/image/New_Assets/About/AWTBrochure-14.png'
-import Modal from "react-modal";
 import "react-image-lightbox/style.css";
 import { Col, Row } from 'react-bootstrap';
-import Lightbox from 'react-image-lightbox';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const About = () => {
     const [isOpen, setIsOpen] = useState(false)
     console.log(isOpen);
+    const [open, setOpen] = useState(false);
     const [photoIndex, setPhotoIndex] = useState(0)
     const images = [
         about1,about2,
     ];
-    const useS=()=>{
-        setIsOpen(true)
-    }
+   
     return (
         <div className={`container  ${style.aboutContainer}`}>
             <div className={`${style.banner_container}`}>
                 <img src={banner} alt="" width="100%" />
             </div>
             <article className={`${style.aboutContent}`}>
-                
                 <h5>About Us</h5>
                 <div></div>
                 <p>Arena Web Security is a sister concern of Arena Web Technology. Arena Web Security is a renowned IT security company in Bangladesh since its establishment in 2012. During these years, Arena Web Security has provided Cyber Security Services and Trainings to many around the world.
@@ -50,41 +47,11 @@ const About = () => {
                    <br/> <br/> Involved with Government entities in 2012 like ICT Ministry, Academy for Rural Development, University of Engineering and Technology. Experienced with cyber security support in corporate area linked with outsourcing market. Already <strong>45<sup>+</sup></strong> batches received this training and have started to earn through online and corporate job.</p>
             </article>
             <Row className="container mx-auto text-center justify-content-center">
-                    <Col xl={4} lg={4} md={6} sm={12} xs={12} className="mt-3">
+            <Col xl={4} lg={4} md={6} sm={12} xs={12} className="mt-3">
                         <div>
-                            <button className="LightImg-container card shadow-lg p-0 m-0" type="button"
-                                onClick={useS}>
-                                <img className="w-100 " src={about1} alt="" />
-                                <div className="middle">
-                                    <div className="textExpand"><i className="fa fa-expand expandIcon"></i>
-                                        <br /> View Image
-                                    </div>
-                                </div>
-                            </button>
-
-                            {isOpen && (
-                                <Lightbox
-                                    mainSrc={images[photoIndex]}
-                                    nextSrc={images[(photoIndex + 1) % images.length]}
-                                    prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                                    onCloseRequest={() => setIsOpen(false)}
-                                    onMovePrevRequest={() =>
-                                        setPhotoIndex((photoIndex + images.length - 1) % images.length)
-                                       
-                                    }
-                                    onMoveNextRequest={() =>
-                                    
-                                        setPhotoIndex((photoIndex + 1) % images.length)
-                                    }
-                                />
-                            )}
-                        </div>
-                    </Col>
-
-                    {/* <Col xl={4} lg={4} md={6} sm={12} xs={12} className="mt-3">
-                        <div>
-                            <button className="LightImg-container card shadow-lg p-0 m-0" type="button"
-                                onClick={() => setIsOpen(true)}>
+                            <button className=" card shadow-lg p-0 m-0" type="button"
+                                onClick={() => setOpen(true)}>
+               
                                 <img className="w-100 LightImgPreview" src={about2} alt="" />
                                 <div className="middle">
                                     <div className="textExpand"><i className="fa fa-expand expandIcon"></i>
@@ -92,24 +59,37 @@ const About = () => {
                                     </div>
                                 </div>
                             </button>
+                            <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                slides={images.map(img)=>src:{img}}
+                     />
 
-                            {isOpen && (
-                                <Lightbox
-                                    mainSrc={images[photoIndex]}
-                                    nextSrc={images[(photoIndex + 1) % images.length]}
-                                    prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-                                    onCloseRequest={() => setIsOpen(false)}
-                                    onMovePrevRequest={() =>
-                                        setPhotoIndex((photoIndex + images.length - 1) % images.length)
-                                    }
-                                    onMoveNextRequest={() =>
-                                        setPhotoIndex((photoIndex + 1) % images.length)
-                                    }
-                                />
-                            )}
+                            
                         </div>
                     </Col>
+                   <Col xl={4} lg={4} md={6} sm={12} xs={12} className="mt-3">
+                        <div>
+                            <button className=" card shadow-lg p-0 m-0" type="button"
+                                onClick={() => setOpen(true)}>
+               
+                                <img className="w-100 LightImgPreview" src={about2} alt="" />
+                                <div className="middle">
+                                    <div className="textExpand"><i className="fa fa-expand expandIcon"></i>
+                                        <br /> View Image
+                                    </div>
+                                </div>
+                            </button>
+                            <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                slides={[{ src:about2 }, { src: about3 }, { src:about4 }, { src:about5}, { src:about5}, { src:about7 }, { src:about8 }, { src:about9 }, { src:about8 }, { src:about9}, { src:about10 }, { src:about10 }, { src:about11 }]}
+                     />
 
+                            
+                        </div>
+                    </Col>
+  {/*
                     <Col xl={4} lg={4} md={6} sm={12} xs={12} className="mt-3">
                         <div>
                             <button className=" LightImg-container card shadow-lg p-0 m-0" type="button"

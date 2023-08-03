@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import * as React from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 const banner = '/image/New_Assets/aboutbanner2.jpg'
 const about1 = '/image/New_Assets/About/AWTBrochure-01.png'
 const about2 = '/image/New_Assets/About/AWTBrochure-02.png'
@@ -16,55 +16,22 @@ const about11 = '/image/New_Assets/About/AWTBrochure-11.png'
 const about12 = '/image/New_Assets/About/AWTBrochure-12.png'
 const about13 = '/image/New_Assets/About/AWTBrochure-13.png'
 const about14 = '/image/New_Assets/About/AWTBrochure-14.png'
-import ReactModal from "react-modal";
-ReactModal.setAppElement("#root");
+import Modal from "react-modal";
 
-const images = [
-  about1,
-  about2,
-  about3,
-  about4,
-];
-
-export default class LightboxExample extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      photoIndex: 0,
-      isOpen: false,
-    };
-  }
-
-  render() {
-    const { photoIndex, isOpen } = this.state;
+export default function App() {
+    const [open, setOpen] = React.useState(false);
 
     return (
-      <div>
-        <button type="button" onClick={() => this.setState({ isOpen: true })}>
-          Open Lightbox
-        </button>
+        <>
+            <button type="button" onClick={() => setOpen(true)}>
+                Open Lightbox
+            </button>
 
-        {isOpen && (
-          <Lightbox
-            mainSrc={images[photoIndex]}
-            nextSrc={images[(photoIndex + 1) % images.length]}
-            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-            onCloseRequest={() => this.setState({ isOpen: false })}
-            onMovePrevRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + images.length - 1) % images.length,
-              })
-            }
-            onMoveNextRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + 1) % images.length,
-              })
-            }
-          />
-        )}
-      </div>
+            <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                slides={[{ src:about1 }, { src: about1 }, { src:about1 }]}
+            />
+        </>
     );
-  }
 }
-
