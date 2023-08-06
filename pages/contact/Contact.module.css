@@ -1,3 +1,7 @@
+.contactus_wrapper{
+    margin: 200px 0px;
+    display: flex;
+}
 .slider-wrapper{
     margin-top: 150px;
 }
@@ -103,14 +107,20 @@
     flex-direction: column;
 }
 .input_group input{
-    border-bottom:1px solid rgb(224, 224, 224) ;
+    border:1px solid black;
     color: #04004d;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
-.submit-btn{
+.submit_btn{
     background-color: #00c389;
     color: white;
     padding: 10px 30px;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 0px;
     font-weight: 700;
 }

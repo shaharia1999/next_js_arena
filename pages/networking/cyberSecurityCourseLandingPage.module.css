@@ -1,0 +1,242 @@
+.page_top{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.overview p{
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.badge_container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    /* gap: 100px; */
+    justify-content:center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+/* .badge{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 13px 4px #b7b7b79e;
+    width: auto;
+    height: 50px;
+    border-radius: 9999px;
+} */
+.badge{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* box-shadow: 0px 0px 3px 1px #d2d2d2; */
+    /* box-shadow: 0px 0px 3px 1px #87ceeb7a; */
+    background-color: #87ceeb1f;
+    border-radius: 10px;
+    color: rgb(0, 21, 78);
+    height: 150px;
+    width: auto;
+    padding-top:10px;
+    /* gap: 10px; */
+}
+.badge span{
+    flex: 1 1;
+}
+.badge p{
+    flex: 1 1;
+}
+.icon_wrapper{
+    padding: 10px;
+}
+.icon{
+    font-size: 25px;
+}
+.badge p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    padding: 0px 15px;
+}
+.path{
+    fill:green !important;
+}
+.team_text{
+    position: absolute;
+    top: 40%;
+}
+.page_top h5{
+    color:#00c389;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.line{
+    /* background-color: #00c389; */
+    content: '';
+    width: 3rem;
+    height: 2px;
+    background-color: #7e7e7e;
+}
+.sliderline{
+    /* background-color: #00c389; */
+    content: '';
+    width: 5rem;
+    height: 3px;
+    background-color: #7e7e7e;
+    margin:auto;
+    border-radius: 100px;
+}
+
+.mentors_slides{
+    background-color: #f3f6fa;
+    border-radius: 10px;
+    /* padding-top:20px; */
+    padding-bottom: 30px;
+    margin-top: 100px;
+}
+.team_slogan{
+    font-weight: 800;
+    color: #04004d;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+
+/* Module list */
+.module_list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.module_list li{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.module_list img{
+    width: 16px;
+}
+/* .LightImg_container:hover{
+    position: relative;
+    width: 100%;
+    background-color: #db0909;
+    border: none !important;
+  } */
+.info_table{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid #ffc500; */
+    /* box-shadow: 0px 0px 10px 0px #ffc500; */
+    /* background-color: #56b5e3; */
+    background-color: #00c389;
+    /* background-image: linear-gradient(90deg, #56b5e3,#56b4e3af,#7d58a5); */
+    border-radius: 10px;
+    margin-top: 150px;
+}
+.info_table div{
+    margin: auto;
+}
+.info_table h5{
+    color: white;
+    margin-bottom:20px ;
+}
+.info_img{
+    width: 40%;
+    margin-top: -180px;
+}
+.info_table ul{
+    list-style: none;
+    color: white;
+    padding: 0;
+    margin: auto;
+    margin: 0;
+}
+.info_table li{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.info_table ul img{
+    width: 16px;
+}
+
+/* Faq */
+.collapse_btn{
+    color: white !important;
+    border: 0 !important;
+    background-color:#00c389 !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+.collapse_btn:focus{
+    box-shadow: none !important;
+}
+#example0{
+    background: #f3f6fa !important;
+    border-radius: 0 0 0.25rem 0.25rem !important;
+}
+/* slider */
+.starImage{
+    width: 250px;
+    opacity: 0.4;
+}
+.payment_methods{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+/* Duo course page */
+.duo_module_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none;
+    gap: 25px 100px;
+}
+.duo_module_list li{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-align: justify;
+}
+.duo_module_list img{
+    width: 16px;
+}
+
+/* Networking course page */
+.network_badge_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin: 30px 20px 60px 20px;
+}
+.networking_module_list{
+    list-style: none;
+    margin-top: 40px;
+}
+.networking_module_list li{
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.networking_module_list img{
+    width: 16px;
+}
+.network_info_table{
+    margin-top: 250px;
+    margin-bottom: 150px;
+}
+.py_60{
+    padding: 60px 0px;
+}

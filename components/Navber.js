@@ -62,9 +62,9 @@ const Navbar = () => {
             </ul>
             </li>
           <a href="https://www.hackers.institute/" target='_blank' rel="noreferrer"><li>BLOGS</li></a>
-          <Link href="/new-gallery"><li>GALLERY</li></Link>
-          <Link href="/new-contact"><li>CONTACT</li></Link>
-          <Link href="/new-admission" className={`${style.apply_btn}`}><li>APPLY NOW</li></Link>
+          <Link href="/gallery"><li>GALLERY</li></Link>
+          <Link href="/contact"><li>CONTACT</li></Link>
+          <Link href="/admission" className={`${style.apply_btn}`}><li>APPLY NOW</li></Link>
         </ul>
       </nav>
     </section>

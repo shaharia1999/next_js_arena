@@ -4,11 +4,14 @@
 }
 .slider_container{
   padding-top: 80px;
+  margin:0 auto;
+ 
   /* padding-bottom: 50px; */
 }
 .slider_wrapper{
   /* background-color: #f7f7f7; */
-  background-image: url('../../image/New_Assets/test03.png');
+
+  background-image: url('/image/New_Assets/test03.png');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
@@ -29,6 +32,10 @@
   top: -50px;
   left: 0;
   right: 0;
+}
+.slider_wrapper img{
+  height: 100%;
+  width:100%;
 }
 .slider_wrapper h2{
   margin-top: 40px;
