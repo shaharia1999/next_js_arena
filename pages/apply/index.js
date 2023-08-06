@@ -4,7 +4,7 @@ import {Button, Container, Form, Row} from "react-bootstrap";
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
-import ApiUrl from "../api/hello";
+import ApiUrl from "../api/api";
 import DjangoCSRFToken from 'django-react-csrftoken';
 import {DatePicker} from 'react-rainbow-components';
 import style from '/'
