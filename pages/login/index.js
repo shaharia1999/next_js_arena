@@ -4,6 +4,7 @@ import Link from 'next/link';
 import style from './Login.module.css'
 const bgImage = '/image/New_Assets/login.png'
 import {AiFillEye ,AiFillEyeInvisible} from "react-icons/ai";
+import RootLayout from '@/components/Layout';
 // const cross = '/image/New_Assets/cancel.png'
 // const { Link, Redirect } = 'react-router-dom';
 // import Tooltip from'react-bootstrap/Tooltip';
@@ -182,7 +183,7 @@ import {AiFillEye ,AiFillEyeInvisible} from "react-icons/ai";
 // export default Login;
 
 
-const index = () => {
+const Login= () => {
     return (
         <div className='container'>
         <div className={`${style.login_box} d-flex justify-content-center align-items-center`}>
@@ -217,4 +218,8 @@ const index = () => {
     );
 };
 
-export default index;
+export default Login;
+
+Login .getLayout=()=>{
+    return <RootLayout></RootLayout>
+}
