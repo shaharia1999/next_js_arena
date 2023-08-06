@@ -10,5 +10,5 @@ import "aos/dist/aos.css";
 export default function App({ Component, pageProps }) {
 
   const getLayout = Component.getLayout || ((page) => page);
-  return getLayout(<Component {...pageProps} />)
+  return getLayout(<Component {...pageProps}  className="bg-white" />)
 }

@@ -1,10 +1,11 @@
-// // import React from { useEffect, useState } = 'react';
-
+'use client';
 import Link from 'next/link';
 import style from './Login.module.css'
 const bgImage = '/image/New_Assets/login.png'
 import {AiFillEye ,AiFillEyeInvisible} from "react-icons/ai";
 import RootLayout from '@/components/Layout';
+import { useState } from 'react';
+// import { useState } from 'react';
 // const cross = '/image/New_Assets/cancel.png'
 // const { Link, Redirect } = 'react-router-dom';
 // import Tooltip from'react-bootstrap/Tooltip';
@@ -182,28 +183,34 @@ import RootLayout from '@/components/Layout';
 
 // export default Login;
 
+// const [data,Setdata]=useState(false)
 
+// console.log(data);
 const Login= () => {
+    const [show,setShow] = useState(false)
+            // const handle=(e)=>{
+            //     setShow(!e);
+            // }
     return (
-        <div className='container'>
+        <div className={`${style.mainlogin} container`}>
         <div className={`${style.login_box} d-flex justify-content-center align-items-center`}>
         <div className={`${style.aside_left} w-50 h-100 d-flex justify-content-center align-items-center`}>
             <img src={bgImage} alt="" className='w-75' />
         </div>
         <div className='w-50 py-5'>
-            <h4 className='text-center'>Login with email & password</h4>
+            <h4 className={`${style.titel} text-center`}>Login with email & password</h4>
     
               <form className='w-75 mx-auto mt-5' >
                 <div className='d-flex flex-column'>
-        
-                    <input type="email" name="email"  />
-                    <input type="email" name="email"/> 
+                <label>Email</label>
+                    <input type="email" name="email" className={style.input} />
+                  
                 </div>
                 <div className='d-flex flex-column mt-5 position-relative'>
                     <label>Password</label>
-                    <input name="password" />
-                    <AiFillEye></AiFillEye>
-                    <AiFillEyeInvisible/>
+                    <input name="password" type="password" py-2 className={`${style.input} bg-danger}`}/>
+                    <AiFillEye className={style.eye} ></AiFillEye>
+                    <AiFillEyeInvisible className={style.eye}/>
                 </div>
                 <div className='d-flex flex-column align-items-center mt-5'>
                     <input type="submit" name="" value="Login" className={`${style.login_btn}`} />
@@ -220,6 +227,6 @@ const Login= () => {
 
 export default Login;
 
-Login .getLayout=()=>{
-    return <RootLayout></RootLayout>
+Login .getLayout=(page)=>{
+    return <RootLayout>{page}</RootLayout>
 }

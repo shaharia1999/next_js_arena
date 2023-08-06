@@ -7,6 +7,15 @@ input:-webkit-autofill:active{
 /* input:-webkit-autofill{
     -webkit-text-fill-color: #157212 !important;
 } */ 
+.mainlogin{
+
+  margin-top:200px;
+  margin-bottom:50px;
+}
+.titel{
+    color:#00c389;
+    text:center;
+}
 .navSec{
     height: 10vh;
 }
@@ -38,6 +47,20 @@ input:-webkit-autofill:active{
     width: 24px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
     cursor: pointer;
+
+}
+.input{
+    padding:5px 10px ;
+    border-bottom:dotted;;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+     background-color:white!important;
+    outline:none;
+    outline: none;
+    border: 0px;
+    border-bottom:1px dashed rgb(218, 218, 218);
+    color: black;
 }
