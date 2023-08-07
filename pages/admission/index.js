@@ -5,6 +5,8 @@ import { DatePicker } from 'react-rainbow-components';
 import RootLayout from '@/components/Layout';
 import ApiUrl from '../api/api';
 import axios from 'axios';
+import Cookies from 'universal-cookie';
+
 import { useForm } from "react-hook-form";
 
 const Form = () => {
@@ -108,6 +110,23 @@ const Form = () => {
     
     }
 
+ 
+    const cookies = new Cookies();
+    // var date = new Date();
+    // date.setTime(date.getDate());
+    // console.log(date);
+
+const current = new Date();
+// it adds 7 days to the current date
+current.setDate(current.getDate() + 7);
+const ndate=(current);
+console.log(ndate);
+    var d = new Date()
+    // console.log(d)
+   
+    
+    cookies.set('myCat', 'Pacman', { path: '/',expires:ndate });
+    console.log(cookies.get('myCat'));
 
    
     return (
