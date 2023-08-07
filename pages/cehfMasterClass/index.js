@@ -1,6 +1,6 @@
 import React from 'react';
 // import MentorSlides from '../CyberSecurity/MentorSlides';
-import style from './cyberSecurityCourseLandingPage.module.css'
+import style from '../cyberSecurity/cyberSecurityCourseLandingPage.module.css'
 import MentorSlides from '@/slider/slider';
 import VewGelary from '@/imageGelary/gelary';
 import { Button, Col, Collapse, Row } from 'react-bootstrap';
@@ -57,7 +57,7 @@ const Networking = () => {
                     <div className={`${style.overview}`}>
                         <h5 className="mb-0">Overview</h5>
                         <div className={`${style.line}`}></div>
-                        <p>In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. Browser security - We cover one of the largest risks online, the browser. The doorway into your system. How to best reduce the attack surface of the browser and harden it for maximum security and privacy. A critical consideration for reducing your risk.</p>
+                        <p>Open Source Intelligence Training™ - Syllabus and Featured Topics This course will provide an education and information you will not be able to acquire anywhere else. The class is completely interactive keeping you busy every moment and enjoying the activities. Learn to direct your searches to obtain results quickly!</p>
                     </div>
                     <div>
                         <h5 className='mb-0'>Key Features</h5>
@@ -65,19 +65,19 @@ const Networking = () => {
                         <div className={`${style.network_badge_container} container`}>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
-                                <p>Network Management</p>
+                                <p>Hands-on training</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Firewall</p>
+                                <p>Latest tools</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Search Engine Privacy</p>
+                                <p>Creating portfolio</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Network Safety</p>
+                                <p>Industry-relevant curriculum</p>
                             </div>
                         </div>
                     </div>
@@ -87,20 +87,21 @@ const Networking = () => {
                         <div className={`${style.line}`}></div>
                         <ul className={`${style.networking_module_list}`}>
                             <li><img src={arrow} alt="" /><span>Introduction</span></li>
-                            <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
-                            <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
-                            <li><img src={arrow} alt="" /><span>The very latest up-to-date information and methods.</span></li>
-                            <li><img src={arrow} alt="" /><span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span></li>
-                            <li><img src={arrow} alt="" /><span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span></li>
-                            <li><img src={arrow} alt="" /><span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span></li>
-                            <li><img src={arrow} alt="" /><span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span></li>
+                            <li><img src={arrow} alt="" /><span>Online privacy / anonymity</span></li>
+                            <li><img src={arrow} alt="" /><span>Counterintelligence techniques used by the criminal elements
+                                On line database systems</span></li>
+                            <li><img src={arrow} alt="" /><span>Archiving methodologies and tools and methods for obtaining archived pages & hidden information.</span></li>
+                            <li><img src={arrow} alt="" /><span>Advance search methods for blogs and social networks</span></li>
+                            <li><img src={arrow} alt="" /><span>Geolocation methods</span></li>
+                            <li><img src={arrow} alt="" /><span>Image recognition technology</span></li>
+                            <li><img src={arrow} alt="" /><span>Best ways to use SS capabilities</span></li>
                         </ul>
 
                     </div>
                 </div>
                 <img src={promoBanner} alt="" />
             </div>
-            {/* <div><VewGelary></VewGelary></div> */}
+            <div><VewGelary></VewGelary></div>
             <div className=''>
                 <div className={`${style.mentors_slides}`}>
                     <div className='container '>

@@ -10,6 +10,7 @@ const star ='/image/New_Assets/review.png'
 const coder ='/image/New_Assets/Programmer.png'
 const arrow = '/image/New_Assets/circle.png'
 const shield ='/image/New_Assets/shield2.png'
+const image ='/image/Fahim.svg'
 import { Animated } from 'react-animated-css';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -53,31 +54,35 @@ const Networking = () => {
         <div>
             <div className={`${style.page_top}  `}>
                 <img src={promoBanner} alt="" />
-                <div className='container mx-3'>
+                <div className='container mx-3  '>
                     <div className={`${style.overview}`}>
                         <h5 className="mb-0">Overview</h5>
                         <div className={`${style.line}`}></div>
-                        <p>In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. Browser security - We cover one of the largest risks online, the browser. The doorway into your system. How to best reduce the attack surface of the browser and harden it for maximum security and privacy. A critical consideration for reducing your risk.</p>
+                        <p>Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.</p>
                     </div>
                     <div>
                         <h5 className='mb-0'>Key Features</h5>
                         <div className={`${style.line}`}></div>
-                        <div className={`${style.network_badge_container} container`}>
+                        <div className={`${style.badge_container} container`}>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
-                                <p>Network Management</p>
+                                <p>Linux</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Firewall</p>
+                                <p>Cyber Security</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Search Engine Privacy</p>
+                                <p>Digital Forensic</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Network Safety</p>
+                                <p>Open Source Intelligence</p>
+                            </div>
+                            <div className={style.badge}>
+                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                                <p>Freelancing</p>
                             </div>
                         </div>
                     </div>
@@ -85,22 +90,32 @@ const Networking = () => {
                     <div>
                         <h5 className='mb-0'>Module</h5>
                         <div className={`${style.line}`}></div>
-                        <ul className={`${style.networking_module_list}`}>
+                        <ul className={`${style.module_list}`}>
                             <li><img src={arrow} alt="" /><span>Introduction</span></li>
-                            <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
-                            <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
-                            <li><img src={arrow} alt="" /><span>The very latest up-to-date information and methods.</span></li>
-                            <li><img src={arrow} alt="" /><span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span></li>
-                            <li><img src={arrow} alt="" /><span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span></li>
-                            <li><img src={arrow} alt="" /><span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span></li>
-                            <li><img src={arrow} alt="" /><span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span></li>
+                            <li><img src={arrow} alt="" /><span>Social Engineering</span></li>
+                            <li><img src={arrow} alt="" /><span>Footprinting</span></li>
+                            <li><img src={arrow} alt="" /><span>Denial-of-Service</span></li>
+                            <li><img src={arrow} alt="" /><span>PHP & MySQL Basic</span></li>
+                            <li><img src={arrow} alt="" /><span>SQL Injection All method</span></li>
+                            <li><img src={arrow} alt="" /><span>Website Penetration Testing</span></li>
+                            <li><img src={arrow} alt="" /><span>Evading IDS, Firewalls</span></li>
+                            <li><img src={arrow} alt="" /><span>Website Hacking</span></li>
+                            <li><img src={arrow} alt="" /><span>Scanning Networks web server</span></li>
+                            <li><img src={arrow} alt="" /><span>System Hacking</span></li>
+                            <li><img src={arrow} alt="" /><span>Linux OS</span></li>
+                            <li><img src={arrow} alt="" /><span>keylogger Spyware</span></li>
+                            <li><img src={arrow} alt="" /><span>Cross-Site Request Forgery</span></li>
+                            <li><img src={arrow} alt="" /><span>Malware Threats [Virus]</span></li>
+                            <li><img src={arrow} alt="" /><span>Outsourcing in Fiverr/Upwork</span></li>
+                            <li><img src={arrow} alt="" /><span>Website Development</span></li>
+                            <li><img src={arrow} alt="" /><span>Outsourcing in Hackerone</span></li>
                         </ul>
 
                     </div>
                 </div>
                 <img src={promoBanner} alt="" />
             </div>
-            {/* <div><VewGelary></VewGelary></div> */}
+            <div className='container'><VewGelary></VewGelary></div>
             <div className=''>
                 <div className={`${style.mentors_slides}`}>
                     <div className='container '>
@@ -116,13 +131,13 @@ const Networking = () => {
                     
                     <MentorSlides /> 
                 </div>
-                {/* <Row className="container mx-auto mt-5">
+                <Row className="container mx-auto mt-5">
                     <Col xl={6} lg={6} md={12} sm={12} xs={12}>
                         <Animated animationIn="fadeInDown" animationInDuration={1000} animationOutDuration={2000}
                             isVisible={true}>
-                            <div className="CyberSecurityLandingCard mt-1" style={{ width: 'auto' }}>
+                            <div className={`${style.CyberSecurityLandingCard} mt-1" `}>
                                 <Button
-                                    className={`btn-block CyberSecurityLandingMainTitle ${style.collapse_btn}`}
+                                    className={` ${style.CyberSecurityLandingMainTitle} ${style.collapse_btn}`}
                                     onClick={() => setOpen(!open)}
                                     aria-controls="example0"
                                     aria-expanded={open}>
@@ -380,9 +395,9 @@ const Networking = () => {
                     </Col>
 
                     <Col xl={6} lg={6} md={12} sm={12} xs={12}>
-                        <img className="w-100 card MasterCourseBanner" src={banner} alt="" />
+                        <img className={`${style.MasterCourseBanner} w-100 card `} src={image} alt="" />
                     </Col>
-                </Row> */}
+                </Row>
                 {/* Information Table */}
                 <div className={`container  mx-auto ${style.info_table} ${style.network_info_table}`}>
                     <img src={coder} alt="" className={`${style.info_img}`} />

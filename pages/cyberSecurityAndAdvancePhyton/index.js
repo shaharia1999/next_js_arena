@@ -1,6 +1,6 @@
 import React from 'react';
 // import MentorSlides from '../CyberSecurity/MentorSlides';
-import style from './cyberSecurityCourseLandingPage.module.css'
+import style from '../cyberSecurity/cyberSecurityCourseLandingPage.module.css'
 import MentorSlides from '@/slider/slider';
 import VewGelary from '@/imageGelary/gelary';
 import { Button, Col, Collapse, Row } from 'react-bootstrap';
@@ -57,46 +57,75 @@ const Networking = () => {
                     <div className={`${style.overview}`}>
                         <h5 className="mb-0">Overview</h5>
                         <div className={`${style.line}`}></div>
-                        <p>In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. Browser security - We cover one of the largest risks online, the browser. The doorway into your system. How to best reduce the attack surface of the browser and harden it for maximum security and privacy. A critical consideration for reducing your risk.</p>
+                        <p>Cybersecurity needs a programming language and today Python is very popular because of its flexibility and lightweight features. This course can help to build skills across the cyberattack world for both cyber attackers and defenders. Near future Python is and will be the most demanding programming and scripting language for cybersecurity. So, by completing this course you can land your first IT job or you can start your career in freelancing. This course could open the door become a complete web expert. Arena Web Security offers approachable, hands-on ethical hacking and python programming courses to help you keep your networks safe from cyber criminals & make your career at the professional marketplace in the field of both ethical hacking and python programming.</p>
                     </div>
                     <div>
-                        <h5 className='mb-0'>Key Features</h5>
-                        <div className={`${style.line}`}></div>
-                        <div className={`${style.network_badge_container} container`}>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
-                                <p>Network Management</p>
-                            </div>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Firewall</p>
-                            </div>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Search Engine Privacy</p>
-                            </div>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Network Safety</p>
-                            </div>
+                    <h5 className='mb-0'>Key Features</h5>
+                    <div className={`${style.line}`}></div>
+                    <div className={`${style.network_badge_container} container`}>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
+                            <p>Cyber Security</p>
+                        </div>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                            <p>Linux</p>
+                        </div>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                            <p>Digital Forensic</p>
+                        </div>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                            <p>Open Source Intelligence</p>
+                        </div>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                            <p>Core Python</p>
+                        </div>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                            <p>Django and REST Framework</p>
+                        </div>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                            <p>Web Scraping</p>
+                        </div>
+                        <div className={style.badge}>
+                            <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
+                            <p>Freelancing</p>
                         </div>
                     </div>
+                </div>
                     {/* Module section */}
                     <div>
-                        <h5 className='mb-0'>Module</h5>
-                        <div className={`${style.line}`}></div>
-                        <ul className={`${style.networking_module_list}`}>
-                            <li><img src={arrow} alt="" /><span>Introduction</span></li>
-                            <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
-                            <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
-                            <li><img src={arrow} alt="" /><span>The very latest up-to-date information and methods.</span></li>
-                            <li><img src={arrow} alt="" /><span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span></li>
-                            <li><img src={arrow} alt="" /><span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span></li>
-                            <li><img src={arrow} alt="" /><span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span></li>
-                            <li><img src={arrow} alt="" /><span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span></li>
-                        </ul>
-
+                    <h5 className='mb-0 text-center'>Module</h5>
+                    <div className={`${style.line} mx-auto mb-5`}></div>
+                    <div className=''>
+                    <h5>Cyber Security & Ethical Hacking:</h5>
+                    <ul className={`${style.duo_module_list} mb-5`}>
+                        <li><img src={arrow} alt="" /><span>Introduction</span></li>
+                        <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
+                        <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
+                        <li><img src={arrow} alt="" /><span>The very latest up-to-date information and methods.</span></li>
+                        <li><img src={arrow} alt="" /><span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span></li>
+                        <li><img src={arrow} alt="" /><span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span></li>
+                        <li><img src={arrow} alt="" /><span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span></li>
+                        <li><img src={arrow} alt="" /><span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span></li>
+                    </ul>
+                    <h5>Advance Python with Django and Scrapping:</h5>
+                    <ul className={`${style.duo_module_list}`}>
+                        <li><img src={arrow} alt="" /><span>Introduction</span></li>
+                        <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
+                        <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
+                        <li><img src={arrow} alt="" /><span>The very latest up-to-date information and methods.</span></li>
+                        <li><img src={arrow} alt="" /><span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span></li>
+                        <li><img src={arrow} alt="" /><span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span></li>
+                        <li><img src={arrow} alt="" /><span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span></li>
+                        <li><img src={arrow} alt="" /><span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span></li>
+                    </ul>
                     </div>
+                </div>
                 </div>
                 <img src={promoBanner} alt="" />
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 // import MentorSlides from '../CyberSecurity/MentorSlides';
-import style from './cyberSecurityCourseLandingPage.module.css'
+import style from '../cyberSecurity/cyberSecurityCourseLandingPage.module.css'
 import MentorSlides from '@/slider/slider';
 import VewGelary from '@/imageGelary/gelary';
 import { Button, Col, Collapse, Row } from 'react-bootstrap';
