@@ -1,0 +1,287 @@
+.ScrollBottomToTop{
+    background-image: linear-gradient(to right, rgb(230, 230, 230), rgb(246, 237, 255));
+    border-radius: 5px;
+    border: none!important;
+    color: #ffffff!important;
+    font-size: 20px;
+}
+.success{
+
+    margin-top:200px;
+
+   
+}
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 26px !important;
+    color: #0b6481;
+    text-decoration: none !important;
+}
+
+.sectionSubTitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px !important;
+    color: #5e5e5e;
+    text-decoration: none !important;
+}
+
+.SuccessCard {
+    border-radius: 2px !important;
+}
+
+.SuccessMsgText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.SuccessMsgBoldText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7D58A5;
+}
+
+.FormIdText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #7D58A5;
+}
+
+.CongratulationText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #2e8d45;
+}
+
+.smsPageTop {
+    margin-top: 50px;
+}
+
+.NotFoundLogoImg {
+    height: 60% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.GoHomeBtn {
+    border-radius: 3px !important;
+    background-color: #136091;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.GoHomeBtn:hover {
+    border-radius: 3px !important;
+    background-color: #1069a2;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.GoHomeBtn:focus {
+    border-radius: 3px !important;
+    background-color: #0e537e;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: none !important;
+}
+
+.SmsBox {
+    background-color: #B6FFCD;
+    padding: 50px 30px 50px 30px !important;
+}
+
+Form i .PasswordVisibility {
+    margin-right: 0px !important;
+    margin-top: 20px !important;
+    cursor: pointer;
+}
+
+
+@media (max-width: 374.98px) {
+    .section-title {
+        font-weight: 600;
+        font-size: 16px !important;
+        text-decoration: none !important;
+    }
+
+    .sectionSubTitle {
+        font-weight: 300;
+        font-size: 8px !important;
+        text-decoration: none !important;
+    }
+
+    .SuccessMsgText {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .FormIdText {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .smsPageTop {
+        margin-top: 20px;
+    }
+
+    .CongratulationText {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2e8d45;
+    }
+
+    .GoHomeBtn {
+        font-size: 14px;
+    }
+
+    .GoHomeBtn:hover {
+        font-size: 14px;
+    }
+
+    .GoHomeBtn:focus {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (min-width: 375.98px) and (max-width: 575.98px) {
+    .section-title {
+        font-weight: 700;
+        font-size: 18px !important;
+        text-decoration: none !important;
+    }
+
+    .sectionSubTitle {
+        font-weight: 300;
+        font-size: 10px !important;
+        text-decoration: none !important;
+    }
+
+    .SuccessMsgText {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .FormIdText {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #7D58A5;
+    }
+
+    .smsPageTop {
+        margin-top: 20px;
+    }
+
+    .CongratulationText {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #2e8d45;
+    }
+
+    .GoHomeBtn {
+        font-size: 14px;
+    }
+
+    .GoHomeBtn:hover {
+        font-size: 14px;
+    }
+
+    .GoHomeBtn:focus {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .section-title {
+        font-weight: 700;
+        font-size: 22px !important;
+        text-decoration: none !important;
+    }
+
+    .sectionSubTitle {
+        font-weight: 300;
+        font-size: 12px !important;
+        text-decoration: none !important;
+    }
+
+    .CongratulationText {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: #2e8d45;
+    }
+
+    .GoHomeBtn {
+        font-size: 16px;
+    }
+
+    .GoHomeBtn:hover {
+        font-size: 16px;
+    }
+
+    .GoHomeBtn:focus {
+        font-size: 16px;
+    }
+}
+.pay_now_btn{
+    background-color: #2e8d45;
+    color: white;
+    text-decoration: none;
+
+}
+.pay_now_btn:hover{
+    background-color:#1069a2;
+    color: white;
+    text-decoration: none;
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-title {
+        font-weight: 700;
+        font-size: 24px !important;
+        text-decoration: none !important;
+    }
+
+    .sectionSubTitle {
+        font-weight: 300;
+        font-size: 14px !important;
+        text-decoration: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .section-title {
+        font-weight: 700;
+        font-size: 28px !important;
+        text-decoration: none !important;
+    }
+
+    .sectionSubTitle {
+        font-weight: 300;
+        font-size: 14px !important;
+        text-decoration: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}

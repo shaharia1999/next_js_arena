@@ -10,6 +10,9 @@
 .form_container h1{
     color: #00c389;
 }
+.inputDateP:required{
+    background-color: #00c389;
+}
 .form{
     height: 100%;
     /* overflow: auto; */

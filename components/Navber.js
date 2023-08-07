@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <section className={`${colorChange ? style.navbar_container : style.navbar_container2}`}>
       <nav className={`${style.navbar} container-fluid`}>
-        <Link href="/new"><img src={colorChange ? logo2 : logo} alt="" /></Link>
+        <Link href="/"><img src={colorChange ? logo2 : logo} alt="" /></Link>
         <ul className={`${style.link_wrapper}`}>
           <Link href="/"><li>HOME</li></Link>
           <Link href="/about"><li>ABOUT</li></Link>
@@ -52,13 +52,13 @@ const Navbar = () => {
             {/* <span><FaAngleDown/></span> */}
             </div>
             <ul id={style.courses_menu}>
-              <Link href="/new-cyber-security-course"><li><span>Cyber Security & Ethical Hacking</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/new-advance-python-with-django"><li><span>Advanced Python With Freelancing</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/new-cyber-security-and-python"><li><span>Cyber Security and Advance Python (Duo)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/new-advanced-cyber-security-course"><li><span>CEHF Masterclass</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/new-cosint-course"><li><span>C|OSINT (Certified Open Source Intelligence)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/new-linux-course"><li><span>Linux</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/new-networking-course"><li><span>Networking Security</span>{/* <span><FaAngleRight /></span> */}</li></Link>              
+              <Link href="/cyberSecurity"><li><span>Cyber Security & Ethical Hacking</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/advancePhaython"><li><span>Advanced Python With Freelancing</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/cyberSecurityAndAdvancePhyton"><li><span>Cyber Security and Advance Python (Duo)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/cehfMasterClass"><li><span>CEHF Masterclass</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/cosint"><li><span>C|OSINT (Certified Open Source Intelligence)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/linux"><li><span>Linux</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/networking"><li><span>Networking Security</span>{/* <span><FaAngleRight /></span> */}</li></Link>              
             </ul>
             </li>
           <a href="https://www.hackers.institute/" target='_blank' rel="noreferrer"><li>BLOGS</li></a>

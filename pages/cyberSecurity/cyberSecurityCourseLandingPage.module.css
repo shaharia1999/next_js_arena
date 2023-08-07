@@ -180,10 +180,12 @@
 .collapse_btn{
     color: white !important;
     border: 0 !important;
- 
+    width: 100% !important;
     background-color:#00c389 !important;
     padding-top: 15px !important;
     padding-bottom: 15px !important;
+    display: flex;
+    justify-content: space-between;
 }
 .collapse_btn:focus{
     box-shadow: none !important;

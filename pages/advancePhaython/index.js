@@ -57,7 +57,7 @@ const Networking = () => {
                     <div className={`${style.overview}`}>
                         <h5 className="mb-0">Overview</h5>
                         <div className={`${style.line}`}></div>
-                        <p>In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. Browser security - We cover one of the largest risks online, the browser. The doorway into your system. How to best reduce the attack surface of the browser and harden it for maximum security and privacy. A critical consideration for reducing your risk.</p>
+                        <p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
                     </div>
                     <div>
                         <h5 className='mb-0'>Key Features</h5>
@@ -65,19 +65,19 @@ const Networking = () => {
                         <div className={`${style.network_badge_container} container`}>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
-                                <p>Network Management</p>
+                                <p>Core Python</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Firewall</p>
+                                <p>Django and REST Framework</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Search Engine Privacy</p>
+                                <p>Web Scraping</p>
                             </div>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Network Safety</p>
+                                <p>Freelancing</p>
                             </div>
                         </div>
                     </div>
@@ -85,22 +85,37 @@ const Networking = () => {
                     <div>
                         <h5 className='mb-0'>Module</h5>
                         <div className={`${style.line}`}></div>
-                        <ul className={`${style.networking_module_list}`}>
+                        <ul className={`${style.module_list}`}>
                             <li><img src={arrow} alt="" /><span>Introduction</span></li>
-                            <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
-                            <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
-                            <li><img src={arrow} alt="" /><span>The very latest up-to-date information and methods.</span></li>
-                            <li><img src={arrow} alt="" /><span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span></li>
-                            <li><img src={arrow} alt="" /><span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span></li>
-                            <li><img src={arrow} alt="" /><span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span></li>
-                            <li><img src={arrow} alt="" /><span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span></li>
+                            <li><img src={arrow} alt="" /><span>Input-Output</span></li>
+                            <li><img src={arrow} alt="" /><span>Conditional Statements</span></li>
+                            <li><img src={arrow} alt="" /><span>Exception Handling</span></li>
+                            <li><img src={arrow} alt="" /><span>Looping</span></li>
+                            <li><img src={arrow} alt="" /><span>Packages</span></li>
+                            <li><img src={arrow} alt="" /><span>Control Statements</span></li>
+                            <li><img src={arrow} alt="" /><span>File Handling</span></li>
+                            <li><img src={arrow} alt="" /><span>String Manipulation</span></li>
+                            <li><img src={arrow} alt="" /><span>OOPS</span></li>
+                            <li><img src={arrow} alt="" /><span>Lists</span></li>
+                            <li><img src={arrow} alt="" /><span>Introduction to Django</span></li>
+                            <li><img src={arrow} alt="" /><span>Introduction to Back-End</span></li>
+                            <li><img src={arrow} alt="" /><span>Web Development using Django</span></li>
+                            <li><img src={arrow} alt="" /><span>Dictionaries</span></li>
+                            <li><img src={arrow} alt="" /><span>Advanced Django for Web and Automation</span></li>
+                            <li><img src={arrow} alt="" /><span>Lambda Operator, Filter, Reduce and Map</span></li>
+                            <li><img src={arrow} alt="" /><span>List Comprehension</span></li>
+                            <li><img src={arrow} alt="" /><span>Modules</span></li>
+                            <li><img src={arrow} alt="" /><span>Building Web APIs using Django REST</span></li>
+                            <li><img src={arrow} alt="" /><span>Deploying Web APIs</span></li>
+                            <li><img src={arrow} alt="" /><span>Scrapping with BeautifulSoup</span></li>
                         </ul>
 
                     </div>
+                    
                 </div>
                 <img src={promoBanner} alt="" />
             </div>
-            {/* <div><VewGelary></VewGelary></div> */}
+            <div className='container'><VewGelary></VewGelary></div>
             <div className=''>
                 <div className={`${style.mentors_slides}`}>
                     <div className='container '>

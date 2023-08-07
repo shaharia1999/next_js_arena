@@ -1,6 +1,6 @@
 import React from 'react';
 // import MentorSlides from '../CyberSecurity/MentorSlides';
-import style from './cyberSecurityCourseLandingPage.module.css'
+import style from '../cyberSecurity/cyberSecurityCourseLandingPage.module.css'
 import MentorSlides from '@/slider/slider';
 import VewGelary from '@/imageGelary/gelary';
 import { Button, Col, Collapse, Row } from 'react-bootstrap';
@@ -53,51 +53,54 @@ const Networking = () => {
         <div>
             <div className={`${style.page_top}  `}>
                 <img src={promoBanner} alt="" />
-                <div className='container mx-3'>
-                    <div className={`${style.overview}`}>
-                        <h5 className="mb-0">Overview</h5>
-                        <div className={`${style.line}`}></div>
-                        <p>In this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning. You will be able to design & construct your network for maximum security and prevent local and remote attacks. Browser security - We cover one of the largest risks online, the browser. The doorway into your system. How to best reduce the attack surface of the browser and harden it for maximum security and privacy. A critical consideration for reducing your risk.</p>
-                    </div>
-                    <div>
-                        <h5 className='mb-0'>Key Features</h5>
-                        <div className={`${style.line}`}></div>
-                        <div className={`${style.network_badge_container} container`}>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
-                                <p>Network Management</p>
-                            </div>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Firewall</p>
-                            </div>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Search Engine Privacy</p>
-                            </div>
-                            <div className={style.badge}>
-                                <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span>
-                                <p>Network Safety</p>
-                            </div>
-                        </div>
-                    </div>
-                    {/* Module section */}
-                    <div>
-                        <h5 className='mb-0'>Module</h5>
-                        <div className={`${style.line}`}></div>
-                        <ul className={`${style.networking_module_list}`}>
-                            <li><img src={arrow} alt="" /><span>Introduction</span></li>
-                            <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
-                            <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
-                            <li><img src={arrow} alt="" /><span>The very latest up-to-date information and methods.</span></li>
-                            <li><img src={arrow} alt="" /><span>Able to configure firewalls on all platforms including Windows, MacOS, and Linux for all types of attack scenarios.</span></li>
-                            <li><img src={arrow} alt="" /><span>Perform network monitoring to discover and identify potential hackers and malware using tools like Wireshark, Tcpdump, and Syslog.</span></li>
-                            <li><img src={arrow} alt="" /><span>Will look at search engine privacy - understand how to mitigate the tracking and privacy issues of search engines and their associated services.</span></li>
-                            <li><img src={arrow} alt="" /><span>What are the best password managers to use and why. How passwords are cracked, and how to mitigate the password attacks.</span></li>
-                        </ul>
-
-                    </div>
+                <div className='container mx-0'>
+                <div className={`${style.overview}`}>
+                    <h5 className="mb-0">Overview</h5>
+                    <div className={`${style.line}`}></div>
+                    <p>The industry-leading Penetration Testing with Kali Linux (KLIN-ACS) course just got even better. This online ethical hacking course is self-paced. It introduces penetration testing tools and techniques via hands-on experience. Students who complete the course and pass the exam earn the coveted Arena Web Certified Professional (AWCP) certification.</p>
                 </div>
+                {/* Module section */}
+                <div>
+                    <h5 className='mb-0'>Module</h5>
+                    <div className={`${style.line}`}></div>
+                    <ul className={`${style.networking_module_list}`}>
+                        <li><img src={arrow} alt="" /><span>Introduction</span></li>
+                        <li><img src={arrow} alt="" /><span>Access to recently retired OSCP exam machines - new!</span></li>
+                        <li><img src={arrow} alt="" /><span>Introduction into the latest hacking tools and techniques</span></li>
+                        <li><img src={arrow} alt="" /><span>Training from the experts behind Kali Linux</span></li>
+                        <li><img src={arrow} alt="" /><span>Learn the "Try Harder" method and mindset</span></li>
+                        <li><img src={arrow} alt="" /><span>Earn the industry-leading OSCP certification</span></li>
+                    </ul>
+                </div>
+                {/* Course Requirement */}
+                <div className='mt-5'>
+                    <h5 className='mb-0'>Course Requirements</h5>
+                    <div className={`${style.line}`}></div>
+                    <ul className={`${style.networking_module_list}`}>
+                        <li><img src={arrow} alt="" /><span>Solid understanding of TCP/IP networking</span></li>
+                        <li><img src={arrow} alt="" /><span>Reasonable Windows and Linux administration experience</span></li>
+                        <li><img src={arrow} alt="" /><span>Familiarity with basic Bash and/or Python scripting</span></li>
+                    </ul>
+                </div>
+                {/* Who can do this course */}
+                <div className='mt-5'>
+                    <h5 className='mb-0'>Who can avail this course?</h5>
+                    <div className={`${style.line}`}></div>
+                    <ul className={`${style.networking_module_list}`}>
+                        <li><img src={arrow} alt="" /><span>Infosec professionals transitioning into penetration testing</span></li>
+                        <li><img src={arrow} alt="" /><span>Pentesters seeking an industry-leading certification</span></li>
+                        <li><img src={arrow} alt="" /><span>Security professionals</span></li>
+                        <li><img src={arrow} alt="" /><span>Network administrators</span></li>
+                        <li><img src={arrow} alt="" /><span>Other technology professionals</span></li>
+                    </ul>
+                </div>
+                {/* About the exam */}
+                <div className='mt-5'>
+                    <h5 className='mb-0'>About the exam</h5>
+                    <div className={`${style.line}`}></div>
+                    <p>The KLIN-ACS course and online lab prepares you for the AWCP certification 24-hour exam Proctored.</p>
+                </div>
+            </div>
                 <img src={promoBanner} alt="" />
             </div>
             {/* <div><VewGelary></VewGelary></div> */}
