@@ -15,33 +15,37 @@ import RootLayout from '@/components/Layout';
 import Payment from '@/common/Payment';
 import PaymentDetails from '@/common/PaymentsDetals';
 
+
 const Profile = () => {
     const [profileData, setProfileData] = useState([])
     const [paymentData, setPaymentData] = useState([])
     const [email, setEmail] = useState('')
     const [dob, setDob] = useState('')
 
-    // useEffect(() => {
-    //     let UserUUID = localStorage.getItem('reg_uuid');
-    //     setEmail(localStorage.getItem('UserEmail'))
-    //     axios.get(ApiUrl.ProfileApi + "?reg_uuid=" + UserUUID).then((response) => {
-    //         if (response.status === 200) {
-    //             setProfileData(response.data);
-    //             setDob(response.data.dob.split(/[- : /]/));
-    //         }
-    //     }).catch(() => {
+    useEffect(() => {
+        // let UserUUID = sessionStorage.getItem('reg_uuid');
+        // console.log(UserUUID)
+        // setEmail(localStorage.getItem('UserEmail'))
+        axios.get(ApiUrl.ProfileApi + "?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
+            if (response.status === 200) {
+                setProfileData(response.data);
+                setDob(response.data.dob.split(/[- : /]/));
+            }
+        }).catch(() => {
 
-    //     })
+        })
 
-    //     // Payment History api
-    //     axios.get(ApiUrl.BaseUrl + "admission-api/api/t-list/?reg_uuid=" + UserUUID).then((response) => {
-    //         if (response.status === 200) {
-    //             setPaymentData(response.data);
-    //         }
-    //     }).catch(() => {
+        // Payment History api
+        axios.get(ApiUrl.BaseUrl + "admission-api/api/t-list/?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
+            if (response.status === 200) {
+                setPaymentData(response.data);
+            }
+        }).catch(() => {
 
-    //     })
-    // }, [])
+        })
+    }, [])
+
+    
     return (
         <div className={`${style.profile_container} container-fluid d-flex justify-content-center  `}>
             <div>

@@ -6,12 +6,16 @@ import RootLayout from '@/components/Layout';
 import ApiUrl from '../api/api';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
-
+import { useMutation, useQuery } from 'react-query';
 import { useForm } from "react-hook-form";
+
+
+
 
 const Form = () => {
     const [dob,setDob] = useState('')
     const api=ApiUrl.SendApiUrl;
+    
     const birth_dateOnChange =(date)=>{
         let year = date.getFullYear();
         let month = date.getMonth()+1;
@@ -19,12 +23,15 @@ const Form = () => {
         let new_date = year+'-'+month+'-'+day
         setDob(new_date)
     }
- 
+    
+      
+
  const [perA,setPerA]=useState('')
  const [perC,setPerC]=useState('')
  const [perP,setPerP]=useState('')
  const [cheked,setCheked]=useState(true)
     const copyAddress = (e) => {
+        
         setCheked(prev=>!prev)
           if(cheked){
             let presentAddress = document.getElementById('present').value
@@ -68,11 +75,33 @@ const Form = () => {
         register,
         formState: { errors },
       } = useForm({ mode: "all" });
-    
+      
+      
+      const PostData=()=>{
+        axios.post("http://192.168.0.116:8000/v1/login/",data)
+        .then(function (response) {
+            console.log(response.status
+                )
+            
+          return (response);
+          
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+       } 
+       const {data, isError, isLoading,isSuccess } = useQuery('posts', PostData) 
+       
+       // first argument is a string to cache and track the query result
+     
     const handleSubmit = (e)=>{
+       
         e.preventDefault();
         const data = new FormData(e.target);
         data.append("batch_schedule_time", "0");
+        if(isSuccess){
+            window.location = "/success";
+        }
         // const name = e.target.name.value
         // const number = e.target.number.value
         // const email = e.target.email.value
@@ -100,13 +129,12 @@ const Form = () => {
         // const ALLDATA=[name,number,email,fbName,nid,presentAddress,presentCity,presentCode,permanentAddress,permanentCity,permanentCode,office,date_of_birth,occupation,institute,department,intituteId,altName,altNumber,altRelation,interest,reason,nationality,course];
         
  
-        axios.post("http://192.168.0.116:8000/v1/login/",data)
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
+      
+
+    
+
+    
+        
     
     }
 
@@ -117,16 +145,19 @@ const Form = () => {
     // console.log(date);
 
 const current = new Date();
+const currentValue = new Date();
+
+
 // it adds 7 days to the current date
 current.setDate(current.getDate() + 7);
 const ndate=(current);
-console.log(ndate);
+
     var d = new Date()
     // console.log(d)
    
     
     cookies.set('myCat', 'Pacman', { path: '/',expires:ndate });
-    console.log(cookies.get('myCat'));
+    // console.log(cookies.get('myCat'));
 
    
     return (
@@ -200,7 +231,8 @@ console.log(ndate);
                                 {/* <input  className={style.inputs} type="date" name="dob" required /> */}
                              
                                     <DatePicker
-                                            value={dob}
+                                            value={dob?dob:currentValue}
+                                            // value={dob}
                                             onChange={birth_dateOnChange}
                                             className={style.inputDateP}
                                             placeholder="Select Date of Birth"
