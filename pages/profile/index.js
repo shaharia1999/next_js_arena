@@ -14,6 +14,7 @@ import Link from 'next/link';
 import RootLayout from '@/components/Layout';
 import Payment from '@/common/Payment';
 import PaymentDetails from '@/common/PaymentsDetals';
+import { AiOutlineClose } from 'react-icons/ai';
 
 
 const Profile = () => {
@@ -67,7 +68,9 @@ const Profile = () => {
                         </div>
                     </aside>
                     <main className={`${style.details_container}`}>
+                        
                         <ul className={`${style.infoTable}`}>
+                            
                             <li><span className='font-weight-bold'>Name</span><span>:</span><span>{profileData?.Fullname}</span></li>
                             <li><span className='font-weight-bold'>Email</span><span>:</span><span>{email ? email : '-'}</span></li>
                             <li><span className='font-weight-bold'>Phone</span><span>:</span><span>{profileData?.phn}</span></li>

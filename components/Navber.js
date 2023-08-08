@@ -10,6 +10,7 @@ import style from './navber.module.css'
 // import { FaAngleRight,FaAngleDown } from 'react-icons/fa';
 // import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import Link from 'next/link';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 
 
@@ -17,6 +18,7 @@ import Link from 'next/link';
 const Navbar = () => {
 
   const [colorChange, setColorchange] = useState(false);
+
   
 
   useEffect(()=>{
@@ -27,6 +29,13 @@ const Navbar = () => {
       setColorchange(true)
     }
   },[])
+
+  const [showNav,setShowNav]=useState(false);
+  const Nav=()=>{
+    setShowNav(prev=>!prev)
+  }
+
+  console.log(showNav);
   const changeNavbarColor = () => {
     if (location.pathname === '/new') {
       if (window.scrollY >= 10) {
@@ -39,33 +48,36 @@ const Navbar = () => {
   };
 //   window.addEventListener('scroll', changeNavbarColor);
   return (
-    <section className={`${colorChange ? style.navbar_container : style.navbar_container2}`}>
+    <section className={style.navbar_container}>
       <nav className={`${style.navbar} container-fluid`}>
         <Link href="/"><img src={colorChange ? logo2 : logo} alt="" /></Link>
-        <ul className={`${style.link_wrapper}`}>
-          <Link href="/"><li>HOME</li></Link>
-          <Link href="/about"><li>ABOUT</li></Link>
-          <Link href="/services"><li>SERVICES</li></Link>
+        <ul className={`${showNav?style.link_wrapper:style.link_wrapper2}`}>
+        <div className={style.close} ><AiOutlineClose onClick={Nav}></AiOutlineClose></div>
+          <Link href="/" onClick={Nav}><li>HOME</li></Link>
+          <Link href="/about" onClick={Nav}><li>ABOUT</li></Link>
+          <Link href="/services" onClick={Nav}><li>SERVICES</li></Link>
           <li id={style.courses}>
             <div>
             <span>COURSES</span>
             {/* <span><FaAngleDown/></span> */}
             </div>
             <ul id={style.courses_menu}>
-              <Link href="/cyberSecurity"><li><span>Cyber Security & Ethical Hacking</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/advancePhaython"><li><span>Advanced Python With Freelancing</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/cyberSecurityAndAdvancePhyton"><li><span>Cyber Security and Advance Python (Duo)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/cehfMasterClass"><li><span>CEHF Masterclass</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/cosint"><li><span>C|OSINT (Certified Open Source Intelligence)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/linux"><li><span>Linux</span>{/* <span><FaAngleRight /></span> */}</li></Link>
-              <Link href="/networking"><li><span>Networking Security</span>{/* <span><FaAngleRight /></span> */}</li></Link>              
+          
+              <Link href="/cyberSecurity" onClick={Nav}><li><span>Cyber Security & Ethical Hacking</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/advancePhaython" onClick={Nav}><li><span>Advanced Python With Freelancing</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/cyberSecurityAndAdvancePhyton" onClick={Nav}><li><span>Cyber Security and Advance Python (Duo)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/cehfMasterClass" onClick={Nav}><li><span>CEHF Masterclass</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/cosint" onClick={Nav}><li><span>C|OSINT (Certified Open Source Intelligence)</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/linux" onClick={Nav}><li><span>Linux</span>{/* <span><FaAngleRight /></span> */}</li></Link>
+              <Link href="/networking" onClick={Nav}><li><span>Networking Security</span>{/* <span><FaAngleRight /></span> */}</li></Link>              
             </ul>
             </li>
           <a href="https://www.hackers.institute/" target='_blank' rel="noreferrer"><li>BLOGS</li></a>
-          <Link href="/gallery"><li>GALLERY</li></Link>
-          <Link href="/contact"><li>CONTACT</li></Link>
-          <Link href="/admission" className={`${style.apply_btn}`}><li>APPLY NOW</li></Link>
+          <Link href="/gallery" onClick={Nav}><li>GALLERY</li></Link>
+          <Link href="/contact"  onClick={Nav}><li>CONTACT</li></Link>
+          <Link href="/admission"  onClick={Nav} className={`${style.apply_btn}`}><li>APPLY NOW</li></Link>
         </ul>
+        <div className={style.menuIcon} onClick={Nav}><AiOutlineMenu/></div>
       </nav>
     </section>
   );
