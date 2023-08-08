@@ -128,3 +128,68 @@
 .path{
     fill:green !important;
 }
+@media (max-width:834px) {
+    .header_title{
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Philosopher', sans-serif;
+    }
+    .aboutTxt{
+        width: 100%;
+        color: white;
+        font-size: 16px;
+        text-align: justify ;
+    }
+    .wave{
+        position:;
+    }
+    .wave::before{
+        background-image: linear-gradient(#56b5e3,#7d58a5);
+        height: 1050px;
+        /* height: 90vh; */
+        /* min-height: 1500px; */
+        content: "";
+        position: absolute;
+        /* width: 2300px; */
+        width: 130%;
+        border-radius: 666px;
+        transform: rotate(0);
+        top: -123%;
+        left: -17%;
+        z-index: -11;
+        box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+        -webkit-box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+        -moz-box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+        margin-top: -30%;
+    }
+    .wave::after{
+        height: 1050px;
+        content: "";
+        position: absolute;
+        /* width: 2300px; */
+        width: 130%;
+        border-radius: 666px;
+        transform: rotate(339deg);
+        top: -123%;
+        left: -17%;
+        z-index: -11;
+        opacity: .05;
+        background-repeat: no-repeat;
+        background-image: url(/image/aws7.webp);
+        background-size: cover;
+        background-position: center;
+        margin-top: -30%;
+    }
+    .btn{
+        border: 0px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 3px 10px;
+        margin-top: 30px;
+    }
+ 
+}

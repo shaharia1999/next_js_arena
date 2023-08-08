@@ -137,6 +137,8 @@
 .apply_btn li{
     color: white ;
 }
+
+/* resposive Navber For mobile */
 @media (max-width:834px) {
     .navbar_container{
         background-image:;
