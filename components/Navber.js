@@ -11,6 +11,8 @@ import style from './navber.module.css'
 // import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { IoIosArrowDropdown } from 'react-icons/io';
+
 
 
 
@@ -57,8 +59,10 @@ const Navbar = () => {
           <Link href="/about" onClick={Nav}><li>ABOUT</li></Link>
           <Link href="/services" onClick={Nav}><li>SERVICES</li></Link>
           <li id={style.courses}>
-            <div>
+            <div className='flex'>
             <span>COURSES</span>
+            <span className={style.dropdown}><IoIosArrowDropdown /></span>
+            
             {/* <span><FaAngleDown/></span> */}
             </div>
             <ul id={style.courses_menu}>
@@ -75,7 +79,7 @@ const Navbar = () => {
           <a href="https://www.hackers.institute/" target='_blank' rel="noreferrer"><li>BLOGS</li></a>
           <Link href="/gallery" onClick={Nav}><li>GALLERY</li></Link>
           <Link href="/contact"  onClick={Nav}><li>CONTACT</li></Link>
-          <Link href="/admission"  onClick={Nav} className={`${style.apply_btn}`}><li>APPLY NOW</li></Link>
+          <Link href="/admission"  onClick={Nav} className={`${style.apply_btn}`}><li className={style.apply_button}>APPLY NOW</li></Link>
         </ul>
         <div className={style.menuIcon} onClick={Nav}><AiOutlineMenu/></div>
       </nav>

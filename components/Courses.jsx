@@ -4,7 +4,7 @@ const testImage=  '/image/New_Assets/course.jpg'
 
 const Courses = () => {
     return (
-        <section className={`${style.coursesId} container pb-5 mb-5`}>
+        <section className={`${style.coursesId} container  `}>
             <h5 className={style.courses}>Courses</h5>
             <div className={style.course_line}></div>
             <p  className={style.course_pera}>Market best General & Corporate <br/> courses from the skilled influencers</p>

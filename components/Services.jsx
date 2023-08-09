@@ -5,6 +5,7 @@ const testImage = '/image/New_Assets/1.jpg'
 const testImage2 = '/image/New_Assets/2.jpg'
 const logo = '/image/AWSLogo.png';
 import style from './service.module.css'
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -21,10 +22,22 @@ const Services = () => {
         <h2  className={style.service_para}>We provide something that is <br/> very exceptional & good.</h2>
      <div className='container '>
     <Swiper
+     modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView={1}
+      Pagination={true}
+      autoplay={true}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      breakpoints={{
+        
+        768: {
+          width: 768,
+          slidesPerView: 2,
+        },
+           
+      
+      }}
     >
        <SwiperSlide>
         <div>
@@ -169,7 +182,7 @@ const Services = () => {
             </div>
         </div>
         </SwiperSlide>
-      ...
+     
     </Swiper>
     </div>
     </div>

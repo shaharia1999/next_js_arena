@@ -65,6 +65,39 @@
     overflow: hidden;
 }
 .img_container img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:600px) {
+    .content_container{
+        display:block;
+        gap:0;
+        align-items: center;
+    }
+    .content_wrapper , .slider{
+        width:100%;
+        overflow: hidden;
+        margin-top: 0px;
+    }
+    .review_container h2{
+        font-size: 30px;
+        font-weight: 700;
+        color: #04004d;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .content_wrapper p{
+        /* text-align: justify; */
+        font-size: 16px;
+        font-style: italic;
+    }
+    .content_wrapper ul li {
+          font-size: 16px;
+    }
+    .slider{
+        width:100%;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-right:20px ;
+    }
 }

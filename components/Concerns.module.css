@@ -26,3 +26,16 @@
   width:100px;
    height:100px;
 }
+@media (max-width:600px) {
+  .concernParent{
+    padding: 0px 0px;
+  }
+  .concerns_para{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #04004d;
+  width: 80%;
+}
+}

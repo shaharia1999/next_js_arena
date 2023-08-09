@@ -1,6 +1,6 @@
 .navbar_container{
     background-image: linear-gradient(90deg,white, #56b5e3,#7d58a5);
-    padding: 20px 0px;
+    padding: 10px 0px;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -137,9 +137,22 @@
 .apply_btn li{
     color: white ;
 }
+.dropdown{
+    font-size: 20px;
+    margin-left: 5px;
+   
+}
+.apply_button{
+    background-color: white;
+    width: auto;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius:  30px;
+    color: black !important;
+}
 
 /* resposive Navber For mobile */
-@media (max-width:834px) {
+@media (max-width:600px) {
     .navbar_container{
         background-image:;
         padding: 20px 0px;
@@ -147,8 +160,7 @@
         top: 0;
         width: 100%;
         position: relative !important;
- 
-      
+  
     }
     .navbar{
         /* display: flex; */
@@ -218,6 +230,8 @@
     font-size: 30px;
     display: block;
 }
+           
+/* <div > <IoIosArrowDropdown className={style.dropdown}/></div> */
 .close{
      display: block;
     text-align: end;
@@ -226,6 +240,128 @@
     padding: 10px 20px;
     font-weight: 500;
 }
+.apply_button{
+    background-color: white;
+    width: 200px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius:  30px;
+    color: black !important;
+}
+
+ .dropdown{
+    font-size: 20px;
+    margin-left: 10px;
+   
+}
 
 
 }
+
+/* responsive for tab */
+@media (max-width:800px) {
+    .navbar_container{
+        background-image:;
+        padding: 20px 0px;
+        z-index: 100;
+        top: 0;
+        width: 100%;
+        position: relative !important;
+  
+    }
+    .navbar{
+        /* display: flex; */
+        align-items: center;
+
+      
+    }
+.navbar .link_wrapper{
+  display: block;
+  height: 130vh;
+  width: 80%;
+  top:0;
+  /* left: -660px; */
+  left: 0;
+  position: absolute;
+  padding-top: 100px;
+  background-image: linear-gradient(#7863ac, #6592cc)
+
+}
+.navbar .link_wrapper2{
+  display: block;
+  height: 100vh;
+  width: 80%;
+  top:0;
+  left: -660px;
+  position: absolute;
+  padding-top: 100px;
+  background-image: linear-gradient(#7863ac, #6592cc)
+
+}
+.navbar li{
+  display: block;
+  margin-top: 20px;
+ 
+
+ 
+}
+.apply_btn{
+ 
+    background-color: transparent;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:white;
+    text-align: start;
+    /* background-color: red; */
+}
+.apply_btn li{
+    color: white ;
+}
+.apply_btn:active{
+    transform: scale(.95);
+}
+.courses_menu{
+    display: none;
+    width: 250px;
+    font-size: 14px;
+    background-color: white;
+    list-style: none;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px 0px rgb(182, 182, 182);
+}
+.menuIcon{
+    color: white;
+    font-size: 30px;
+    display: block;
+}
+           
+/* <div > <IoIosArrowDropdown className={style.dropdown}/></div> */
+.close{
+     display: block;
+    text-align: end;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.apply_button{
+    background-color: white;
+    width: 200px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius:  30px;
+    color: black !important;
+}
+
+ .dropdown{
+    font-size: 20px;
+    margin-left: 10px;
+   
+}
+
+
+}
+

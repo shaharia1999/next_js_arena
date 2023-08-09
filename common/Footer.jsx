@@ -16,14 +16,19 @@ const Footer = () => {
         <section className={style.parent_container} >
             <div className={`container ${style.footerCard} `}>
                 <div className={style.footer_wrapper}>
+                    <div className={style.footer_wrapper_img}>
                     <img className={style.icon} src={icon1} alt="" />
+                    </div>
                     <div>
                         <h5>Address</h5>
                         <p>House No-1, BLOCK-B Banasree, <br /> Main Road Rampura, Dhaka - 1219</p>
                     </div>
                 </div>
                 <div className={`${style.phone} ${style.footer_wrapper}`}>
-                    <img className={style.icon} src={icon2} alt="" />
+                <div className={style.footer_wrapper_img}>
+                      <img className={style.icon} src={icon2} alt="" /> 
+                    </div>
+                    
                     <div>
                         <h5>Phone</h5>
                         <div>
@@ -33,7 +38,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={style.footer_wrapper}>
-                    <img className={style.icon} src={icon3} alt="" />
+                <div className={style.footer_wrapper_img}>
+                      <img className={style.icon} src={icon3} alt="" /> 
+                    </div>
                     <div>
                         <h5>Email</h5>
                         <p>info@arenawebsecurity.net</p>

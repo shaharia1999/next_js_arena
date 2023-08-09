@@ -5,7 +5,7 @@
     position: relative;
     /* height: 100vh;
     min-height: 800px; */
-    height: 800px;
+    height:800px;
     z-index: 0;
     overflow: hidden;
 }
@@ -18,6 +18,7 @@
     /* height: 90vh; */
     /* min-height: 1500px; */
     content: "";
+    /* min-height: 1500px; */
     position: absolute;
     /* width: 2300px; */
     width: 130%;
@@ -32,7 +33,7 @@
     margin-top: -30%;
 }
 .wave::after{
-    height: 1050px;
+    height: 1050px !important;
     content: "";
     position: absolute;
     /* width: 2300px; */
@@ -128,7 +129,13 @@
 .path{
     fill:green !important;
 }
-@media (max-width:834px) {
+@media (max-width:1440px) {
+    .badge_container{
+        margin-top: 100px;
+    }
+}
+/*  Responsive For Tab Screnn */
+@media (max-width:776px) {
     .header_title{
         color: white;
         font-size: 40px;
@@ -141,14 +148,20 @@
         font-size: 16px;
         text-align: justify ;
     }
+    .header_slogan{
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Roboto display";
+    }
     .wave{
         position:;
     }
     .wave::before{
         background-image: linear-gradient(#56b5e3,#7d58a5);
-        height: 1050px;
+        /* height: 1050px; */
         /* height: 90vh; */
-        /* min-height: 1500px; */
+        min-height: 1500px;
         content: "";
         position: absolute;
         /* width: 2300px; */
@@ -181,15 +194,162 @@
         background-position: center;
         margin-top: -30%;
     }
+    .badge p{
+        margin: 0;
+        padding: 5px 20px;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+    }
+    .badge{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        /* border: 1px solid rgb(192, 192, 192); */
+        box-shadow: inset 0px 0px 13px 4px #b7b7b79e;
+        width: 100%;
+        height: auto;
+        /* padding-left: 5px; */
+        /* padding-right: 15px; */
+        border-radius: 9999px;
+     
+        
+    }
+    .badge_container{
+        margin-top: 50px;
+    }
+    .icon_wrapper{
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        padding: 10px 20px;
+        border: 1px solid #abababc7;
+        box-shadow: inset 0px 0px 20px 0px green;
+    }
+    .icon{
+        font-size: 10px;
+        /* border: 5px solid rgb(75, 70, 70);
+        border-radius: 9999px; */
+    }
+  
+
+   
+}
+@media (max-width:600px) {
+    .header_container{
+     
+        height:87vh;
+        z-index: 0;
+        overflow: hidden;
+    }
+    .header_title{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Philosopher', sans-serif;
+        margin-bottom: 30px;
+    }
+    .aboutTxt{
+        width: 100%;
+        color: white;
+        font-size: 14px;
+        text-align: justify ;
+    }
+    .header_slogan{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "Roboto display";
+    }
+    .wave{
+        position:;
+    }
+    .wave::before{
+        background-image: linear-gradient(#56b5e3,#7d58a5);
+        /* height: 1050px; */
+        height: 90vh;
+        /* min-height: 1500px; */
+        content: "";
+        position: absolute;
+        /* width: 2300px; */
+        width: 130%;
+        border-radius: 666px;
+        transform: rotate(0);
+        top: -123%;
+        left: -17%;
+        z-index: -11;
+        box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+        -webkit-box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+        -moz-box-shadow: 94px 0px 0px 88px rgb(237 237 237);
+        margin-top: -30%;
+    }
+    .wave::after{
+        height:90vh;
+        content: "";
+        position: absolute;
+        /* width: 2300px; */
+        width: 130%;
+        border-radius: 666px;
+        transform: rotate(339deg);
+        top: -123%;
+        left: -17%;
+        z-index: -11;
+        opacity: .05;
+        background-repeat: no-repeat;
+        background-image: url(/image/aws7.webp);
+        background-size: cover;
+        background-position: center;
+        margin-top: -30%;
+    }
     .btn{
         border: 0px;
         background-color: white;
-        color: black;
-        font-size: 18px;
+
+        font-size: 16px;
         font-weight: 500;
         border-radius: 10px;
         padding: 3px 10px;
         margin-top: 30px;
     }
- 
+    .badge_container{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .badge{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        /* border: 1px solid rgb(192, 192, 192); */
+        box-shadow: inset 0px 0px 13px 4px #b7b7b79e;
+        width: 100%;
+        height: auto;
+        /* padding-left: 5px; */
+        /* padding-right: 15px; */
+        border-radius: 9999px;
+    }
+    .icon_wrapper{
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        padding: 5px 10px;
+        border: 1px solid #abababc7;
+        box-shadow: inset 0px 0px 20px 0px green;
+    }
+    .icon{
+        font-size: 10px;
+        /* border: 5px solid rgb(75, 70, 70);
+        border-radius: 9999px; */
+    }
+    .badge p{
+        margin: 0;
+        padding: 5px 0px;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        margin-top:0px !important;
+    }
 }

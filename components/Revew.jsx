@@ -13,6 +13,7 @@ const review8 = '/image/New_Assets/Review/d-7.jpg'
 const review9= '/image/New_Assets/Review/d-8.jpg'
 const review11 = '/image/New_Assets/Review/d-9.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
 
 
 // Import Swiper styles
@@ -22,7 +23,7 @@ import 'swiper/css';
 const Review = () => {
     return (
         <section>
-            <div className={`${style.review_container} container`}>
+            <div className={`${style.review_container} container  `}>
                 <div className={`${style.content_container}`}>
                     <div  className={style.content_wrapper}>
                         <h1>Review</h1>
@@ -36,10 +37,10 @@ const Review = () => {
                     </div>
                     <div className={style.slider}>
                     <Swiper
-                        spaceBetween={0}
+                    
                         slidesPerView={1}
-                        autoplay= {1000}
-                          
+                        autoplay= {true}
+                        modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                         >

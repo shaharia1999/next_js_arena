@@ -22,7 +22,9 @@ const About = () => {
                         <li><img src={bullet} alt=""/> General & corporate courses</li>
                     </ul>
                 </article>
-                <img data-aos-duration="1500" src={team} alt="" />
+                <div className={style.about_img}>
+                <img data-aos-duration="1500" src={team} alt=""  />
+                </div>
          
             </div>
         </section>
