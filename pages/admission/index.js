@@ -8,6 +8,8 @@ import axios from 'axios';
 import Cookies from 'universal-cookie';
 import { useMutation, useQuery } from 'react-query';
 import { useForm } from "react-hook-form";
+import 'react-toastify/dist/ReactToastify.css';
+import {ToastContainer, toast} from 'react-toastify'
 
 
 
@@ -22,6 +24,7 @@ const Form = () => {
         let day = date.getDate();
         let new_date = year+'-'+month+'-'+day
         setDob(new_date)
+       
     }
     
       
@@ -95,13 +98,30 @@ const Form = () => {
        // first argument is a string to cache and track the query result
      
     const handleSubmit = (e)=>{
-       
+         
         e.preventDefault();
-        const data = new FormData(e.target);
+        if(e.target.birth_date.value.length == 0 ){
+            console.log('value print');
+            toast.error('Birth Date is Required !', {
+                position: "bottom-center",
+                theme: "colored",
+                autoClose: false,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }else{
+            const data = new FormData(e.target);
         data.append("batch_schedule_time", "0");
         if(isSuccess){
             window.location = "/success";
         }
+        }
+        
+       
+        
         // const name = e.target.name.value
         // const number = e.target.number.value
         // const email = e.target.email.value
@@ -165,6 +185,7 @@ const ndate=(current);
             <div className={`${style.form_container} container mx-auto px-0`}>
                 <h1 className='text-center mb-5'>Student Information</h1>
                 <form className='' onSubmit={(e)=>handleSubmit(e)}>
+                <ToastContainer className="toastMargin justify-content-center"/>
                     <div className='d-flex flex-column' style={{ gap: '50px 0px' }}>
                         <div className={`${style.box} row border position-relative`}>
                             <h5 className='position-absolute'>Personal Information</h5>
@@ -231,8 +252,8 @@ const ndate=(current);
                                 {/* <input  className={style.inputs} type="date" name="dob" required /> */}
                              
                                     <DatePicker
-                                            value={dob?dob:currentValue}
-                                            // value={dob}
+                                           
+                                            value={dob}
                                             onChange={birth_dateOnChange}
                                             className={style.inputDateP}
                                             placeholder="Select Date of Birth"
