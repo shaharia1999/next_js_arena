@@ -16,6 +16,7 @@ import Payment from '@/common/Payment';
 import PaymentDetails from '@/common/PaymentsDetals';
 import { AiOutlineClose } from 'react-icons/ai';
 import MyTimeCount from '@/components/TimeCounDown';
+import { Fragment } from 'react';
 
 
 const Profile = () => {
@@ -49,8 +50,11 @@ const Profile = () => {
 
     
     return (
+        <Fragment>
+                <MyTimeCount></MyTimeCount>
+       
         <div className={`${style.profile_container} container-fluid d-flex justify-content-center  `}>
-            <MyTimeCount></MyTimeCount>
+        
             <div>
                 <Link href="https://www.hackers.institute/2018/09/Ethical-Hacking-Course-Bangladesh.html"><img src={admissionBanner} alt="" className='d-none d-lg-block' /></Link>
             </div>
@@ -179,6 +183,7 @@ const Profile = () => {
                 <Link href="https://www.hackers.institute/2018/09/Ethical-Hacking-Course-Bangladesh.html"><img src={admissionBanner} alt="" className='d-none d-lg-block'/></Link>
             </div>
         </div>
+        </Fragment>
     );
 };
 
