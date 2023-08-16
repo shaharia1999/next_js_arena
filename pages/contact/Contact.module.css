@@ -1,26 +1,24 @@
-.contactus_wrapper{
-    margin: 200px 0px;
-    display: flex;
-}
-.slider-wrapper{
-    margin-top: 150px;
-}
+
 .slider{
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50vh;
-    min-height: 468px;
-    max-height: 500px;
+    margin-top: 150px;
+
+}
+.map{
+    width: 50%;
 }
 .slider img{
     width: 400px;
 }
-.slider-content{
+.slider_content{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-left: 50px;
 }
 .services_container{
     margin-top:100px;
@@ -57,8 +55,8 @@
     height: 2px;
     background-color: #7e7e7e;
 }
-.service-boxes{
-    gap: 20px;
+.serviceBoxes{
+   
 }
 .box{
     border-radius: 20px;
@@ -69,6 +67,7 @@
     display: flex;
     /* justify-content: space-between; */
     gap: 100px;
+   
 }
 .contact_slogan{
     color: #04004d;
@@ -107,20 +106,147 @@
     flex-direction: column;
 }
 .input_group input{
-    border:1px solid black;
+    /* border-bottom:1px solid rgb(224, 224, 224) ; */
     color: #04004d;
+    border: none;
+    outline: 1px solid black;
     padding: 5px 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .submit_btn{
     background-color: #00c389;
     color: white;
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: 0px;
     font-weight: 700;
+}
+.slider_content h1{
+    font-weight: 600;
+    color: #04004d;
+    font-size: 30px;
+}
+
+@media (max-width:800px) {
+
+    .slider{
+        background-color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+       margin-top: 20px;
+    
+    }
+    .map{
+        width: 100% !important;
+    }
+    .slider img{
+        width: 200px;
+        
+    }
+    .service_img{
+        border: 10px solid #00c389;
+        width: 10em;
+        border-radius: 9999px;
+        overflow: hidden;
+    }
+    .service_wrapper:nth-child(even){
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .service_wrapper:nth-child(odd){
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .contact_container{
+        margin-top: 80px;
+        display: block;
+        /* flex-direction: column;
+        justify-content: space-between; */
+    }
+    .map{
+        height: 500px;
+        width: 50%;
+    }
+    
+    
+}
+@media (max-width:600px) {
+    
+    .slider{
+        background-color: white;
+        display:block;
+        height: 65vh!important;
+        margin-top: 50px !important;
+    }
+    .slider_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .slider img{
+        width: 200px;
+       
+    }
+    .slider_content{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .service_wrapper:nth-child(even){
+        display: block;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-top: 50px;
+    }
+    .service_wrapper:nth-child(odd){
+        display:block;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .service_img{
+        border: 10px solid #00c389;
+        width: 8em;
+        border-radius: 9999px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .service_wrapper h2{
+        font-size: 20px;
+    }
+    .service_wrapper p{
+        font-size: 14px;
+    }
+    .slider_content p{
+   font-size: 14px;
+   
+    }
+    .slider_content h1{
+      font-size: 20px;
+   
+    }
+    .contact_container{
+        display: block;
+        /* flex-direction: column;
+        justify-content: space-between; */
+    }
+    .contact_slogan{
+        color: #04004d;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
 }

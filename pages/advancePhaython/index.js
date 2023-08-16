@@ -52,7 +52,7 @@ const Networking = () => {
     return (
         <div>
             <div className={`${style.page_top}  `}>
-                <img src={promoBanner} alt="" />
+                <img src={promoBanner} alt="" className={style.page_top_img} />
                 <div className='container mx-3'>
                     <div className={`${style.overview}`}>
                         <h5 className="mb-0">Overview</h5>
@@ -62,7 +62,7 @@ const Networking = () => {
                     <div>
                         <h5 className='mb-0'>Key Features</h5>
                         <div className={`${style.line}`}></div>
-                        <div className={`${style.network_badge_container} container`}>
+                        <div className={`${style.badge_container} container`}>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
                                 <p>Core Python</p>
@@ -113,7 +113,7 @@ const Networking = () => {
                     </div>
                     
                 </div>
-                <img src={promoBanner} alt="" />
+                <img src={promoBanner} alt="" className={style.page_top_img2} />
             </div>
             <div className='container'><VewGelary></VewGelary></div>
             <div className=''>

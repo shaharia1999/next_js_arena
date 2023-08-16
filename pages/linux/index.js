@@ -1,6 +1,6 @@
 import React from 'react';
 // import MentorSlides from '../CyberSecurity/MentorSlides';
-import style from '../cyberSecurity/cyberSecurityCourseLandingPage.module.css'
+import style from '../advancePhaython/cyberSecurityCourseLandingPage.module.css'
 import MentorSlides from '@/slider/slider';
 import VewGelary from '@/imageGelary/gelary';
 import { Button, Col, Collapse, Row } from 'react-bootstrap';
@@ -52,7 +52,7 @@ const Networking = () => {
     return (
         <div>
             <div className={`${style.page_top}  `}>
-                <img src={promoBanner} alt="" />
+                <img src={promoBanner} alt="" className={style.page_top_img}/>
                 <div className='container mx-0'>
                 <div className={`${style.overview}`}>
                     <h5 className="mb-0">Overview</h5>
@@ -63,7 +63,7 @@ const Networking = () => {
                 <div>
                     <h5 className='mb-0'>Module</h5>
                     <div className={`${style.line}`}></div>
-                    <ul className={`${style.networking_module_list}`}>
+                    <ul className={`${style.module_list}`}>
                         <li><img src={arrow} alt="" /><span>Introduction</span></li>
                         <li><img src={arrow} alt="" /><span>Access to recently retired OSCP exam machines - new!</span></li>
                         <li><img src={arrow} alt="" /><span>Introduction into the latest hacking tools and techniques</span></li>
@@ -76,7 +76,7 @@ const Networking = () => {
                 <div className='mt-5'>
                     <h5 className='mb-0'>Course Requirements</h5>
                     <div className={`${style.line}`}></div>
-                    <ul className={`${style.networking_module_list}`}>
+                    <ul className={`${style.module_list}`}>
                         <li><img src={arrow} alt="" /><span>Solid understanding of TCP/IP networking</span></li>
                         <li><img src={arrow} alt="" /><span>Reasonable Windows and Linux administration experience</span></li>
                         <li><img src={arrow} alt="" /><span>Familiarity with basic Bash and/or Python scripting</span></li>
@@ -86,7 +86,7 @@ const Networking = () => {
                 <div className='mt-5'>
                     <h5 className='mb-0'>Who can avail this course?</h5>
                     <div className={`${style.line}`}></div>
-                    <ul className={`${style.networking_module_list}`}>
+                    <ul className={`${style.module_list}`}>
                         <li><img src={arrow} alt="" /><span>Infosec professionals transitioning into penetration testing</span></li>
                         <li><img src={arrow} alt="" /><span>Pentesters seeking an industry-leading certification</span></li>
                         <li><img src={arrow} alt="" /><span>Security professionals</span></li>
@@ -101,7 +101,7 @@ const Networking = () => {
                     <p>The KLIN-ACS course and online lab prepares you for the AWCP certification 24-hour exam Proctored.</p>
                 </div>
             </div>
-                <img src={promoBanner} alt="" />
+                <img src={promoBanner} alt="" className={style.page_top_img2} />
             </div>
             {/* <div><VewGelary></VewGelary></div> */}
             <div className=''>

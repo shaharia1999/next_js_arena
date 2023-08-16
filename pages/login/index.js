@@ -6,42 +6,90 @@ import {AiFillEye ,AiFillEyeInvisible} from "react-icons/ai";
 import RootLayout from '@/components/Layout';
 import { useState } from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import {ToastContainer } from 'react-toastify'
+
 
 const Login= () => {
     const [show,setShow] = useState(true)
     const handleSubmit =(e)=>{
            e.preventDefault();
            const data = new FormData(e.target);
-           axios.post("http://192.168.0.116:8000/v1/login/",data)
+           axios.post("http://192.168.0.119:8000/v1/login/",data)
            .then(function (response) {
              console.log(response);
+             if(response.status === 200 && response.data.login === 1){
+                sessionStorage.setItem("create_at", response.data.create_at);
+                sessionStorage.setItem("day_active",response.data.day_active);
+                sessionStorage.setItem("time",response.data.time);
+                sessionStorage.setItem("admission", response.data.admission);
+                sessionStorage.setItem("reg_uuid", response.data.reg_uuid);
+                toast.success('successfully login', {
+                    position: "bottom-center",
+                    theme: "colored",
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    autoClose: 3000,
+                });
+                //    window.location = "/profile";
+             }
+             else if (response.status === 200 && response.data.login === 2) {
+                toast.error(response.data.msg, {
+                    position: "bottom-center",
+                    theme: "colored",
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    autoClose: 3000,
+                });
+            } else {
+                toast.error('Username or password wrong!', {
+                    position: "bottom-center",
+                    theme: "colored",
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    autoClose: 3000,
+                });
+            }
            })
            .catch(function (error) {
              console.log(error);
            });
            console.log(data.get("email"))
+   
+       
      
      
         
     }
     return (
         <div className={`${style.mainlogin} container`}>
-        <div className={`${style.login_box} d-flex justify-content-center align-items-center`}>
-        <div className={`${style.aside_left} w-50 h-100 d-flex justify-content-center align-items-center`}>
+             <ToastContainer className="toastMargin justify-content-center"/>
+        <div className={`${style.login_box} d-lg-flex justify-content-center align-items-center`}>
+        <div className={`${style.aside_left} lg-w-50 h-100 d-flex justify-content-center align-items-center`}>
             <img src={bgImage} alt="" className='w-75' />
         </div>
-        <div className='w-50 py-5'>
+        <div className='lg-w-50 py-5'>
             <h4 className={`${style.titel} text-center`}>Login with email & password</h4>
               <form className='w-75 mx-auto mt-5' onSubmit={(e)=>handleSubmit(e)}>
                 <div className='d-flex flex-column'>
                 <label>Email</label>
-                    <input type="email" name="email" className={style.input} value={'your.email+fakedata82963@gmail.com'}/>
+                    <input type="email" name="email" className={style.input} />
                 </div>
                 <div className='d-flex flex-column mt-5 position-relative'>
                     <label>Password</label>
                     {
-                        show? <input name="password" type="password"  value={36206991} py-2 className={`${style.input} bg-danger}`}/>:
-                        <input name="password" type="tax" value={36206991} py-2 className={`${style.input} bg-danger}`}/>
+                        show? <input name="password" type="password"   py-2 className={`${style.input} bg-danger}`}/>:
+                        <input name="password" type="tax"  py-2 className={`${style.input} bg-danger}`}/>
                     }
                    
                     {

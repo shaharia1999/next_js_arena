@@ -20,7 +20,7 @@ const SuccessSmsPage= () => {
         <div>
              <div>
                      <div className={`${style.success} mb-5`} >
-                     <Confetti width={width} height={height}  opacity={.4}/>
+                     <Confetti className={style.Confetti}  opacity={.4}/>
                         <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
                             <div className="modal-content">
                                 <div className="modal-body p-0" style={{ border: "none", backgroundColor: "#fafafa"}}>

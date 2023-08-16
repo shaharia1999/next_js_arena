@@ -1,8 +1,6 @@
 .gallery_container{
     margin: 200px 0px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr) ;
-    gap: 5px;
+    
 }
 .gallery_container img{
     border-radius: 10px;
@@ -35,4 +33,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.aboutImg{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:30px;
+
+    
+}
+.aboutImg img:hover{
+    transition: all 2s;
+}
+.aboutImg img:hover{
+    transform: scale(1.1);
 }

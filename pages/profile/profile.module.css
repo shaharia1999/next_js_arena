@@ -84,3 +84,29 @@
     text-align: center;
     background-color: #adadad34;
 }
+@media (max-width:820px) {
+    .avatar_sec{
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 13px 0px #adadad82;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+        padding: 30px 20px;
+        
+    }
+    .avatar_sec img{
+        width: 30%;
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+    .profile_container{
+        margin-top: 200px;
+        padding: 0 0px ;
+        margin-bottom: 100px;
+    }
+   
+}

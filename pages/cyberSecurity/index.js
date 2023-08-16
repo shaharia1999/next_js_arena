@@ -53,8 +53,8 @@ const Networking = () => {
     return (
         <div>
             <div className={`${style.page_top}  `}>
-                <img src={promoBanner} alt="" />
-                <div className='container mx-3  '>
+                <img src={promoBanner} alt="" className={style.page_top_img} />
+                <div className={`container mx-3 ${style.page_top_main}`  }>
                     <div className={`${style.overview}`}>
                         <h5 className="mb-0">Overview</h5>
                         <div className={`${style.line}`}></div>
@@ -113,7 +113,7 @@ const Networking = () => {
 
                     </div>
                 </div>
-                <img src={promoBanner} alt="" />
+                <img src={promoBanner} alt="" className={style.page_top_img2}  />
             </div>
             <div className='container'><VewGelary></VewGelary></div>
             <div className=''>
@@ -399,7 +399,7 @@ const Networking = () => {
                     </Col>
                 </Row>
                 {/* Information Table */}
-                <div className={`container  mx-auto ${style.info_table} ${style.network_info_table}`}>
+                <div className={`container   mx-auto ${style.info_table} ${style.network_info_table}`}>
                     <img src={coder} alt="" className={`${style.info_img}`} />
                     <div className={`${style.py_60}`}>
                         <h5>Basic Information</h5>

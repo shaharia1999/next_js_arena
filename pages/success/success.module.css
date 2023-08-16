@@ -11,6 +11,7 @@
 
    
 }
+
 .section-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -108,15 +109,24 @@ Form i .PasswordVisibility {
     margin-top: 20px !important;
     cursor: pointer;
 }
+.Confetti {
+    width: 100%;
+}
+@media (max-width:830px) {
+    .Confetti {
+        width: 600px;
+    }
+}
 
-
-@media (max-width: 374.98px) {
+@media (max-width: 600px) {
     .section-title {
         font-weight: 600;
         font-size: 16px !important;
         text-decoration: none !important;
     }
-
+    .Confetti {
+        width: 300px;
+    }
     .sectionSubTitle {
         font-weight: 300;
         font-size: 8px !important;

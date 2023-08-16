@@ -1,6 +1,6 @@
 import React from 'react';
 // import MentorSlides from '../CyberSecurity/MentorSlides';
-import style from '../cyberSecurity/cyberSecurityCourseLandingPage.module.css'
+import style from '../advancePhaython/cyberSecurityCourseLandingPage.module.css'
 import MentorSlides from '@/slider/slider';
 import VewGelary from '@/imageGelary/gelary';
 import { Button, Col, Collapse, Row } from 'react-bootstrap';
@@ -52,7 +52,7 @@ const Networking = () => {
     return (
         <div>
             <div className={`${style.page_top}  `}>
-                <img src={promoBanner} alt="" />
+                <img src={promoBanner} alt="" className={style.page_top_img} />
                 <div className='container mx-3'>
                     <div className={`${style.overview}`}>
                         <h5 className="mb-0">Overview</h5>
@@ -62,7 +62,7 @@ const Networking = () => {
                     <div>
                         <h5 className='mb-0'>Key Features</h5>
                         <div className={`${style.line}`}></div>
-                        <div className={`${style.network_badge_container} container`}>
+                        <div className={`${style.badge_container} container`}>
                             <div className={style.badge}>
                                 <span className={style.icon_wrapper}>{/* <Icon icon="mdi:tick-circle" className={style.icon} /> */}<img src={shield} alt="" /></span> {/* <Icon className={style.icon} icon="map:sheild" /> */}
                                 <p>Network Management</p>
@@ -85,7 +85,7 @@ const Networking = () => {
                     <div>
                         <h5 className='mb-0'>Module</h5>
                         <div className={`${style.line}`}></div>
-                        <ul className={`${style.networking_module_list}`}>
+                        <ul className={`${style.module_list}`}>
                             <li><img src={arrow} alt="" /><span>Introduction</span></li>
                             <li><img src={arrow} alt="" /><span>Configure and architect a small network for maximum physical and wireless security.</span></li>
                             <li><img src={arrow} alt="" /><span>Understand how we are tracked online by corporations, nation-states your ISP and others.</span></li>
@@ -98,7 +98,7 @@ const Networking = () => {
 
                     </div>
                 </div>
-                <img src={promoBanner} alt="" />
+                <img src={promoBanner} alt="" className={style.page_top_img2} />
             </div>
             {/* <div><VewGelary></VewGelary></div> */}
             <div className=''>

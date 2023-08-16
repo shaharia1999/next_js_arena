@@ -17,7 +17,7 @@ class ApiUrl{
   static SendApply="http://192.168.0.116:8000/api/form/";
   static SendLogin="http://192.168.0.116:8000/v1/login/";
   static SendApiUrl="http://192.168.0.116:8000/cross-login/";
-  static ProfileApi="http://192.168.0.116:8000/v1/profile/" 
+  static ProfileApi="http://192.168.0.119:8000/v1/profile/" 
   static BannerApi = "http://192.168.0.116:8000/api/image-list/" 
  
 }

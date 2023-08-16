@@ -15,6 +15,7 @@ import RootLayout from '@/components/Layout';
 import Payment from '@/common/Payment';
 import PaymentDetails from '@/common/PaymentsDetals';
 import { AiOutlineClose } from 'react-icons/ai';
+import MyTimeCount from '@/components/TimeCounDown';
 
 
 const Profile = () => {
@@ -24,10 +25,10 @@ const Profile = () => {
     const [dob, setDob] = useState('')
 
     useEffect(() => {
-        // let UserUUID = sessionStorage.getItem('reg_uuid');
-        // console.log(UserUUID)
-        // setEmail(localStorage.getItem('UserEmail'))
-        axios.get(ApiUrl.ProfileApi + "?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
+        let UserUUID = sessionStorage.getItem('reg_uuid');
+        setEmail(localStorage.getItem('UserEmail'))
+        axios.get(ApiUrl.ProfileApi + "?reg_uuid=" +UserUUID).then((response) => {
+            console.log(response);
             if (response.status === 200) {
                 setProfileData(response.data);
                 setDob(response.data.dob.split(/[- : /]/));
@@ -37,25 +38,26 @@ const Profile = () => {
         })
 
         // Payment History api
-        axios.get(ApiUrl.BaseUrl + "admission-api/api/t-list/?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
-            if (response.status === 200) {
-                setPaymentData(response.data);
-            }
-        }).catch(() => {
+    //     axios.get(ApiUrl.BaseUrl + "admission-api/api/t-list/?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
+    //         if (response.status === 200) {
+    //             setPaymentData(response.data);
+    //         }
+    //     }).catch(() => {
 
-        })
+    //     })
     }, [])
 
     
     return (
         <div className={`${style.profile_container} container-fluid d-flex justify-content-center  `}>
+            <MyTimeCount></MyTimeCount>
             <div>
-                <Link href="https://www.hackers.institute/2018/09/Ethical-Hacking-Course-Bangladesh.html"><img src={admissionBanner} alt="" /></Link>
+                <Link href="https://www.hackers.institute/2018/09/Ethical-Hacking-Course-Bangladesh.html"><img src={admissionBanner} alt="" className='d-none d-lg-block' /></Link>
             </div>
             <div className='container mx-0'>
                 <h5 className={`${style.student_profile}`}>Student Profile</h5>
                 <div className={`${style.line}`}></div>
-                <div className='d-flex justify-content-around '>
+                <div className='d-lg-flex justify-content-around '>
                     <aside>
                         <div className={`${style.avatar_sec} `}>
                             {/* <div className='border rounded-circle w-50 text-center'> */}
@@ -174,7 +176,7 @@ const Profile = () => {
            
             </div>
             <div>
-                <Link href="https://www.hackers.institute/2018/09/Ethical-Hacking-Course-Bangladesh.html"><img src={admissionBanner} alt="" /></Link>
+                <Link href="https://www.hackers.institute/2018/09/Ethical-Hacking-Course-Bangladesh.html"><img src={admissionBanner} alt="" className='d-none d-lg-block'/></Link>
             </div>
         </div>
     );

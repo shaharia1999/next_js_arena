@@ -81,11 +81,11 @@ const Form = () => {
       
       
       const PostData=()=>{
-        axios.post("http://192.168.0.116:8000/v1/login/",data)
+        axios.post("http://192.168.0.119:8000/v1/login/",data)
         .then(function (response) {
             console.log(response.status
                 )
-            
+            window.location=''
           return (response);
           
         })
@@ -189,65 +189,65 @@ const ndate=(current);
                     <div className='d-flex flex-column' style={{ gap: '50px 0px' }}>
                         <div className={`${style.box} row border position-relative`}>
                             <h5 className='position-absolute'>Personal Information</h5>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column '>
                                 <label htmlFor="" className={style.fontWeight}>Student Name<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="student_name" required/>
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Mobile Number<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="student_mobile" required/>
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Email<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="student_email" required />
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Facebook Name<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="fb_id" required/>
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>NID/Birth Certificate/Passport<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="nid" required/>
                             </div>
                         </div>
                         <div className={`${style.box} row border position-relative`}>
                             <h5 className='position-absolute'>Address</h5>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Address (Present)<span className='text-danger'>*</span></label>
                                 <input id='present' onChange={change} className={style.inputs} type="" name="present_address" required/>
                             </div>
-                            <div className='col-3 d-flex flex-column'>
+                            <div className='col-lg-3 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>City<span className='text-danger'>*</span></label>
                                 <input id='present_city' onChange={change}  className={style.inputs} type="" name="present_city" required/>
                             </div>
-                            <div className='col-3 d-flex flex-column'>
+                            <div className='col-lg-3 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Post Code<span className='text-danger'>*</span></label>
                                 <input id='present_code' onChange={change} className={style.inputs} type="" name="present_postal" required />
                             </div>
                             <div className='col-12 d-flex flex-row-reverse justify-content-end align-items-center'>
                                 <label htmlFor="" className='mb-0 ml-2 ps-2'> Same as present adddress?</label>
-                                <input  className={`${style.inputs} mr-5`} type="checkbox" name="copy" required onClick={copyAddress}/>
+                                <input  className={`${style.inputs} mr-5`} type="checkbox" name="copy"  onClick={copyAddress}/>
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Address (Permanent)<span className='text-danger'>*</span></label>
                                 <input id='perA' className={style.inputs} type="" name="permanent_address" value={perA} required/>
                             </div>
-                            <div className='col-3 d-flex flex-column'>
+                            <div className='col-lg-3 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>City<span className='text-danger'>*</span></label>
                                 <input id='perA'   className={style.inputs} type="" name="permanent_city" value={perC} required/>
                             </div>
-                            <div className='col-3 d-flex flex-column'>
+                            <div className='col-lg-3 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Post Code<span className='text-danger'>*</span></label>
                                 <input id='perC'   className={style.inputs} type="" name="permanent_postal" value={perP} required />
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Office Address (If any)</label>
                                 <input  className={style.inputs} type="" name="office_address" required />
                             </div>
                         </div>
                         <div className={`${style.box} row border position-relative`}>
                             <h5 className='position-absolute'>Other Information</h5>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Date of Birth<span className='text-danger' >*</span></label>
                                 {/* <input  className={style.inputs} type="date" name="dob" required /> */}
                              
@@ -266,11 +266,11 @@ const ndate=(current);
                                             
                                         />
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Occupation<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="student_occupation" required/>
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Nationality<span className='text-danger' >*</span></label>
                                 {/* <input  className={style.inputs} type="" name="nationality" /> */}
                                 <select className={`${style.selects} bg-transparent`} name='nationality'required>
@@ -280,7 +280,7 @@ const ndate=(current);
                                 </select>
                             </div>
                       
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Gender<span className='text-danger' >*</span></label>
                                 {/* <input  className={style.inputs} type="" name="nationality" /> */}
                                 <select className={`${style.selects} bg-transparent`} name='gender' required>
@@ -289,7 +289,7 @@ const ndate=(current);
                                     <option >Female</option>
                                 </select>
                             </div>
-                            <div className='col-6 d-flex flex-column'>
+                            <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Select Course<span className='text-danger'>*</span></label>
                                 <select className={`${style.selects} bg-transparent `} name="course_title" required>
                                     <option disabled selected></option>
@@ -301,30 +301,30 @@ const ndate=(current);
                         </div>
                         <div className={`${style.box} row border position-relative`}>
                             <h5 className='position-absolute'>Institution Information</h5>
-                            <div className='col-4 d-flex flex-column'>
+                            <div className='col-lg-4 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>School/College/University<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="varsity_name" required/>
                             </div>
-                            <div className='col-4 d-flex flex-column'>
+                            <div className='col-lg-4 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Department<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="varsity_dpt" required/>
                             </div>
-                            <div className='col-4 d-flex flex-column'>
+                            <div className='col-lg-4 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Id<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="varsity_id" required/>
                             </div>
                         </div>
                         <div className={`${style.box} row border position-relative`}>
                             <h5 className='position-absolute'>Alternative contact</h5>
-                            <div className='col-4 d-flex flex-column'>
+                            <div className='col-lg-4 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Name<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="alt_name" required/>
                             </div>
-                            <div className='col-4 d-flex flex-column'>
+                            <div className='col-lg-4 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Mobile<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="alt_mobile" required/>
                             </div>
-                            <div className='col-4 d-flex flex-column'>
+                            <div className='col-lg-4 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Relation<span className='text-danger'>*</span></label>
                                 <input  className={style.inputs} type="" name="alt_relation" required/>
                             </div>

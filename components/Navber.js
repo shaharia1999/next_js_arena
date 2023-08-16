@@ -51,7 +51,7 @@ const Navbar = () => {
 //   window.addEventListener('scroll', changeNavbarColor);
   return (
     <section className={style.navbar_container}>
-      <nav className={`${style.navbar} container-fluid`}>
+      <nav className={`${style.navbar} container-fluid position-sticky`}>
         <Link href="/"><img src={colorChange ? logo2 : logo} alt="" /></Link>
         <ul className={`${showNav?style.link_wrapper:style.link_wrapper2}`}>
         <div className={style.close} ><AiOutlineClose onClick={Nav}></AiOutlineClose></div>

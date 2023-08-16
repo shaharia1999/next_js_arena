@@ -35,7 +35,7 @@
     width: 1.2rem;
     margin-right: 10px;
 }
-@media (max-width:776px) {
+@media (max-width:820px) {
     .about_container{
         display: block;
         align-items: center;
@@ -82,7 +82,7 @@
     .about_top_txt{
         font-weight: 700;
         color: #04004d;
-        font-size: 25px;
+        font-size: 20px !important;
         margin-bottom: 20px;
       
     }

@@ -47,21 +47,22 @@ const About = () => {
                    <br/> <br/> Involved with Government entities in 2012 like ICT Ministry, Academy for Rural Development, University of Engineering and Technology. Experienced with cyber security support in corporate area linked with outsourcing market. Already <strong>45<sup>+</sup></strong> batches received this training and have started to earn through online and corporate job.</p>
             </article>
             <SlideshowLightbox className={`${style.aboutImg}`}>
-    <img className="" src={about1} />
-    <img className="" src={about2} />
-    <img className="" src={about3} />
-    <img className="" src={about4} />
-    <img className="" src={about5} />
-    <img className="" src={about6} />
-    <img className="" src={about7} />
-    <img className="" src={about8} />
-    <img className="" src={about9} />
-    <img className="" src={about10} />
-    <img className="" src={about11} />
-    <img className="" src={about12} />
-    <img className="" src={about3} />
- 
-</SlideshowLightbox> 
+               
+                <img className="" src={about1} />
+                <img className="" src={about2} />
+                <img className="" src={about3} />
+                <img className="" src={about4} />
+                <img className="" src={about5} />
+                <img className="" src={about6} />
+                <img className="" src={about7} />
+                <img className="" src={about8} />
+                <img className="" src={about9} />
+                <img className="" src={about10} />
+                <img className="" src={about11} />
+                <img className="" src={about12} />
+                <img className="" src={about3} />
+            
+            </SlideshowLightbox> 
         </div>
     );
 };
