@@ -1,6 +1,11 @@
+
+'use client'
 import React, {Component} from 'react';
-import PaymentPage from '../public/Bkash';
+// import PaymentPage from '../public/Bkash';
 import BKash from 'bkash';
+import { BLOCKED_PAGES } from 'next/dist/shared/lib/constants';
+import BkashPayment from '@/components/Bkash';
+// import Bkash from './Bkash/Bkash';
 const BkashLogo = '/image/bkash.png'
 const bkash = '/image/Bkash.jsx'
 // import image from '../../../bKash_FEndScript/bkash'
@@ -8,13 +13,14 @@ const bkash = '/image/Bkash.jsx'
 class Payment extends Component {
     componentDidMount() {
         const script = document.createElement("script");
-        // script.async = true;
+        script.async = true;
         // script.src = "https://arenawebsecurity.net/static/cdn/bkash.js";
         // script.src = "http://192.168.1.5:8000/static/admin/js/bkash.js";
-        // script.src = "https://arenawebsecurity.net/bkash/bkash.js";
-        script.src ='/Bkash.jsx'
-        this.div.appendChild(script);
+        script.src = "https://arenawebsecurity.net/bkash/bkash.js";
+        // script.src ='/Bkash.js'
 
+        this.div.appendChild(script);
+       
         
     }
 
@@ -35,7 +41,7 @@ class Payment extends Component {
                     </div>
                     <div className="col-md-3"></div>
                 </div>
-              
+             {/* <BkashPayment></BkashPayment> */}
             </div>
             
           

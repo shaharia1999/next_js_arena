@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="651" height="531" viewBox="0 0 651 531">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.458" x2="0.488" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#56b5e3" stop-opacity="0.549"/>
+      <stop offset="1" stop-color="#7d58a5" stop-opacity="0.639"/>
+    </linearGradient>
+    <clipPath id="clip-ecommerce">
+      <rect width="651" height="531"/>
+    </clipPath>
+  </defs>
+  <g id="ecommerce" clip-path="url(#clip-ecommerce)">
+    <rect width="651" height="531" fill="#fff"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(0.052 -0.18)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="651" height="531" transform="translate(-0.052 0.18)" fill="url(#linear-gradient)"/>
+    </g>
+    <rect id="Rectangle_12" data-name="Rectangle 12" width="29" height="143" transform="translate(284.409 218) rotate(11)" fill="#fff"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="124" height="143" transform="translate(285 218)" fill="#fff"/>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="29" height="143" transform="matrix(0.978, -0.208, 0.208, 0.978, 379.951, 224.031)" fill="#fff"/>
+    <g id="brand-identity" transform="translate(238.915 163)">
+      <path id="Path_12" data-name="Path 12" d="M16.711,201.92a3.118,3.118,0,0,0,2.407,1.136H199.939A3.117,3.117,0,0,0,203,199.34L174.94,55.93a3.117,3.117,0,0,0-3.06-2.519H146.939V37.823a21.812,21.812,0,0,0-29.617-20.379A21.812,21.812,0,0,0,87.7,37.823V53.411H47.176a3.117,3.117,0,0,0-3.06,2.519L16.058,199.34a3.118,3.118,0,0,0,.653,2.58Zm39.818-29.1,28.8,24h-57.6ZM169.314,59.646l26.839,137.175H96.507L69.668,59.646h33.625V78.352H97.058v6.235h18.706V78.352h-6.235V59.646H140.7V78.352h-6.235v6.235h18.706V78.352h-6.235V59.646ZM117.322,24.332a15.594,15.594,0,0,1,7.794,13.491V53.411H109.528V37.823a15.594,15.594,0,0,1,7.794-13.491Zm7.794-2.1A15.606,15.606,0,0,1,140.7,37.823V53.411h-9.353V37.823a21.755,21.755,0,0,0-6.562-15.58c.109,0,.217-.008.327-.008ZM93.94,37.823a15.606,15.606,0,0,1,15.588-15.588c.11,0,.218.006.327.008a21.755,21.755,0,0,0-6.562,15.58V53.411H93.94Zm-44.2,21.823h3.668v53h6.235v-53h3.668L89.2,191.927,59.646,167.3V134.469H53.411V167.3L23.861,191.927Z"/>
+      <path id="Path_13" data-name="Path 13" d="M112,280h6.235v6.235H112Z" transform="translate(-58.589 -161.119)"/>
+      <path id="Path_14" data-name="Path 14" d="M303.588,263.176A15.588,15.588,0,1,0,288,247.588,15.588,15.588,0,0,0,303.588,263.176Zm0-24.941a9.353,9.353,0,1,1-9.353,9.353,9.353,9.353,0,0,1,9.353-9.353Z" transform="translate(-166.001 -131.825)"/>
+      <path id="Path_15" data-name="Path 15" d="M264,336h15.588v6.235H264Z" transform="translate(-151.354 -195.296)"/>
+      <path id="Path_16" data-name="Path 16" d="M320,336h31.176v6.235H320Z" transform="translate(-185.531 -195.296)"/>
+      <path id="Path_17" data-name="Path 17" d="M248,368h37.411v6.235H248Z" transform="translate(-141.589 -214.826)"/>
+      <path id="Path_18" data-name="Path 18" d="M360,368h24.941v6.235H360Z" transform="translate(-209.943 -214.826)"/>
+    </g>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="9.5" cy="9.5" r="9.5" transform="translate(367 269)" fill="#f43a45"/>
+  </g>
+</svg>

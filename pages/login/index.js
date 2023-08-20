@@ -84,13 +84,12 @@ const Login= () => {
               <form className='w-75 mx-auto mt-5' onSubmit={(e)=>handleSubmit(e)}>
                 <div className='d-flex flex-column'>
                 <label>Email</label>
-                    <input type="email" name="email" className={style.input} value={'your.email+fakedata51149@gmail.com'}/>
+                    <input type="email" name="email" className={style.input} />
                 </div>
                 <div className='d-flex flex-column mt-5 position-relative'>
                     <label>Password</label>
                     {
-                        show? <input name="password" type="password"   py-2 className={`${style.input} bg-danger}`} value={74909071
-                        }/>:
+                        show? <input name="password" type="password"   py-2 className={`${style.input} bg-danger}`}/>:
                         <input name="password" type="tax"  py-2 className={`${style.input} bg-danger}`}/>
                     }
                    
