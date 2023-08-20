@@ -1,5 +1,6 @@
 .timer{
     margin: 150px;
+ 
 }
 .countdown{
     display: flex;
@@ -17,4 +18,20 @@
 }
 .countdown div h3{
     color: #00c389;
+}
+@media (max-width:600px) {
+    .countdown{
+        display: block;
+     
+    }
+    .timer{
+        margin: 0;
+        /* background-color: black; */
+        margin-top: 100px;
+    }
+    .countdown div{
+        width: 100px;
+       margin: 20px auto;
+    
+    }
 }

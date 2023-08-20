@@ -2,6 +2,7 @@
 // import Navbar from '../Common/Navbar'
 import { Icon } from '@iconify/react';
 import style from './hedar.module.css'
+import { Fade } from 'react-reveal';
 
 const Header = () => {
     return (
@@ -13,14 +14,18 @@ const Header = () => {
                 <div className={style.wave}>
                     {/* <Navbar /> */}
                     
+                    <Fade left duration={2000}>
                     <div  className={`container ${style.details}`}>
                         <h1 className={style.header_title}>Arena Web Security</h1>
                         <p className={style.header_slogan}>New window of world wide web</p>
                         <p className={style.aboutTxt}>Arena Web Security is a sister concern of Arena Web Technology. Arena Web Security is a renowned IT security company in Bangladesh since its establishment in 2012. During these years, Arena Web Security has provided Cyber Security Services and Trainings to many around the world.</p>
                         <button className={style.btn}>Learn More</button>
                     </div>
+                 </Fade>
+                    
                 </div>
             </div>
+            
             <div className={`${style.badge_container} container`}>
                 <div className={style.badge}>
                     <span className={style.icon_wrapper}><Icon icon="mdi:tick-circle" className={style.icon} /></span>

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 const admissionBanner ='/image/course.png'
 const manAvatar ='/image/New_Assets/man.png'
@@ -24,8 +25,8 @@ const Profile = () => {
     const [paymentData, setPaymentData] = useState([])
     const [email, setEmail] = useState('')
     const [dob, setDob] = useState('')
-
     useEffect(() => {
+  
         let UserUUID = sessionStorage.getItem('reg_uuid');
         setEmail(localStorage.getItem('UserEmail'))
         axios.get(ApiUrl.ProfileApi + "?reg_uuid=" +UserUUID).then((response) => {
@@ -35,20 +36,16 @@ const Profile = () => {
                 setDob(response.data.dob.split(/[- : /]/));
             }
         }).catch(() => {
-
         })
-
         // Payment History api
-    //     axios.get(ApiUrl.BaseUrl + "admission-api/api/t-list/?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
-    //         if (response.status === 200) {
-    //             setPaymentData(response.data);
-    //         }
-    //     }).catch(() => {
+        // axios.get(ApiUrl.BaseUrl + "admission-api/api/t-list/?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
+        //     if (response.status === 200) {
+        //         setPaymentData(response.data);
+        //     }
+        // }).catch(() => {
 
-    //     })
+        // })
     }, [])
-
-    
     return (
         <Fragment>
                 <MyTimeCount></MyTimeCount>
@@ -77,27 +74,27 @@ const Profile = () => {
                         
                         <ul className={`${style.infoTable}`}>
                             
-                            <li><span className='font-weight-bold'>Name</span><span>:</span><span>{profileData?.Fullname}</span></li>
-                            <li><span className='font-weight-bold'>Email</span><span>:</span><span>{email ? email : '-'}</span></li>
-                            <li><span className='font-weight-bold'>Phone</span><span>:</span><span>{profileData?.phn}</span></li>
-                            <li><span className='font-weight-bold'>NID</span><span>:</span><span>{profileData.nid}</span></li>
-                            <li><span className='font-weight-bold'>DOB</span><span>:</span><span>{dob[2] + '-' + dob[1] + '-' + dob[0]}</span></li>
-                            <li><span className='font-weight-bold'>Gender</span><span>:</span><span>{profileData?.gender}</span></li>
-                            <li><span className='font-weight-bold'>Institute</span><span>:</span><span>{profileData?.institute}</span></li>
-                            <li><span className='font-weight-bold'>Address</span><span>:</span><span>{profileData?.p_address}</span></li>
-                            <li><span className='font-weight-bold'>City</span><span>:</span><span>{profileData?.city}</span></li>
-                            <li><span className='font-weight-bold'>Hobby</span><span>:</span><span>{profileData.hobby}</span></li>
-                            <li><span className='font-weight-bold'>Admission</span><span>:</span>
+                            <li><span className={style.spanBold}>Name</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData?.Fullname}</span></li>
+                            <li><span className={style.spanBold}>Email</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-1'>{email}</span></li>
+                            <li><span className={style.spanBold}>Phone</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData?.phn}</span></li>
+                            <li><span className={style.spanBold}>NID</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData.nid}</span></li>
+                            <li><span className={style.spanBold}>DOB</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{dob[2] + '-' + dob[1] + '-' + dob[0]}</span></li>
+                            <li><span className={style.spanBold}>Gender</span><span className='lg-ps-3 ps-2'>:</span ><span className='lg-ps-3 ps-2'>{profileData?.gender}</span></li>
+                            <li><span className={style.spanBold}>Institute</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData?.institute}</span></li>
+                            <li><span className={style.spanBold}>Address</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData?.p_address}</span></li>
+                            <li><span className={style.spanBold}>City</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData?.city}</span></li>
+                            <li><span className={style.spanBold}>Hobby</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData.hobby}</span></li>
+                            <li><span className={style.spanBold}>Admission</span><span className='lg-ps-3 ps-2'>:</span>
                                 {profileData?.discount_user ? <span className="text-success">Done</span> :
                                     paymentData?.total?.total_amount >= profileData?.course_fee_divide ?
                                         <span className="text-success">Done</span>
                                         : paymentData?.total?.total_amount === null || 0 ?
-                                            <span className="text-danger">Pending</span>
+                                            <span className="text-danger ps-3">Pending</span>
                                             :
                                             !paymentData.total ?
-                                                <span className="text-danger">Pending</span>
+                                                <span className="text-danger ps-3">Pending</span>
                                                 :
-                                                <span className="text-primary">Seat Booking</span>
+                                                <span className="text-primary ps-3">Seat Booking</span>
                                 }</li>{/* <span>Done</span> */}
                             {/* {   profileData?.discount_user ? <h6 className="NameText text-center">Admission: <span className="text-success">Done</span></h6> :
                                     paymentData?.total?.total_amount >= profileData?.course_fee_divide ? 

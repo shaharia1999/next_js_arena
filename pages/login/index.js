@@ -20,6 +20,7 @@ const Login= () => {
            .then(function (response) {
              console.log(response);
              if(response.status === 200 && response.data.login === 1){
+                sessionStorage.setItem('u_id',response.data.u_id)
                 sessionStorage.setItem("create_at", response.data.create_at);
                 sessionStorage.setItem("day_active",response.data.day_active);
                 sessionStorage.setItem("time",response.data.time);
@@ -64,7 +65,7 @@ const Login= () => {
            .catch(function (error) {
              console.log(error);
            });
-           console.log(data.get("email"))
+           localStorage.setItem('UserEmail',data.get("email"))
    
        
      
@@ -78,17 +79,18 @@ const Login= () => {
         <div className={`${style.aside_left} lg-w-50 h-100 d-flex justify-content-center align-items-center`}>
             <img src={bgImage} alt="" className='w-75' />
         </div>
-        <div className='lg-w-50 py-5'>
+        <div className='lg-w-50 py-5 ps-5'>
             <h4 className={`${style.titel} text-center`}>Login with email & password</h4>
               <form className='w-75 mx-auto mt-5' onSubmit={(e)=>handleSubmit(e)}>
                 <div className='d-flex flex-column'>
                 <label>Email</label>
-                    <input type="email" name="email" className={style.input} />
+                    <input type="email" name="email" className={style.input} value={'your.email+fakedata51149@gmail.com'}/>
                 </div>
                 <div className='d-flex flex-column mt-5 position-relative'>
                     <label>Password</label>
                     {
-                        show? <input name="password" type="password"   py-2 className={`${style.input} bg-danger}`}/>:
+                        show? <input name="password" type="password"   py-2 className={`${style.input} bg-danger}`} value={74909071
+                        }/>:
                         <input name="password" type="tax"  py-2 className={`${style.input} bg-danger}`}/>
                     }
                    

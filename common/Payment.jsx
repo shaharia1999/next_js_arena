@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
+import PaymentPage from '../public/Bkash';
+import BKash from 'bkash';
 const BkashLogo = '/image/bkash.png'
+const bkash = '/image/Bkash.jsx'
 // import image from '../../../bKash_FEndScript/bkash'
 
 class Payment extends Component {
     componentDidMount() {
         const script = document.createElement("script");
-        script.async = true;
+        // script.async = true;
         // script.src = "https://arenawebsecurity.net/static/cdn/bkash.js";
         // script.src = "http://192.168.1.5:8000/static/admin/js/bkash.js";
-        script.src = "https://arenawebsecurity.net/bkash/bkash.js";
+        // script.src = "https://arenawebsecurity.net/bkash/bkash.js";
+        script.src ='/Bkash.jsx'
         this.div.appendChild(script);
+
+        
     }
 
     render() {
@@ -29,7 +35,10 @@ class Payment extends Component {
                     </div>
                     <div className="col-md-3"></div>
                 </div>
+              
             </div>
+            
+          
         );
     }
 }

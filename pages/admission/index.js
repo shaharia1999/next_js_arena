@@ -81,7 +81,7 @@ const Form = () => {
       
       
       const PostData=()=>{
-        axios.post("http://192.168.0.119:8000/v1/login/",data)
+        axios.post("http://192.168.0.119:8000/api/form/",data)
         .then(function (response) {
             console.log(response.status
                 )
@@ -93,12 +93,11 @@ const Form = () => {
           console.log(error);
         });
        } 
-       const {data, isError, isLoading,isSuccess } = useQuery('posts', PostData) 
+   
        
        // first argument is a string to cache and track the query result
      
-    const handleSubmit = (e)=>{
-         
+    const HandleSubmit = (e)=>{
         e.preventDefault();
         if(e.target.birth_date.value.length == 0 ){
             console.log('value print');
@@ -114,10 +113,20 @@ const Form = () => {
             });
         }else{
             const data = new FormData(e.target);
+            axios.post("http://192.168.0.119:8000/api/form/",data)
+            .then(function (response) {
+                console.log(response.status
+                    )
+              console.log( response);
+              
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
         data.append("batch_schedule_time", "0");
-        if(isSuccess){
-            window.location = "/success";
-        }
+        // if(isSuccess){
+        //     window.location = "/success";
+        // }
         }
         
        
@@ -125,6 +134,12 @@ const Form = () => {
         // const name = e.target.name.value
         // const number = e.target.number.value
         // const email = e.target.email.value
+
+
+
+
+
+        
         // const fbName = e.target.fb_name.value
         // const nid = e.target.nid.value
         // const presentAddress = e.target.present_address.value
@@ -184,7 +199,7 @@ const ndate=(current);
         <section className={`${style.apply_container} position-relative`}>
             <div className={`${style.form_container} container mx-auto px-0`}>
                 <h1 className='text-center mb-5'>Student Information</h1>
-                <form className='' onSubmit={(e)=>handleSubmit(e)}>
+                <form className='' onSubmit={(e)=>HandleSubmit(e)}>
                 <ToastContainer className="toastMargin justify-content-center"/>
                     <div className='d-flex flex-column' style={{ gap: '50px 0px' }}>
                         <div className={`${style.box} row border position-relative`}>
