@@ -20,10 +20,16 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 const Navbar = () => {
 
   const [colorChange, setColorchange] = useState(false);
+  const [email,setEmail]=useState(false)
+
 
   
 
   useEffect(()=>{
+    const mail=(localStorage.getItem("UserEmail"))
+    if(mail){
+      setEmail(true)
+    }
     if(location.pathname !== '/new'){
       setColorchange(true)
     }
@@ -35,6 +41,36 @@ const Navbar = () => {
   const [showNav,setShowNav]=useState(false);
   const Nav=()=>{
     setShowNav(prev=>!prev)
+  }
+  const Nav2=()=>{
+    setShowNav(prev=>!prev)
+    console.log('LOGoYUT')
+    sessionStorage.removeItem("create_at");
+    sessionStorage.removeItem('day_active');
+    sessionStorage.removeItem('admission');
+   localStorage.removeItem('UserEmail');
+    localStorage.removeItem('Fullname');
+    localStorage.removeItem('u_id');
+    localStorage.removeItem('phn');
+    localStorage.removeItem('dob');
+    localStorage.removeItem('create_at');
+    localStorage.removeItem('gender');
+    localStorage.removeItem('nid');
+    localStorage.removeItem('p_address');
+    localStorage.removeItem('img');
+    localStorage.removeItem('hobby');
+    localStorage.removeItem('city');
+    localStorage.removeItem('institute');
+    localStorage.removeItem('admission');
+    localStorage.removeItem('day_active');
+    localStorage.removeItem('reg_uuid');
+    localStorage.removeItem('Type');
+    sessionStorage.removeItem("create_at");
+    sessionStorage.removeItem('day_active');
+    sessionStorage.removeItem('admission');
+    sessionStorage.removeItem("time");
+    window.location='/login'
+    
   }
 
   console.log(showNav);
@@ -79,7 +115,13 @@ const Navbar = () => {
           <a href="https://www.hackers.institute/" target='_blank' rel="noreferrer"><li>BLOGS</li></a>
           <Link href="/gallery" onClick={Nav}><li>GALLERY</li></Link>
           <Link href="/contact"  onClick={Nav}><li>CONTACT</li></Link>
-          <Link href="/admission"  onClick={Nav} className={`${style.apply_btn}`}><li className={style.apply_button}>APPLY NOW</li></Link>
+          {
+            email === false && <Link href="/admission"  onClick={Nav} className={`${style.appdddly_btn}`}><li className={style.apply_button}>APPLY NOW</li></Link>
+          }
+          {
+            email === true && <li className={style.apply_button}  onClick={Nav2}>LogOut</li>
+          }
+         
         </ul>
         <div className={style.menuIcon} onClick={Nav}><AiOutlineMenu/></div>
       </nav>

@@ -149,6 +149,7 @@
     text-align: center;
     border-radius:  30px;
     color: black !important;
+    cursor: pointer;
 }
 
 /* resposive Navber For mobile */

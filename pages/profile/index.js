@@ -27,7 +27,40 @@ const Profile = () => {
     const [dob, setDob] = useState('')
     const [data,setData]=useState([])
     useEffect(() => {
-  
+        const value=sessionStorage.getItem("day_active");
+        const seassion=Number(value)
+        if(seassion === null || seassion === 0 || seassion < 0){
+            window.location.href = "/login";
+            Swal.fire({
+              title: 'Login and try again  ! Please Call The Help Number +88 01324176407',
+              timer: 10000,
+              button: false,
+              timerProgressBar: true,
+              customClass: 'swal-Title',
+          }).then((result) => {
+              window.location.href = "/login";
+          })
+           localStorage.removeItem('UserEmail')
+           localStorage.removeItem('img');
+           localStorage.removeItem('u_id');
+           localStorage.removeItem('phn');
+           localStorage.removeItem('gender');
+           localStorage.removeItem('hobby');
+           localStorage.removeItem('dob');
+           localStorage.removeItem('city');
+           localStorage.removeItem('institute');
+           localStorage.removeItem('Fullname');
+           localStorage.removeItem('p_address');
+           localStorage.removeItem('nid');
+           localStorage.removeItem('create_at');
+           localStorage.removeItem('UserEmail');
+           localStorage.removeItem('day_active');
+           sessionStorage.removeItem("create_at");
+           sessionStorage.removeItem('day_active');
+           sessionStorage.removeItem('admission');
+           sessionStorage.removeItem("time");
+           return;
+      }
         let UserUUID = sessionStorage.getItem('reg_uuid');
         setEmail(localStorage.getItem('UserEmail'))
         axios.get(ApiUrl.ProfileApi + "?reg_uuid=" +UserUUID).then((response) => {
@@ -49,7 +82,8 @@ const Profile = () => {
         })
     }, [])
     return (
-        <Fragment>
+        <Fragment >
+            <div className={style.mainProfilePage}>
                 <MyTimeCount></MyTimeCount>
        
         <div className={`${style.profile_container} container-fluid d-flex justify-content-center  `}>
@@ -87,17 +121,21 @@ const Profile = () => {
                             <li><span className={style.spanBold}>City</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData?.city}</span></li>
                             <li><span className={style.spanBold}>Hobby</span><span className='lg-ps-3 ps-2'>:</span><span className='lg-ps-3 ps-2'>{profileData.hobby}</span></li>
                             <li><span className={style.spanBold}>Admission</span><span className='lg-ps-3 ps-2'>:</span>
-                                {profileData?.discount_user ? <span className="text-success">Done</span> :
-                                    paymentData?.total?.total_amount >= profileData?.course_fee_divide ?
-                                        <span className="text-success">Done</span>
-                                        : paymentData?.total?.total_amount === null || 0 ?
-                                            <span className="text-danger ps-3">Pending</span>
-                                            :
-                                            !paymentData.total ?
-                                                <span className="text-danger ps-3">Pending</span>
-                                                :
-                                                <span className="text-primary ps-3">Seat Booking</span>
-                                }</li>{/* <span>Done</span> */}
+                            {  data?.discount_user ? <h6 className="NameText text-center"> <span className="text-success">Done</span></h6> :
+                                    data?.total?.total_amount >= data?.course_fee_divide ? 
+                                    <h6 className="NameText text-center"><span className="text-success">Done</span></h6> 
+                                    : data?.total?.total_amount === null || 0 ?
+                                    <h6 className="NameText text-center"> <span
+                                    className="text-danger">Pending</span></h6>
+                                    :
+                                    !data.total ? 
+                                    <h6 className="NameText text-center"> <span
+                                    className="text-danger">Pending</span></h6>
+                                    :
+                                    <h6 className="NameText text-center"> <span
+                                    className="text-primary">Seat Booking</span></h6>
+                                }
+                                </li>{/* <span>Done</span> */}
                             {/* {   profileData?.discount_user ? <h6 className="NameText text-center">Admission: <span className="text-success">Done</span></h6> :
                                     paymentData?.total?.total_amount >= profileData?.course_fee_divide ? 
                                     <h6 className="NameText text-center">Admission: <span className="text-success">Done</span></h6> 
@@ -128,12 +166,12 @@ const Profile = () => {
                                 <th>Amount</th>
                             </tr>
                         </thead> */}
-                        <thead>
+                        <thead className={style.table}>
                         <tr>
                             <th>#</th>
                             <th>Date of Payment</th>
                             <th>Payment Type</th>
-                            <th>Payment Number/Account Number</th>
+                            <th>Payment Number</th>
                             <th>Amount</th>
                         </tr>
                     </thead>
@@ -180,7 +218,7 @@ const Profile = () => {
                             <td>{paymentData?.total?.total_amount} &#2547;</td>
                         </tr>
                      </tbody> */}
-                       <tbody>
+                       <tbody className={style.table2}>
                         {
                             data?.data?.length === 0 ? <tr>
                                 <td colSpan={5} className="text-center">No Payment Details Available</td>
@@ -213,6 +251,7 @@ const Profile = () => {
             <div>
                 <Link href="https://www.hackers.institute/2018/09/Ethical-Hacking-Course-Bangladesh.html"><img src={admissionBanner} alt="" className='d-none d-lg-block'/></Link>
             </div>
+        </div>
         </div>
         </Fragment>
     );

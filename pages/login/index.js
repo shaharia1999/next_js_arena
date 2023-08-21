@@ -40,7 +40,7 @@ const Login= () => {
                     progress: undefined,
                     autoClose: 3000,
                 });
-                //    window.location = "/profile";
+                   window.location = "/profile";
              }
              else if (response.status === 200 && response.data.login === 2) {
                 toast.error(response.data.msg, {
@@ -83,7 +83,7 @@ const Login= () => {
         <div className={`${style.aside_left} lg-w-50 h-100 d-flex justify-content-center align-items-center`}>
             <img src={bgImage} alt="" className='w-75' />
         </div>
-        <div className='lg-w-50 py-5 ps-5'>
+        <div className={`${style.loginBoix} lg-py-5 lg-ps-5 `}>
             <h4 className={`${style.titel} text-center`}>Login with email & password</h4>
               <form className='w-75 mx-auto mt-5' onSubmit={(e)=>handleSubmit(e)}>
                 <div className='d-flex flex-column'>
@@ -104,7 +104,7 @@ const Login= () => {
                 </div>
                 <div className='d-flex flex-column align-items-center mt-5'>
                     <input type="submit" name="" value="Login" className={`${style.login_btn}`} />
-                    <Link href="/new-admission" className='mt-4'><p className='d-inline-block border-bottom'>Apply for course</p></Link>
+                    <Link href="/admission" className='mt-4'><p className='d-inline-block border-bottom'>Apply for course</p></Link>
                 </div>
             </form>
         </div>

@@ -26,8 +26,8 @@ const Contact = () => {
                                 <input type="email" name="" />
                             </div>
                             <div className={`${ style.input_group} d-flex`}>
-                                <label for="">Number</label>
-                                <input type="" name="" />
+                                <label for="">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <div className='d-flex justify-content-center'>
                                 <input type="Submit" name="" value="Send" className={style.submit_btn} />
