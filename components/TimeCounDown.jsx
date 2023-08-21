@@ -81,6 +81,30 @@ const TimeCounDown = () => {
                                 sessionStorage.removeItem('day_active');
                                 sessionStorage.removeItem('admission');
                                 sessionStorage.removeItem("time");
+                                sessionStorage.removeItem("create_at");
+                                sessionStorage.removeItem('day_active');
+                                sessionStorage.removeItem('admission');
+                               localStorage.removeItem('UserEmail');
+                                localStorage.removeItem('Fullname');
+                                localStorage.removeItem('u_id');
+                                localStorage.removeItem('phn');
+                                localStorage.removeItem('dob');
+                                localStorage.removeItem('create_at');
+                                localStorage.removeItem('gender');
+                                localStorage.removeItem('nid');
+                                localStorage.removeItem('p_address');
+                                localStorage.removeItem('img');
+                                localStorage.removeItem('hobby');
+                                localStorage.removeItem('city');
+                                localStorage.removeItem('institute');
+                                localStorage.removeItem('admission');
+                                localStorage.removeItem('day_active');
+                                localStorage.removeItem('reg_uuid');
+                                localStorage.removeItem('Type');
+                                sessionStorage.removeItem("create_at");
+                                sessionStorage.removeItem('day_active');
+                                sessionStorage.removeItem('admission');
+                                sessionStorage.removeItem("time");
                               
                                 Swal.fire({
                                     title: 'Session Expire ! Please Call The Help Number +88 01324176407',
