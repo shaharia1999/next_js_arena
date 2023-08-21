@@ -26,7 +26,7 @@ var paymentID = '';
                 request['amount']=Amount;
                 console.log('amount = ', request['amount']);
     
-                if (request['amount']<500){
+                if (request['amount']<0){
                     Swal.fire({
                         position: 'top-center',
                         icon: 'error',
@@ -42,13 +42,12 @@ var paymentID = '';
                 }else {
                     $.ajax({
                         // url: 'https://arenawebsecurity.net/bkash/payment/create/',
-                        url: 'https://arenawebsecurity.net/admission-api/bkash/payment/create/',
-    
-                        
+                        url: 'http://192.168.0.119:8000/bkash/payment/create/',
                         type: 'POST',
                         contentType: 'application/json',
                         data: JSON.stringify(request),
                         success: function (data) {
+                            console.log(data);
                             //data = JSON.parse(data);
                             if (data && data.paymentID != null) {
                                 paymentID = data.paymentID;
@@ -73,7 +72,7 @@ var paymentID = '';
                 var Type =  localStorage.getItem("Type");
                 var Course_title =  localStorage.getItem("Course_title");
                 $.ajax({
-                    url: 'https://arenawebsecurity.net/admission-api/bkash/payment/execute/?email='+ Email + "&type=" + Type + "&title=" + Course_title,
+                    url: 'http://192.168.0.119:8000/bkash/payment/execute/?email='+ Email + "&type=" + Type + "&title=" + Course_title,
                     type: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({

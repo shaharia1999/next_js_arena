@@ -25,12 +25,13 @@ const Profile = () => {
     const [paymentData, setPaymentData] = useState([])
     const [email, setEmail] = useState('')
     const [dob, setDob] = useState('')
+    const [data,setData]=useState([])
     useEffect(() => {
   
         let UserUUID = sessionStorage.getItem('reg_uuid');
         setEmail(localStorage.getItem('UserEmail'))
         axios.get(ApiUrl.ProfileApi + "?reg_uuid=" +UserUUID).then((response) => {
-            console.log(response);
+            // console.log(response);
             if (response.status === 200) {
                 setProfileData(response.data);
                 setDob(response.data.dob.split(/[- : /]/));
@@ -38,13 +39,14 @@ const Profile = () => {
         }).catch(() => {
         })
         // Payment History api
-        // axios.get(ApiUrl.BaseUrl + "admission-api/api/t-list/?reg_uuid=" + 'a5255671-4a01-4af4-a4b4-5a0c4086e5e6').then((response) => {
-        //     if (response.status === 200) {
-        //         setPaymentData(response.data);
-        //     }
-        // }).catch(() => {
+        axios.get(ApiUrl.BaseUrl + "api/t-list/?reg_uuid=" + UserUUID).then((response) => {
+            console.log(response);
+            if (response.status === 200) {
+                setData(response.data);
+            }
+        }).catch(() => {
 
-        // })
+        })
     }, [])
     return (
         <Fragment>
@@ -117,7 +119,7 @@ const Profile = () => {
                     <h5 className={`${style.payment_summary}`}>Payment Summary</h5>
                     <div className={`${style.line}`}></div>
                     <table className='container '>
-                        <thead className={`${style.payment_table_head}`}>
+                        {/* <thead className={`${style.payment_table_head}`}>
                             <tr>
                                 <th>#</th>
                                 <th>Date</th>
@@ -125,8 +127,17 @@ const Profile = () => {
                                 <th>Number</th>
                                 <th>Amount</th>
                             </tr>
-                        </thead>
-                        <tbody className={`${style.payment_table_body}`}>
+                        </thead> */}
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Date of Payment</th>
+                            <th>Payment Type</th>
+                            <th>Payment Number/Account Number</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                        {/* <tbody className={`${style.payment_table_body}`}>
                             <tr>
                                 <td>1</td>
                                 <td>02/12/22</td>
@@ -168,7 +179,30 @@ const Profile = () => {
                             <td className='text-right'>Total:</td>
                             <td>{paymentData?.total?.total_amount} &#2547;</td>
                         </tr>
-                     </tbody>
+                     </tbody> */}
+                       <tbody>
+                        {
+                            data?.data?.length === 0 ? <tr>
+                                <td colSpan={5} className="text-center">No Payment Details Available</td>
+                            </tr> :
+                                data?.data?.map((data,index) =>
+                                    <tr className='px-2 py-2'>
+                                        <td>{index+1}</td>
+                                        <td>{new Date(data.time).getDate()+"-"+parseInt(new Date(data.time).getMonth()+1)+"-"+new Date(data.time).getFullYear()}</td>
+                                        {console.log(new Date(data.time).getDate()+"-"+parseInt(new Date(data.time).getMonth()+1)+"-"+new Date(data.time).getFullYear())}
+                                        <td>{data?.payment_type}</td>
+                                        <td>{data?.pay_number}</td>
+                                        <td>{data?.amount}</td>
+                                    </tr>
+                                )
+                                
+                        }
+                        <tr>
+                            <td colSpan={3}></td>
+                            <td className='text-right'>Total:</td>
+                            <td>{data?.total?.total_amount} &#2547;</td>
+                        </tr>
+                    </tbody>
                     </table>
                 </div>
                 <Payment></Payment>

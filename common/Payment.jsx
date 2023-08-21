@@ -16,8 +16,8 @@ class Payment extends Component {
         script.async = true;
         // script.src = "https://arenawebsecurity.net/static/cdn/bkash.js";
         // script.src = "http://192.168.1.5:8000/static/admin/js/bkash.js";
-        script.src = "https://arenawebsecurity.net/bkash/bkash.js";
-        // script.src ='/Bkash.js'
+        // script.src = "https://arenawebsecurity.net/bkash/bkash.js";
+        script.src ='/Bkash.js'
 
         this.div.appendChild(script);
        

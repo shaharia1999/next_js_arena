@@ -26,6 +26,10 @@ const Login= () => {
                 sessionStorage.setItem("time",response.data.time);
                 sessionStorage.setItem("admission", response.data.admission);
                 sessionStorage.setItem("reg_uuid", response.data.reg_uuid);
+                // localStorage.setItem("Type",response.data.admission);
+                localStorage.setItem("Type", 1);
+                localStorage.setItem("Course_title",response.data.title
+                );
                 toast.success('successfully login', {
                     position: "bottom-center",
                     theme: "colored",

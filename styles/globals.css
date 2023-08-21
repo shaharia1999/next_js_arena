@@ -142,7 +142,7 @@ body {
 }
 
 .bKashBackCard {
-  background-color: #FFC0CB;
+  background-color: #FFC0CB !important;
 }
 .profileImg{
   height: 200px;
@@ -302,6 +302,7 @@ body {
       order: 4;
   }
 }
+
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .profileCardPadding{
