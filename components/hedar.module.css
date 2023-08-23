@@ -1,20 +1,25 @@
 /* path{
     fill:url(#gradient) !important;
 } */
+.headermain{
+    height: 100vh !important;
+    overflow: hidden;
+}
 .header_container{
     position: relative;
-    /* height: 100vh;
-    min-height: 800px; */
-    height:900px;
+    height: 85vh;
+    /* min-height: 800px; */
+    /* height:900px; */
     z-index: 0;
     overflow: hidden;
+    padding-bottom: 50px;
 }
 .wave{
     position: relative;
 }
 .wave::before{
     background-image: linear-gradient(330deg,#56b5e3,#7d58a5);
-    height: 1150px;
+    height: 110vh;
     /* height: 90vh; */
     /* min-height: 1500px; */
     content: "";
@@ -33,7 +38,7 @@
     margin-top: -30%;
 }
 .wave::after{
-    height: 1150px !important;
+    height: 110vh !important;
     content: "";
     position: absolute;
     /* width: 2300px; */
@@ -116,6 +121,8 @@
 }
 .icon{
     font-size: 40px;
+
+    color: #008000;
     /* border: 5px solid rgb(75, 70, 70);
     border-radius: 9999px; */
 }

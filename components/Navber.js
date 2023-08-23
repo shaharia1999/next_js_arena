@@ -44,7 +44,7 @@ const Navbar = () => {
   }
   const Nav2=()=>{
     setShowNav(prev=>!prev)
-    console.log('LOGoYUT')
+    
     sessionStorage.removeItem("create_at");
     sessionStorage.removeItem('day_active');
     sessionStorage.removeItem('admission');
@@ -73,7 +73,7 @@ const Navbar = () => {
     
   }
 
-  console.log(showNav);
+
   const changeNavbarColor = () => {
     if (location.pathname === '/new') {
       if (window.scrollY >= 10) {

@@ -1,4 +1,5 @@
 
+import Link from 'next/link'
 import style from  './Footer.module.css'
 const icon1 = '/image/New_Assets/address.png'
 const icon2 = '/image/New_Assets/telephone.png'
@@ -58,26 +59,34 @@ const Footer = () => {
                         <div>
                             <h5>Information</h5>
                             <ul className={style.list_wrapper}>
-                                <li>About Us</li>
-                                <li>Contact</li>
-                                <li>FAQ</li>
-                                <li>Career</li>
-                                <li>Blog</li>
-                                <li>Service</li>
-                                <li>Gallery</li>
-                                <li>Privacy Policy</li>
+                                <Link href='/about' className='text-decoration-none'>  <li>About Us</li></Link>
+                                <Link href='/contact' className='text-decoration-none'>  <li>Contact</li></Link>
+                                <Link href='/' className='text-decoration-none'>   <li>FAQ</li></Link>
+                                <Link href='/' className='text-decoration-none'>  <li>Career</li></Link>
+                                <Link href='/https://www.hackers.institute/' className='text-decoration-none'>   <li>Blog</li></Link>
+                                <Link href='/services' className='text-decoration-none'>   <li>Service</li></Link>
+                                <Link href='/gallery' className='text-decoration-none'>    <li>Gallery</li></Link>
+                                <Link href='/' className='text-decoration-none'>   <li>Privacy Policy</li></Link>
                             </ul>
                         </div>
                         <div>
                             <h5>Courses</h5>
                             <ul className={style.list_wrapper}>
-                                <li>Cyber Security & Ethical Hacking</li>
-                                <li>Advanced Python & Freelancing</li>
-                                <li>Cyber Security & Python (DUO)</li>
-                                <li>C|OSINT</li>
-                                <li>Linux</li>
-                                <li>Networking Security</li>
-                                <li>CEHF Masterclass</li>
+                            <Link href='/cyberSecurity' className='text-decoration-none'>   <li>Cyber Security & Ethical Hacking</li></Link>
+                            <Link href='/advancePhaython' className='text-decoration-none'> <li>Advanced Python & Freelancing</li></Link>
+                            <Link href='/cyberSecurityAndAdvancePhyton' className='text-decoration-none'> <li>Cyber Security & Python (DUO)</li></Link>
+                            <Link href='/cosint' className='text-decoration-none'>  <li>C|OSINT</li></Link>
+                            <Link href='/linux' className='text-decoration-none'>  <li>Linux</li></Link>
+                            <Link href='/networking' className='text-decoration-none'>     <li>Networking Security</li></Link>
+                            <Link href='/cehfMasterClass' className='text-decoration-none'>  <li>CEHF Masterclass</li></Link>
+                           
+                               
+                                
+                                
+                                
+                                
+                             
+                                
                             </ul>
                         </div>
                         <div>

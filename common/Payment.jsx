@@ -18,8 +18,11 @@ class Payment extends Component {
         // script.src = "http://192.168.1.5:8000/static/admin/js/bkash.js";
         // script.src = "https://arenawebsecurity.net/bkash/bkash.js";
         script.src ='/Bkash.js'
-
         this.div.appendChild(script);
+        if(this.div.appendChild(script)){
+            console.log("return")
+        }
+
        
         
     }

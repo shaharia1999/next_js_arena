@@ -1,11 +1,26 @@
-import React, { useState } from 'react';
+'use client'
+import React, { useEffect, useRef, useState } from 'react';
 import style from './Statistics.module.css'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
+import { Fade } from 'react-reveal';
 
 const Statistics = () => {
-    const [count, setCount] = useState(true)
+    const [count, setCount] = useState(false)
     console.log(count);
+    useEffect(()=>{
+        const element = document.getElementById("count");
+       
+
+     
+        
+
+    },[])
+    const scroll = () => {
+        // const element = document.getElementById("count");
+       scrollIntoView( { behavior: 'smooth', block: 'start' } );
+        console.log('shaharia');
+      };
     /* const numElement = document.querySelectorAll('.stat-num')
     const speed = 200
     const counter = numElement.forEach(element => {
@@ -22,22 +37,35 @@ const Statistics = () => {
         }
         updateNum()
     }); */
+
+  
     return (
-        <section>
+        <section  onMouseEnter={()=>setCount(true)} onMouseLeave={()=>setCount(false)}>
             <div className={`container  ${style.state_wrapper}  `}>
-                <div >
+            <Fade left duration={2000}>
+            <div >
                     <h3 className={`${style.h3}`}>Statistics shows our contribution <br /> to the security community</h3>
                 </div>
+            </Fade>
+               
                 <div className={`${style.num_wrapper}`}>
                     <div className={`${style.count}`}>
-                        <ScrollTrigger onEnter={() => setCount(true)}>
+                        <ScrollTrigger onEnter={setCount}>
                             {count &&
                                 <CountUp
-                                    start={2}
+                                    start={0}
                                     end={45}
                                     duration={1}
                                 >
                                 </CountUp>}
+                                {!count &&
+                                <CountUp
+                                    start={0}
+                                    end={45}
+                                    duration={1}
+                                >
+                                </CountUp>}
+
                                 <span></span>
                             <sup>+</sup>
                         </ScrollTrigger>
@@ -46,6 +74,13 @@ const Statistics = () => {
                     <div className={`${style.count}`}>
                         <ScrollTrigger onEnter={() => setCount(true)}>
                             {count &&
+                                <CountUp
+                                    start={0}
+                                    end={15}
+                                    duration={2}
+                                >
+                                </CountUp>}
+                                {!count &&
                                 <CountUp
                                     start={0}
                                     end={15}
@@ -63,7 +98,14 @@ const Statistics = () => {
                                 <CountUp
                                     start={0}
                                     end={2}
-                                    duration={3}
+                                    duration={1}
+                                >
+                                </CountUp>}
+                                {!count &&
+                                <CountUp
+                                    start={0}
+                                    end={2}
+                                    duration={1}
                                 >
                                 </CountUp>}
                                 <span>k</span>
@@ -73,6 +115,7 @@ const Statistics = () => {
                     </div>
                 </div>
             </div>
+          
         </section>
     );
 };

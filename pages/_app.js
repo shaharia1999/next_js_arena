@@ -37,6 +37,13 @@ export default function App({ Component, pageProps }) {
           console.log(window.bKash,` shaharia`)
         }
       />
+       <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.js"
+        strategy="beforeInteractive"
+        onLoad={() =>
+          console.log(window.bKash,` shaharia`)
+        }
+      />
          <Component {...pageProps}  className="bg-white" />
     </QueryClientProvider>
   )

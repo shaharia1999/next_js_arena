@@ -81,7 +81,8 @@ var paymentID = '';
                     success: function(data) {
                         //data = JSON.parse(data);
                         if (data && data.paymentID != null) {
-                            window.location.href = "/paymentSuccess"; //MerchantÃ¢â‚¬â„¢s success page
+                            // window.location.href = "/paymentSuccess"; //MerchantÃ¢â‚¬â„¢s success page
+                            Swal.fire("Payment Success! Insufficient Balance");
                         } else {
                             if(data.errorCode == 2023){
                                 Swal.fire("Payment Failed ! Insufficient Balance");

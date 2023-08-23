@@ -21,19 +21,28 @@ const MentorSlides = () => {
                
                modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
                spaceBetween={50}
-               slidesPerView={1}
+            //    slidesPerView={1}
             //    navigation
                autoplay={true}
 
-               breakpoints={{
-        
-                768: {
-                  width: 768,
-                  slidesPerView: 2,
-                },
-                   
-              
-              }}
+                 
+        breakpoints={{
+            // when window width is >= 640px
+            0: {
+            //   width: 300,
+              slidesPerView: 1,
+            },
+            520: {
+            //   width: 300,
+              slidesPerView: 2,
+            },
+            // when window width is >= 768px
+            950: {
+            //   width: 768,
+              slidesPerView: 3,
+            },
+       
+          }}
                pagination={{ clickable: true }}
             //    scrollbar={{ draggable: true }}
                onSwiper={(swiper) => console.log(swiper)}

@@ -6,12 +6,14 @@ const testImage2 = '/image/New_Assets/2.jpg'
 const logo = '/image/AWSLogo.png';
 import style from './service.module.css'
 import { Navigation, Pagination, Scrollbar, A11y,Autoplay } from 'swiper/modules';
-
+import Slide from 'react-reveal/Slide';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import React from 'react';
+import Fade from 'react-reveal';
+
 
 const Services = () => {
     return (   
@@ -19,25 +21,39 @@ const Services = () => {
       <div className='container'>  
       <span className={style.services_txt}>Services</span>
         <div className={style.line}></div>
-        <h2  className={style.service_para}>We provide something that is <br/> very exceptional & good.</h2>
+        <Fade left duration={2000}><h2  className={style.service_para}>We provide something that is <br/> very exceptional & good.</h2></Fade>
+
      <div className='container '>
     <Swiper
      modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
       spaceBetween={50}
-      slidesPerView={1}
+    //   slidesPerView={3}
       Pagination={true}
       autoplay={true}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-      breakpoints={{
+    //   onSlideChange={() => console.log('slide change')}
+    //   onSwiper={(swiper) => console.log(swiper)}
+   
         
-        768: {
-          width: 768,
-          slidesPerView: 2,
-        },
+        breakpoints={{
+            // when window width is >= 640px
+            0: {
+            //   width: 300,
+              slidesPerView: 1,
+            },
+            520: {
+            //   width: 300,
+              slidesPerView: 2,
+            },
+            // when window width is >= 768px
+            950: {
+            //   width: 768,
+              slidesPerView: 3,
+            },
+       
+          }}
+     
            
-      
-      }}
+  
     >
        <SwiperSlide>
         <div>

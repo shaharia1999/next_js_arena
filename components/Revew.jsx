@@ -41,8 +41,8 @@ const Review = () => {
                         slidesPerView={1}
                         autoplay= {true}
                         modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        // onSlideChange={() => console.log('slide change')}
+                        // onSwiper={(swiper) => console.log(swiper)}
                         >
                              <SwiperSlide>
                              <div>

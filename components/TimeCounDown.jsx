@@ -27,6 +27,7 @@ const TimeCounDown = () => {
                     if (response.status === 200){
                         this.setState({ProfileData: response.data});
                         this.setState({cstmTime:response.data?.bd_time_index})
+                        return;
                     }
                }).catch(()=>{
         

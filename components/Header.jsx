@@ -6,7 +6,7 @@ import { Fade } from 'react-reveal';
 
 const Header = () => {
     return (
-        <section>
+        <section className={style.headermain}>
       
             <div className={`${style.header_container}`}>
                 {/* <h1 className={style.header_title}>Some text here</h1>
