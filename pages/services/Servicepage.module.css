@@ -130,7 +130,19 @@
     color: #04004d;
     font-size: 30px;
 }
-
+@media (max-width:1440px) {
+    .slider img{
+        width: 300px;
+       
+    }
+    .service_img{
+        border: 10px solid #00c389;
+        width: 20em;
+        border-radius: 9999px;
+        overflow: hidden;
+    }
+    
+}
 @media (max-width:800px) {
 
     .slider{
@@ -181,6 +193,7 @@
     
     
 }
+
 @media (max-width:600px) {
     
     .slider{

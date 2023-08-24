@@ -11,6 +11,8 @@ import { useForm } from "react-hook-form";
 import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer, toast} from 'react-toastify'
 import { useEffect } from 'react';
+import validator from 'validator'
+
 
 
 
@@ -33,6 +35,7 @@ const Form = () => {
  const [perA,setPerA]=useState('')
  const [perC,setPerC]=useState('')
  const [perP,setPerP]=useState('')
+
  const [cheked,setCheked]=useState(true)
     const copyAddress = (e) => {
         
@@ -101,11 +104,48 @@ const Form = () => {
        } 
    
        
-       // first argument is a string to cache and track the query result
-     
+
+const [emailError, setEmailError] = useState(false)
+const [phoneError, setPhoneError] = useState(false)
+const [empty, setEmpty] = useState(false)
+const [submit,setSubmit]=useState('Submit');
+
+     // Email Validation
+const validateEmail = (e) => {
+    var email = e.target.value
+    let EmailRegx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email === !EmailRegx) {
+        setEmpty(true);
+        console.log(true);
+      }
+    if (EmailRegx.test(email)) {
+       setEmailError(true)
+ 
+       console.log(true)
+    }
+     else {
+       setEmailError(false)
+       console.log(false)
+ 
+    }
+  }
+  
+     // Phone Validation
+  const validatePhone = (e) => {
+
+    var phone = e.target.value
+  
+    if (validator.isMobilePhone(phone)) {
+        setPhoneError(true)
+        console.log(true)
+    } else {
+        setPhoneError(false)
+        console.log(false);
+    }
+}
     const HandleSubmit = (e)=>{
         e.preventDefault();
-        if(e.target.birth_date.value.length == 0 ){
+        if(e.target.birth_date.value.length == 0  ){
             console.log('value print');
             toast.error('Birth Date is Required !', {
                 position: "bottom-center",
@@ -117,13 +157,53 @@ const Form = () => {
                 draggable: true,
                 progress: undefined,
             });
-        }else{
+        }else if(empty){
+            toast.error('Remove white space !', {
+                position: "bottom-center",
+                theme: "colored",
+                autoClose: false,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }else if(phoneError === false){
+            toast.error(' Invalid phone !', {
+                position: "bottom-center",
+                theme: "colored",
+                autoClose: false,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+        else if(emailError === false){
+            toast.error(' Invalid Email !', {
+                position: "bottom-center",
+                theme: "colored",
+                autoClose: false,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+
+        }
+        else{
             const data = new FormData(e.target);
+            setSubmit('Panding...')
             axios.post("http://192.168.0.119:8000/api/form/",data)
             .then(function (response) {
-                console.log(response.status
-                    )
+                if(response.status === 200){
+                    window.location.href = "/success";
+                }
+                    
               console.log( response);
+             
               
             })
             .catch(function (error) {
@@ -216,11 +296,28 @@ const ndate=(current);
                             </div>
                             <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Mobile Number<span className='text-danger'>*</span></label>
-                                <input  className={style.inputs} type="" name="student_mobile" required/>
+                                {
+                                    phoneError?    <input  className={`${style.inputs} text-black`} type="number" name="student_mobile" required id="MobileNumber"
+                                    //   onInput={(e) => e.target.value = e.target.value.slice(0,16)}
+                                    // onChange={mobile(this.e)}
+                                    onChange={(e)=>validatePhone(e)}
+                                      />:    <input  className={`${style.inputs} text-danger`} type="number" name="student_mobile" required id="MobileNumber"
+                                      //   onInput={(e) => e.target.value = e.target.value.slice(0,16)}
+                                      // onChange={mobile(this.e)}
+                                      onChange={(e)=>validatePhone(e)}
+                                        />
+                                }
+                             
                             </div>
                             <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Email<span className='text-danger'>*</span></label>
-                                <input  className={style.inputs} type="" name="student_email" required />
+                                { emailError?<input  className={`${style.inputs} text-black`} type="" name="student_email" required 
+                                      onChange={(e) => validateEmail(e)} /> :
+                                      <input  className={`${style.inputs} text-danger`} type="" name="student_email" required 
+                                      onChange={(e) => validateEmail(e)} />
+                                      
+                                }
+                               
                             </div>
                             <div className='col-lg-6 d-flex flex-column'>
                                 <label htmlFor="" className={style.fontWeight}>Facebook Name<span className='text-danger'>*</span></label>
@@ -275,6 +372,7 @@ const ndate=(current);
                                     <DatePicker
                                            
                                             value={dob}
+                                            maxDate={new Date()}
                                             onChange={birth_dateOnChange}
                                             className={style.inputDateP}
                                             placeholder="Select Date of Birth"
@@ -363,7 +461,7 @@ const ndate=(current);
                         </div>
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <input  className={style.inputs} type="submit" name="" value="Submit" className={`${style.submit_btn}`}  required/> {/* onClick={(e) => e.preventDefault()} */}
+                        <input  className={style.inputs} type="submit" name="" value={submit}   className={`${style.submit_btn}`}  required/> {/* onClick={(e) => e.preventDefault()} */}
                     </div>
                 </form>
             </div>

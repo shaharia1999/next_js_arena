@@ -264,7 +264,7 @@
         
     }
     .page_top{
-        margin-top: 50px;
+        margin-top: 100px;
         display: block;
         padding: 0 30px;
     }
@@ -317,6 +317,11 @@
 }
 
 @media (max-width:600px) {
+    .page_top{
+        margin-top: 20px;
+        display: block;
+        padding: 0 30px;
+    }
     .badge_container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -336,6 +341,7 @@
         height: 50px;
         border-radius: 9999px;
     } */
+    
     .badge{
         display: flex;
         align-items: center;

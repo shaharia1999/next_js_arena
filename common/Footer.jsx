@@ -104,19 +104,27 @@ const Footer = () => {
                     </div>
                   
                     <div className={` container ${style.social}`}>
-                        <div className={style.socialContainer}>                               
-                            <div className={style.socialWrapper}>
+                        <div className={style.socialContainer}>   
+                        <Link href='https://www.facebook.com/ArenaBangladesh/' className='text-decoration-none'>
+                        <div className={style.socialWrapper}>
                                 <img src={social1} alt="facebook icon" />
                                 <span>Facebook</span>
                             </div>
+                            
+                            </Link>                            
+                            <Link href='https://www.youtube.com/channel/UCABV9wzGHQcgyIMP-Vr57tw'className='text-decoration-none'>
                             <div className={style.socialWrapper}>
-                                <img src={social2} alt="youtube icon" />
+                                        <img src={social2} alt="youtube icon" />
                                 <span>Youtube</span>
                             </div>
-                            <div className={style.socialWrapper}>
-                                <img src={social3} alt="linkedin icon" />
-                                <span>Linkedin</span>
-                            </div>
+                            </Link>
+                           <Link href='https://www.linkedin.com/company/arena-web-security' className='text-decoration-none'>
+                                <div className={style.socialWrapper}>
+                                        <img src={social3} alt="linkedin icon" />
+                                        <span >Linkedin</span>
+                                </div>
+                            </Link> 
+                           
                         </div>
                     </div>
                     <p className='text-center text-white position-relative m-0 py-5'>Copyright © 2023 All Rights Reserved by Arena Web Security.</p>

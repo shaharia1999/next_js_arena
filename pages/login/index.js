@@ -13,8 +13,10 @@ import {ToastContainer } from 'react-toastify'
 
 const Login= () => {
     const [show,setShow] = useState(true)
+    const [Lvalue,setLvalue]=useState('Login')
     const handleSubmit =(e)=>{
            e.preventDefault();
+             setLvalue('Panding..')
            const data = new FormData(e.target);
            axios.post("http://192.168.0.119:8000/v1/login/",data)
            .then(function (response) {
@@ -103,7 +105,7 @@ const Login= () => {
                     }
                 </div>
                 <div className='d-flex flex-column align-items-center mt-5'>
-                    <input type="submit" name="" value="Login" className={`${style.login_btn}`} />
+                    <input type="submit" name="" value={Lvalue} className={`${style.login_btn}`} />
                     <Link href="/admission" className='mt-4'><p className='d-inline-block border-bottom'>Apply for course</p></Link>
                 </div>
             </form>

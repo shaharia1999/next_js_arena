@@ -3,10 +3,17 @@
     padding: 10px 0px;
     position: fixed;
     z-index: 100;
-    top: 0;
+    top:25px;
     width: 100%;
    
   
+}
+.notifications{
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(243, 243, 228);
+    z-index: 1000;
 }
 .menuIcon{
     color: white;
@@ -50,10 +57,21 @@
     font-weight: 600;
     color: white;
 }
+.link_wrapper li:hover{
+    margin-right: 15px;
+    font-weight: 600;
+    color: black;
+   
+}
 .link_wrapper2 li{
     margin-right: 15px;
     font-weight: 600;
     color: white;
+}
+.link_wrapper2 li:hover{
+    margin-right: 15px;
+    font-weight: 600;
+    color:black;
 }
 .apply_btn{
     /* background-color: #ffffff; */
@@ -159,7 +177,7 @@
         background-image:;
         padding: 20px 0px;
         z-index: 100;
-        top: 0;
+        top:25px;
         width: 100%;
       
   
@@ -261,21 +279,31 @@
 }
 @media (max-width:600px) {
     .navbar_container{
-        /* background-image:;
-        padding: 20px 0px;
+        background-image:;
+        padding: 10px 0px;
         z-index: 100;
-        top: 0;
+        top: 25;
         width: 100%;
-        position: relative !important; */
+        position: sticky !important;
   
+    }
+    .notifications{
+        font-size: 12px;
+        position: sticky;
+        top: 0;
+        background-color: rgb(243, 243, 228);
+        z-index: 1000;
     }
     .navbar{
         /* display: flex; */
         align-items: center;
         position: sticky !important;
-        top: 0;
+        top: 25px;
 
       
+    }
+    .navbar img{
+        width: 100px;
     }
 .navbar .link_wrapper{
   display: block;
