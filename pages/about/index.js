@@ -23,6 +23,7 @@ const about14 = '/image/New_Assets/About/AWTBrochure-14.png'
 import {SlideshowLightbox} from 'lightbox.js-react'
 import 'lightbox.js-react/dist/index.css'
 import { Col, Row } from 'react-bootstrap';
+import { useEffect } from 'react';
 
 
 const About = () => {
@@ -33,9 +34,14 @@ const About = () => {
     const images = [
         about1,about2,
     ];
+    useEffect(()=>{
+    const element=    document.getElementById('main');
+    element.scrollIntoView();
+
+    })
    
     return (
-        <div className={`container  ${style.aboutContainer}`}>
+        <div className={`container  ${style.aboutContainer}`} id='main'>
             <div className={`${style.banner_container}`}>
                 <img src={banner} alt="" width="100%" />
             </div>

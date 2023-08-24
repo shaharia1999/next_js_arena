@@ -49,9 +49,14 @@ const Networking = () => {
 
     //     })
     // }, [])
+    // useEffect(()=>{
+    //     const element=    document.getElementById('main');
+    //     element.scrollIntoView();
+    
+    //     })
     return (
-        <div>
-            <div className={`${style.page_top}  `}>
+        <div id='main'>
+            <div className={`${style.page_top}  `} >
                 <img src={promoBanner} alt="" className={style.page_top_img} />
                 <div className='container mx-3'>
                     <div className={`${style.overview}`}>

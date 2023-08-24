@@ -1,0 +1,15 @@
+.Faq{
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    font-weight: 600;
+    font-size: 25px;
+}
+.header{
+    background-image: linear-gradient(90deg, #56b5e3,#7d58a5);
+    padding: 15px 0;
+    color: white;
+}

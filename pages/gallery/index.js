@@ -12,11 +12,19 @@ const test6 = '/image/aws6.webp'
 const test7 ='/asset/image/aws7.webp'
 const test8 ='/asset/image/aws8.webp'
 import 'lightbox.js-react/dist/index.css'
+import { useEffect } from 'react';
 
 const Gallery = () => {
+    // useEffect(()=>{
+    //     const element=    document.getElementById('main');
+    //     element.scrollIntoView();
+      
+    
+    //     })
     return (
-        <div className={`container mx-auto ${style.gallery_container}`}>
-            <div className={`${style.gallery_content}`}>
+        <div id='main'>
+        <div className={`container mx-auto ${style.gallery_container}`} >
+            <div className={`${style.gallery_content}`} >
                 <h3>Some of our memorable events <br/> that we always cherish in our heart!</h3>
                 <p>Layout.js is not necessary, but allows you to render components across every route. It’s very helpful when adding global elements such as navigation .</p>
             </div>
@@ -32,6 +40,7 @@ const Gallery = () => {
   
  
 </SlideshowLightbox> 
+        </div>
         </div>
         </div>
     );

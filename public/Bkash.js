@@ -53,6 +53,7 @@ var paymentID = '';
                                 paymentID = data.paymentID;
                                 bKash.create().onSuccess(data); //pass the whole response data in bKash.create().onSucess() method as a parameter
                                 console.log(data)
+                                window.location.href ='/paymentSuccess'
                             } else {
                                 // alert("Payment Failed ", JSON.stringify(data.errorMessage))
                                 Swal.fire("Payment Failed ", JSON.stringify(data.errorMessage));

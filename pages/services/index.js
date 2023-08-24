@@ -15,6 +15,7 @@ import 'swiper/css/pagination';
 import RootLayout from '@/components/Layout';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import { useEffect } from 'react';
 
 
 // import required modules
@@ -53,8 +54,13 @@ const Service = () => {
         });
       
     }
+    useEffect(()=>{
+        const element=    document.getElementById('main');
+        element.scrollIntoView();
+    
+        })
     return (
-        <section>
+        <section id='main'>
             <Swiper
                 spaceBetween={30}
                 // navigation={true}

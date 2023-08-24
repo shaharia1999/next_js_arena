@@ -56,7 +56,7 @@
 }
 .footer::before{
     content: "";
-    background-image: linear-gradient(45deg, #56b5e3, #7d58a5);
+    background-image: linear-gradient(45deg, #3a80a3, #453555);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -90,6 +90,10 @@
 .list_wrapper li{
     color: white;
     font-weight: 700;
+}
+.list_wrapper li:hover{
+    color: #00c389;
+    
 }
 .social{
     display: flex;

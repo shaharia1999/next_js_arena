@@ -8,11 +8,17 @@ import Services from '@/components/Services'
 import Courses from '@/components/Courses'
 import Review from '@/components/Revew'
 import Concerns from '@/components/Concerns'
+import { useEffect } from 'react'
 
 
 
 
 const Home= () => {
+  useEffect(()=>{
+    const element=    document.getElementById('main');
+    element.scrollIntoView();
+
+    })
   return (
     <>
       <Head>
@@ -23,7 +29,7 @@ const Home= () => {
         
         
       </Head>
-      <main>
+      <main id='main'>
         <Header></Header>
         <About></About>
         <Statistics></Statistics>

@@ -1,6 +1,8 @@
 
 import Link from 'next/link'
 import style from  './Footer.module.css'
+import { useEffect } from 'react'
+import ScrollToTop from 'react-scroll-to-top'
 const icon1 = '/image/New_Assets/address.png'
 const icon2 = '/image/New_Assets/telephone.png'
 const icon3  ='/image/New_Assets/at.png'
@@ -13,8 +15,16 @@ const favIcon ='/image/favicon.ico'
 const Footer = () => {
     // const location = useLocation()
     // className={`${location.pathname === '/new' && 'parent_container'}`}
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      
+
+ 
     return (
-        <section className={style.parent_container} >
+        <section className={style.parent_container} id='main'>
+              <ScrollToTop smooth />
             <div className={`container ${style.footerCard} `}>
                 <div className={style.footer_wrapper}>
                     <div className={style.footer_wrapper_img}>
@@ -59,34 +69,26 @@ const Footer = () => {
                         <div>
                             <h5>Information</h5>
                             <ul className={style.list_wrapper}>
-                                <Link href='/about' className='text-decoration-none'>  <li>About Us</li></Link>
-                                <Link href='/contact' className='text-decoration-none'>  <li>Contact</li></Link>
-                                <Link href='/' className='text-decoration-none'>   <li>FAQ</li></Link>
-                                <Link href='/' className='text-decoration-none'>  <li>Career</li></Link>
+                                <Link href='/about' className='text-decoration-none' onClick={topFunction} >  <li>About Us</li></Link>
+                                <Link href='/contact' className='text-decoration-none' onClick={topFunction}>  <li>Contact</li></Link>
+                                <Link href='/faq' className='text-decoration-none' onClick={topFunction}>   <li>FAQ</li></Link>
+                                <Link href='/' className='text-decoration-none' onClick={topFunction}>  <li>Career</li></Link>
                                 <Link href='/https://www.hackers.institute/' className='text-decoration-none'>   <li>Blog</li></Link>
-                                <Link href='/services' className='text-decoration-none'>   <li>Service</li></Link>
-                                <Link href='/gallery' className='text-decoration-none'>    <li>Gallery</li></Link>
-                                <Link href='/' className='text-decoration-none'>   <li>Privacy Policy</li></Link>
+                                <Link href='/services' className='text-decoration-none' onClick={topFunction}>   <li>Service</li></Link>
+                                <Link href='/gallery' className='text-decoration-none' onClick={topFunction}>    <li>Gallery</li></Link>
+                                <Link href='/privacyPolicy' className='text-decoration-none' onClick={topFunction}>   <li>Privacy Policy</li></Link>
                             </ul>
                         </div>
                         <div>
                             <h5>Courses</h5>
                             <ul className={style.list_wrapper}>
-                            <Link href='/cyberSecurity' className='text-decoration-none'>   <li>Cyber Security & Ethical Hacking</li></Link>
-                            <Link href='/advancePhaython' className='text-decoration-none'> <li>Advanced Python & Freelancing</li></Link>
-                            <Link href='/cyberSecurityAndAdvancePhyton' className='text-decoration-none'> <li>Cyber Security & Python (DUO)</li></Link>
-                            <Link href='/cosint' className='text-decoration-none'>  <li>C|OSINT</li></Link>
-                            <Link href='/linux' className='text-decoration-none'>  <li>Linux</li></Link>
-                            <Link href='/networking' className='text-decoration-none'>     <li>Networking Security</li></Link>
-                            <Link href='/cehfMasterClass' className='text-decoration-none'>  <li>CEHF Masterclass</li></Link>
-                           
-                               
-                                
-                                
-                                
-                                
-                             
-                                
+                            <Link href='/cyberSecurity' className='text-decoration-none' onClick={topFunction}>   <li>Cyber Security & Ethical Hacking</li></Link>
+                            <Link href='/advancePhaython' className='text-decoration-none' onClick={topFunction}> <li>Advanced Python & Freelancing</li></Link>
+                            <Link href='/cyberSecurityAndAdvancePhyton' className='text-decoration-none' onClick={topFunction}> <li>Cyber Security & Python (DUO)</li></Link>
+                            <Link href='/cosint' className='text-decoration-none' onClick={topFunction}>  <li>C|OSINT</li></Link>
+                            <Link href='/linux' className='text-decoration-none' onClick={topFunction}>  <li>Linux</li></Link>
+                            <Link href='/networking' className='text-decoration-none' onClick={topFunction}>     <li>Networking Security</li></Link>
+                            <Link href='/cehfMasterClass' className='text-decoration-none' onClick={topFunction}>  <li>CEHF Masterclass</li></Link>  
                             </ul>
                         </div>
                         <div>
@@ -100,8 +102,9 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
+                  
                     <div className={` container ${style.social}`}>
-                        <div className={style.socialContainer}>
+                        <div className={style.socialContainer}>                               
                             <div className={style.socialWrapper}>
                                 <img src={social1} alt="facebook icon" />
                                 <span>Facebook</span>
@@ -118,6 +121,7 @@ const Footer = () => {
                     </div>
                     <p className='text-center text-white position-relative m-0 py-5'>Copyright © 2023 All Rights Reserved by Arena Web Security.</p>
                 </div>
+              
             </footer>
         </section>
     );

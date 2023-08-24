@@ -10,6 +10,7 @@ import { useMutation, useQuery } from 'react-query';
 import { useForm } from "react-hook-form";
 import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer, toast} from 'react-toastify'
+import { useEffect } from 'react';
 
 
 
@@ -52,6 +53,11 @@ const Form = () => {
       
         
     }
+    // useEffect(()=>{
+    //     const element=document.getElementById('main');
+    //     element.scrollIntoView();
+    
+    //     })
     const change = (e) => {
           if(!cheked){
             let presentAddress = document.getElementById('present').value
@@ -196,7 +202,7 @@ const ndate=(current);
 
    
     return (
-        <section className={`${style.apply_container} position-relative`}>
+        <section className={`${style.apply_container} position-relative`} id='main'>
             <div className={`${style.form_container} container mx-auto px-0`}>
                 <h1 className='text-center mb-5'>Student Information</h1>
                 <form className='' onSubmit={(e)=>HandleSubmit(e)}>
