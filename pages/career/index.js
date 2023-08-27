@@ -70,7 +70,7 @@ class Career extends Component {
                                             // onClick={() => this.setState({open: !open})}
                                             aria-controls="example0"
                                             aria-expanded={open}>
-                                            <h6 className="float-left">Assistant Marketing Manager</h6>
+                                            <h6 className="float-left" >{newData.title}</h6>
                                         </Button>
                                         <Accordion.Header>
                                         

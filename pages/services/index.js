@@ -16,6 +16,15 @@ import RootLayout from '@/components/Layout';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useEffect } from 'react';
+import Link from 'next/link';
+import { Button, Card } from 'react-bootstrap';
+import { AiFillLock, AiFillSafetyCertificate } from 'react-icons/ai';
+import { FaConnectdevelop, FaLinux } from 'react-icons/fa';
+import {  SiFreelancer, SiTestcafe} from 'react-icons/si';
+import { DiRequirejs} from 'react-icons/di';
+import { GiArtificialIntelligence, GiHillFort } from 'react-icons/gi';
+import { BsDatabaseExclamation } from 'react-icons/bs';
+import { IoMdDoneAll } from 'react-icons/io';
 
 
 // import required modules
@@ -29,7 +38,10 @@ const ecom6 ='/image/New_Assets/telephone.png'
 
 const Service = () => {
     const services = 12
-
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     const HandleSubmit=(e)=>{
         e.preventDefault();
         const data = new FormData(e.target);
@@ -226,6 +238,54 @@ const Service = () => {
                     <article>
                         <h2>Cyber Security Consultancy</h2>
                         <p>The threats of cyber-attacks are a fact of life and a fact of business. Wipro’s Cyber security and Risk Service can help you stay ahead of the threats and put your customer’s minds at ease. We take an integrated approach to protection that prioritizes not only prevention, but also minimizing risk and controlling loss.</p>
+                        <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-gap-5'>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillLock className={style.lock}></AiFillLock>
+                            <Card.Title className={style.title}>Security Services</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                      
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body >
+                        <div className='d-flex'><BsDatabaseExclamation className={style.lock}></BsDatabaseExclamation>
+                            <Card.Title className={style.title}>Data Privacy</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                           
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Industry Certified</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        </div>
+                        
                     </article>
                 </div>
                 <div className={style.service_wrapper}>
@@ -237,6 +297,145 @@ const Service = () => {
                     <article>
                         <h2>Cyber Security Course</h2>
                         <p>Whether you’re interested in landing your first IT security job, becoming a full-time white hat hacker, or preparing to test the security of your own home network, Arena Web Security offers approachable, hands-on ethical hacking courses to help you keep your networks safe from cyber criminals & make your career at professional marketplace.</p>
+                        <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-gap-5'>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><FaLinux className={style.lock}></FaLinux>
+                            <Card.Title className={style.title}>Linux</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                            <button className={style.service_Btn}  onClick={topFunction}><Link href='/cyberSecurity' className={`${style.service_btn} text-decoration-none underline-none text-white`}>Read More</Link></button>
+                        </Card.Body>
+                  
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body >
+                        <div className='d-flex'><AiFillLock className={style.lock}></AiFillLock>
+                            <Card.Title className={style.title}>Cyber Security</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                            <button className={style.service_Btn}  onClick={topFunction}><Link href='/cyberSecurity' className={`${style.service_btn} text-decoration-none underline-none text-white`}>Read More</Link></button>
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card> 
+                        <Card.Body>
+                            <div className='d-flex'><GiHillFort className={style.lock}></GiHillFort>
+                            <Card.Title className={style.title}>Digital Forensic</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                            <button className={style.service_Btn}  onClick={topFunction}><Link href='/cyberSecurity' className={`${style.service_btn} text-decoration-none underline-none text-white`}>Read More</Link></button>
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card> 
+                        <Card.Body>
+                            <div className='d-flex'><GiArtificialIntelligence className={style.lock}></GiArtificialIntelligence>
+                            <Card.Title className={style.title}>Open Source Int.</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                            <button className={style.service_Btn}  onClick={topFunction}><Link href='/cyberSecurity' className={`${style.service_btn} text-decoration-none underline-none text-white`}>Read More</Link></button>
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card> 
+                        <Card.Body>
+                            <div className='d-flex'><SiFreelancer className={style.lock}></SiFreelancer>
+                            <Card.Title className={style.title}>Freelancing</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                            <button className={style.service_Btn}  onClick={topFunction}><Link href='/cyberSecurity' className={`${style.service_btn} text-decoration-none underline-none text-white`}>Read More</Link></button>
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        </div>
+                      
+                    </article>
+                </div>
+           
+            
+                <div className={style.service_wrapper}>
+                    <aside>
+                        <div className={style.service_img}>
+                            <img src={ecom} alt="" className='w-100' />
+                        </div>
+                    </aside>
+                    <article>
+                        <h2>VAPT</h2>
+                        <p>Vulnerability Assessment & Penetration Testing describes a broad range of security assessment services designed to identify & help address cyber security exposures across an organisation’s IT estate. To ensure that you choose the right type of assessment for your company’s needs, it’s important to understand the other types of VAPT services.</p>
+                        <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-gap-5'>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillLock className={style.lock}></AiFillLock>
+                            <Card.Title className={style.title}> Cyber Security technician </Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                      
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body >
+                        <div className='d-flex'><BsDatabaseExclamation className={style.lock}></BsDatabaseExclamation>
+                            <Card.Title className={style.title}>Network Security / Ethical Hacking</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                           
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Penetration Testing</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        </div>
                     </article>
                 </div>
                 <div className={style.service_wrapper}>
@@ -248,17 +447,83 @@ const Service = () => {
                     <article>
                         <h2>Software Testing</h2>
                         <p>Web Application & Website Testing Services, Manual Testing, Test Automation, Mobile Testing, Web Testing, Desktop Testing, Security and Penetration Testing, Game Testing, Documentation, QA and Testing, DevOps. Full-cycle Independent QA and Managed testing Services for web, desktop, mobile apps, server-side systems, and devices.</p>
-                    </article>
-                </div>
-                <div className={style.service_wrapper}>
-                    <aside>
-                        <div className={style.service_img}>
-                            <img src={ecom} alt="" className='w-100' />
+                        <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-gap-5'>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><DiRequirejs className={style.lock}></DiRequirejs>
+                            <Card.Title className={style.title}> Requirement Analysis</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            In this stage, software testers work with stakeholders 
+                            involved in the development process...
+                            </Card.Text>
+                           
+                        </Card.Body>
+                  
+                        </Card>
                         </div>
-                    </aside>
-                    <article>
-                        <h2>VAPT</h2>
-                        <p>Vulnerability Assessment & Penetration Testing describes a broad range of security assessment services designed to identify & help address cyber security exposures across an organisation’s IT estate. To ensure that you choose the right type of assessment for your company’s needs, it’s important to understand the other types of VAPT services.</p>
+                        <div>
+                        <Card >
+                        <Card.Body >
+                        <div className='d-flex'><SiTestcafe className={style.lock}></SiTestcafe>
+                            <Card.Title className={style.title}>Test Planning</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            After thorough analysis, a test plan is created. Test planning involves aligning with relevant stakeholders on the test strategy:
+                            </Card.Text>
+                        
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card> 
+                        <Card.Body>
+                            <div className='d-flex'><FaConnectdevelop className={style.lock}></FaConnectdevelop>
+                            <Card.Title className={style.title}>Test Case Development</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            After defining the scenarios and functionalities to be tested, we'll write the test cases
+                            </Card.Text>
+                    
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card> 
+                        <Card.Body>
+                            <div className='d-flex'><GiArtificialIntelligence className={style.lock}></GiArtificialIntelligence>
+                            <Card.Title className={style.title}>Test Environment Setup</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                        
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card> 
+                        <Card.Body>
+                            <div className='d-flex'><IoMdDoneAll className={style.lock}></IoMdDoneAll>
+                            <Card.Title className={style.title}>Test Cycle Closure ..</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                           
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        </div>
+                      
                     </article>
                 </div>
                 <div className={style.service_wrapper}>
@@ -269,7 +534,69 @@ const Service = () => {
                     </aside>
                     <article>
                         <h2>Software Maintenance</h2>
-                        <p>The Arena Web Security is your one stop solution for complete software and maintenance services. We ami to provided trusted source to maintain and improve your existing application. When you hire web application maintenance services, you will be assigned a cluster of professional with the vast expertise of application maintenance services.</p>
+                        <p>The Arena Web Security is your one stop solution for complete software and maintenance services. We are to provided trusted source to maintain and improve your existing application. When you hire web application maintenance services, you will be assigned a cluster of professional with the vast expertise of application maintenance services.</p>
+                        <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-gap-5'>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillLock className={style.lock}></AiFillLock>
+                            <Card.Title className={style.title}>Corrective Software Maintenance</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                      
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body >
+                        <div className='d-flex'><BsDatabaseExclamation className={style.lock}></BsDatabaseExclamation>
+                            <Card.Title className={style.title}>Preventative Software Mtc.. </Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                           
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Perfective Software Maintenance</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Adaptive Software Maintenance</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        </div>
                     </article>
                 </div>
                 <div className={style.service_wrapper}>

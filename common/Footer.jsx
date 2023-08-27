@@ -72,7 +72,7 @@ const Footer = () => {
                                 <Link href='/about' className='text-decoration-none' onClick={topFunction} >  <li>About Us</li></Link>
                                 <Link href='/contact' className='text-decoration-none' onClick={topFunction}>  <li>Contact</li></Link>
                                 <Link href='/faq' className='text-decoration-none' onClick={topFunction}>   <li>FAQ</li></Link>
-                                <Link href='/' className='text-decoration-none' onClick={topFunction}>  <li>Career</li></Link>
+                                <Link href='/career' className='text-decoration-none' onClick={topFunction}>  <li>Career</li></Link>
                                 <Link href='/https://www.hackers.institute/' className='text-decoration-none'>   <li>Blog</li></Link>
                                 <Link href='/services' className='text-decoration-none' onClick={topFunction}>   <li>Service</li></Link>
                                 <Link href='/gallery' className='text-decoration-none' onClick={topFunction}>    <li>Gallery</li></Link>

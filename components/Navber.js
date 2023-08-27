@@ -81,7 +81,7 @@ const Navbar = () => {
     sessionStorage.removeItem('day_active');
     sessionStorage.removeItem('admission');
     sessionStorage.removeItem("time");
-    window.location='/login'
+    window.location='/'
     
   }
 
@@ -98,7 +98,7 @@ const Navbar = () => {
   };
 //   window.addEventListener('scroll', changeNavbarColor);
   return (<Fragment>
-                        <div className={`${style.notifications} container-fluid py-1`}>
+                        <div className={`${style.notifications}  py-0.5`}>
                         <div className="row">
                             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 marquee-div">
                                 <Marquee pauseOnHover={true} speed={80} gradientWidth={0} className="marquee-text">
