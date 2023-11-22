@@ -4,21 +4,28 @@ import style from './Login.module.css'
 const bgImage = '/image/New_Assets/login.png'
 import {AiFillEye ,AiFillEyeInvisible} from "react-icons/ai";
 import RootLayout from '@/components/Layout';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {ToastContainer } from 'react-toastify'
+import ApiUrl from '../api/api';
+
 
 
 const Login= () => {
     const [show,setShow] = useState(true)
     const [Lvalue,setLvalue]=useState('Login')
+
+
     const handleSubmit =(e)=>{
+
+       
+        
            e.preventDefault();
              setLvalue('Panding..')
            const data = new FormData(e.target);
-           axios.post("http://192.168.0.119:8000/v1/login/",data)
+           axios.post(ApiUrl.SendLogin,data)
            .then(function (response) {
              console.log(response);
              if(response.status === 200 && response.data.login === 1){

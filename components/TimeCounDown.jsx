@@ -131,9 +131,10 @@ const TimeCounDown = () => {
                                 return (
                                     <div className={style.timer}>
                                         <span id="countdown" className="timer"> </span>
-                                        <div className="container CountContainer mt-5">
+                                        <div className="  mt-5">
                                             <h6 className={`${style.CountTitle} text-center mt-5`}>Admission Time Remaining</h6>
                                             <div className={style.countdown}>
+                                            {/* <div className=''> */}
                                                 <div>
                                                     <p className="TimeFont TimeDays">{days}</p>
                                                     <h3>Days</h3>

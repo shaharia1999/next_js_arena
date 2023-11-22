@@ -7,8 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-
-
 import { Navigation, Pagination,EffectFade ,Autoplay} from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -25,6 +23,8 @@ import { DiRequirejs} from 'react-icons/di';
 import { GiArtificialIntelligence, GiHillFort } from 'react-icons/gi';
 import { BsDatabaseExclamation } from 'react-icons/bs';
 import { IoMdDoneAll } from 'react-icons/io';
+import { SlideshowLightbox } from 'lightbox.js-react';
+import 'lightbox.js-react/dist/index.css'
 
 
 // import required modules
@@ -35,6 +35,24 @@ const ecom3 = '/image/New_Assets/cancel.png'
 const ecom4 ='/image/New_Assets/at.png'
 const ecom5 = '/image/New_Assets/login.png'
 const ecom6 ='/image/New_Assets/telephone.png'
+const test1='/image/banner/1.jpg'
+const test2='/image/banner/2.jpg'
+const test3='/image/banner/3.jpg'
+const test4='/image/banner/4.jpg'
+const m1='/image/banner/m1.jpg'
+const m2='/image/banner/m2.jpg'
+const m3='/image/banner/m3.jpg'
+const m4='/image/banner/m4.jpg'
+const e1='/image/banner/e7.png'
+const e2='/image/banner/e8.png'
+const e3='/image/banner/e4.png'
+const e4='/image/banner/e5.png'
+const s1='/image/banner/s1.jpg'
+const s2='/image/banner/s2.jpg'
+const s3='/image/banner/s3.jpg'
+const s4='/image/banner/s4.jpg'
+const demo1='/image/banner/demo1.png'
+const demo2='/image/banner/demo2.png'
 
 const Service = () => {
     const services = 12
@@ -608,6 +626,93 @@ const Service = () => {
                     <article>
                         <h2>Software Development</h2>
                         <p>Software development services are aimed at designing, engineering, deploying, supporting, and evolving various software types. We are develops quality software services – software consulting, cloud migration, app integration, and more. We serve mid and large enterprises and software product companies across multiple industries.</p>
+                        {/* <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-gap-5'>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Requirements analysis</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                      
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body >
+                        <div className='d-flex'><BsDatabaseExclamation className={style.lock}></BsDatabaseExclamation>
+                            <Card.Title className={style.title}>Design and development </Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                           
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Testing</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Deployment</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Maintenance and support</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        </div> */}
+
+            <div className={`${style.aboutImg}`}>
+                <Link href='https://stalwart-dusk-a87d27.netlify.app'>
+                <img className="" src={demo1} />
+                </Link>
+                <img className="" src={demo2} />
+                {/* <img className="" src={test3} />
+                <img className="" src={test4} /> */}
+
+            </div>
                     </article>
                 </div>
                 <div className={style.service_wrapper}>
@@ -619,6 +724,98 @@ const Service = () => {
                     <article>
                         <h2>Networking Security Service (NSS)</h2>
                         <p>Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X. 509 v3 certificates, and other security standards.</p>
+                        <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-gap-5'>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>DCN Tutorial</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                      
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body >
+                        <div className='d-flex'><BsDatabaseExclamation className={style.lock}></BsDatabaseExclamation>
+                            <Card.Title className={style.title}>Physical Layer</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+                           
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Data Link Layer</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Network Layer</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Transport Layer</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        <div>
+                        <Card >
+                        <Card.Body>
+                            <div className='d-flex'><AiFillSafetyCertificate className={style.lock}></AiFillSafetyCertificate>
+                            <Card.Title className={style.title}>Application Layer</Card.Title>
+                            </div>
+                            
+                            <Card.Text className='mt-5'>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                            </Card.Text>
+               
+                        </Card.Body>
+                        </Card>
+                        </div>
+                        </div>
                     </article>
                 </div>
                 <div className={style.service_wrapper}>
@@ -630,6 +827,13 @@ const Service = () => {
                     <article>
                         <h2>Mobile App Development</h2>
                         <p>We have leading mobile app developers who always stay up-to-date with the latest technology trends to serving firms across the globe. While our analysts make qualitative and quantitative market study and well-researched forecasts for mobile app market fluctuations, our developers and designers craft stunning for our clients.</p>
+                        <SlideshowLightbox className={`${style.aboutImg}`}>
+                                <img className="" src={m1} />
+                                <img className="" src={m2} />
+                                <img className="" src={m3} />
+                                <img className="" src={m4} />
+
+                       </SlideshowLightbox>
                     </article>
                 </div>
                 <div className={style.service_wrapper}>
@@ -641,6 +845,13 @@ const Service = () => {
                     <article>
                         <h2>Ecommerce Solution</h2>
                         <p>Our Ecommerce development services cater to multi-disciplinary requirements of performance, security, scalability and usability. Our SEO experts optimize the top selling products of your store with an on-page and off-page Ecommerce SEO strategy that drives loads of organic traffic to your website.</p>
+                        <SlideshowLightbox className={`${style.aboutImg}`}>
+                                <img className="" src={e3} />
+                                <img className="" src={e4} />
+                                <img className="" src={e3} />
+                                <img className="" src={e4} />
+
+                       </SlideshowLightbox>
                     </article>
                 </div>
                 <div className={style.service_wrapper}>
@@ -652,6 +863,13 @@ const Service = () => {
                     <article>
                         <h2>SEO</h2>
                         <p>SEO is not magic. Google doesn't randomly decide which website's go to the top of the search results. The algorithm adjusts rankings based on several factors. Our SEO campaigns optimize for each of those factors to show Google your website has what it's looking for.</p>
+                        <SlideshowLightbox className={`${style.aboutImg}`}>
+                                <img className="" src={s1} />
+                                <img className="" src={s2} />
+                                <img className="" src={s3} />
+                                <img className="" src={s4} />
+
+                     </SlideshowLightbox>
                     </article>
                 </div>
                 <div className={style.service_wrapper}>

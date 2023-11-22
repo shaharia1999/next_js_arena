@@ -239,7 +239,7 @@ body {
 }
 
 .MainProfilePadding{
-  padding: 10px 5px 10px 5px;
+  padding: 0px 5px 10px 5px;
 }
 
 .profileCardPadding{
@@ -257,11 +257,17 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
+.MainProfilePadding{
+  margin: 0px 50px;
+}
 
 @media (max-width: 374.98px) {
   .profileCardPadding{
       padding: 10px 0px 10px 0px!important;
   }
+  .MainProfilePadding{
+    margin: 0px 10px;
+}
   .TextBold{
       font-weight: 500!important;
   }
@@ -285,10 +291,10 @@ body {
       font-size: 12px;
       font-weight: 300;
   }
-  .profileImg{
-      height: 140px;
-      width: 140px;
-  }
+
+  .MainProfilePadding{
+    margin: 0px 10px;
+}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -300,6 +306,9 @@ body {
       font-size: 14px;
       font-weight: 300;
   }
+  .MainProfilePadding{
+    margin: 0px 10px;
+}
  
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -316,6 +325,9 @@ body {
       -ms-order: 1;
       order: 1;
   }
+  .MainProfilePadding{
+    margin: 0px 10px;
+}
   #details_section div:nth-child(3){
       -webkit-order: 3;
       -ms-order: 3;

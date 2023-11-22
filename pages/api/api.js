@@ -6,21 +6,20 @@ class ApiUrl{
   // static SendApiUrl="https://hw.arenaclass.stream/cross-login/";
   // static ProfileApi="https://arenawebsecurity.net/admission-api/v1/profile/"
   // static BannerApi = "https://arenawebsecurity.net/admission-api/api/image-list/"
-  /* static BaseUrl="http://192.168.1.5:8000/";
-  static SendApply="http://192.168.1.5:8000/api/form/";
-  static SendLogin="http://192.168.1.5:8000/v1/login/";
-  static SendApiUrl="http://192.168.1.5:8000/cross-login/";
-  static ProfileApi="http://192.168.1.5:8000/v1/profile/" 
-  static BannerApi = "http://192.168.1.5:8000/api/image-list/" */
-
-  static BaseUrl="http://192.168.0.119:8000/";
-  static SendApply="http://192.168.0.116:8000/api/form/";
-  static SendLogin="http://192.168.0.116:8000/v1/login/";
-  static SendApiUrl="http://192.168.0.116:8000/cross-login/";
-  static ProfileApi="http://192.168.0.119:8000/v1/profile/" 
-  static BannerApi = "http://192.168.0.116:8000/api/image-list/" 
-  static Faq='http://192.168.0.119:8000/faq/'
-  static Job='http://192.168.0.119:8000/career/'
+  /* static BaseUrl="http://192.168.1.5:8001/";
+  static SendApply="http://192.168.1.5:8001/api/form/";
+  static SendLogin="http://192.168.1.5:8001/v1/login/";
+  static SendApiUrl="http://192.168.1.5:8001/cross-login/";
+  static ProfileApi="http://192.168.1.5:8001/v1/profile/" 
+  static BannerApi = "http://192.168.1.5:8001/api/image-list/" */
+  static BaseUrl="http://192.168.0.121:8001/";
+  static SendApply="http://192.168.0.121:8001/api/form/";
+  static SendLogin="http://192.168.0.121:8001/v1/login/";
+  static SendApiUrl="http://192.168.0.121:8001/cross-login/";
+  static ProfileApi="http://192.168.0.121:8001/v1/profile/" 
+  static BannerApi = "http://192.168.0.121:8001/api/image-list/" 
+  static Faq='http://192.168.0.121:8001/faq/'
+  static Job='http://192.168.0.121:8001/career/'
  
 }
 export default ApiUrl;

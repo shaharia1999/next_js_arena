@@ -196,7 +196,7 @@ const validateEmail = (e) => {
         else{
             const data = new FormData(e.target);
             setSubmit('Panding...')
-            axios.post("http://192.168.0.119:8000/api/form/",data)
+            axios.post(ApiUrl.SendLogin,data)
             .then(function (response) {
                 if(response.status === 200){
                     window.location.href = "/success";
@@ -217,38 +217,7 @@ const validateEmail = (e) => {
         
        
         
-        // const name = e.target.name.value
-        // const number = e.target.number.value
-        // const email = e.target.email.value
 
-
-
-
-
-        
-        // const fbName = e.target.fb_name.value
-        // const nid = e.target.nid.value
-        // const presentAddress = e.target.present_address.value
-        // const presentCity = e.target.present_city.value
-        // const presentCode = e.target.present_code.value
-        // const permanentAddress = e.target.permanent_address.value
-        // const permanentCity = e.target.permanent_city.value
-        // const permanentCode = e.target.permanent_code.value
-        // const office = e.target.office_address.value
-        // const date_of_birth = dob
-        // const occupation = e.target.occupation.value
-        // const institute = e.target.institute_info.value
-        // const department = e.target.department.value
-        // const intituteId = e.target.institute_id.value
-        // const altName = e.target.alt_name.value
-        // const altNumber = e.target.alt_mobile.value
-        // const altRelation = e.target.alt_relation.value
-        // const interest = e.target.interest.value
-        // const reason = e.target.reason.value
-        // const nationality =JSON.stringify(e.target.nationality.value) 
-        // const course = e.target.course.value
-        // const ALLDATA=[name,number,email,fbName,nid,presentAddress,presentCity,presentCode,permanentAddress,permanentCity,permanentCode,office,date_of_birth,occupation,institute,department,intituteId,altName,altNumber,altRelation,interest,reason,nationality,course];
-        
  
       
 

@@ -81,7 +81,20 @@
     border-radius: 9999px;
     overflow: hidden;
 }
+/* img  */
+.aboutImg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px;
 
+    
+}
+.aboutImg img{
+ width: 100%;
+ height: 100%;
+
+    
+}
 /* Service boxes */
 .lock{
     color:#00c389;

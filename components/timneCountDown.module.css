@@ -1,10 +1,10 @@
 .timer{
-    /* margin-top: 120px; */
-    margin-bottom: 50px;
-    /* margin-top: 120px; */
- 
+
+    margin:0px 43px;
+    position: relative;
+    z-index: 1;
 }
-.countdown{
+/* .countdown{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,6 +14,23 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+    /* background-color: red; */
+
+/* } */ 
+.countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./image/aboutImg.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: ;
+    /* background-color: red; */
+    width: 100%;
+    height: 300px;
+    /* margin: 0px 50px !important; */
 
 }
 .countdown::before{
@@ -41,7 +58,9 @@
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 400;
-}
+    color:white;
+    padding: 10px 0px;
+    background-image:linear-gradient(90deg, #56b5e3,#7d58a5)}
 
 .countdown::before div{
     z-index: 100;
@@ -66,6 +85,12 @@
         z-index: 100;
 
     
+    }
+    .timer{
+
+        margin:0px 0px;
+        position: relative;
+        z-index: 1;
     }
     .countdown div h3{
         color: #00c389;

@@ -32,14 +32,12 @@ const Gallery = () => {
             <div className={`container  ${style.aboutContainer}`}>
       
             <SlideshowLightbox className={`${style.aboutImg}`}>
-    <img className="" src={test1} />
-    <img className="" src={test2} />
-    <img className="" src={test3} />
-    <img className="" src={test4} />
-    <img className="" src={test5} />
-  
- 
-</SlideshowLightbox> 
+                <img className="" src={test1} />
+                <img className="" src={test2} />
+                <img className="" src={test3} />
+                <img className="" src={test4} />
+                <img className="" src={test5} />
+            </SlideshowLightbox> 
         </div>
         </div>
         </div>
